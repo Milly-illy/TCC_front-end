@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Causa Viva - Cadastro da ONG</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../assets/css/cadastros.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <img src="../assets/images/logoAuth.png" alt="logoAuth">
+    <h1>Faça o cadastro da sua ONG!</h1>
+    <main>
+      <form action="">
+        <div class="nome">
+          <label for="ONG">Nome da ONG</label>
+          <input type="text" name="ONG" placeholder="Digite o nome da ong" />
+        </div>
+
+        <div class="dono">
+          <label for="dono">Nome do(s) dono(s)</label>
+          <input type="text" name="dono" placeholder="Digite o seu nome" />
+        </div>
+
+        <section>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Digite o seu email" />
+          </div>
+
+          <div class="password">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Digite a sua senha"
+            />
+          </div>
+
+          <div class="password">
+            <label for="password">Confirme Senha</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Confirme a sua senha"
+            />
+          </div>
+        </section>
+
+        <section>
+          <div class="causa">
+            <label for="causa">Causa</label>
+            <select name="causa" id="">
+              <option value="Proteção Animal">Proteção Animal</option>
+              <option value="Direitos Humanos e Sociais">
+                Direitos Humanos e Sociais
+              </option>
+              <option value="Meio Ambiente">Meio Ambiente</option>
+              <option value="Saúde e Bem-Estar">Saúde e Bem-Estar</option>
+              <option value="Educação e Cultura">Educação e Cultura</option>
+            </select>
+          </div>
+
+          <div class="data">
+            <label for="data">Quando foi criada</label>
+            <input type="date" name="data" id="" />
+          </div>
+          <div class="fotoVideo">
+            <label for="fotoVideo">Foto e vídeo </label>
+            <input type="file" name="fotoVideo" placeholder="Adicione fotos e vídeos..."/>
+          </div>
+        </section>
+
+        <section>
+        <div class="cep">
+          <label for="cep">Cep</label>
+          <input type="text" name="cep" placeholder="Digite o cep da ong" />
+        </div>
+
+        <div class="bairro">
+          <label for="bairro">Bairro</label>
+          <input type="text" name="bairro" placeholder="Digite o bairro da ong"/>
+        </div>
+
+        <div class="cidade">
+          <label for="cidade">Cidade</label>
+          <input type="text" name="cidade" placeholder="Digite a cidade da ong"
+          />
+        </div>
+
+        <div class="estado">
+          <label for="estado">Estado</label>
+          <input type="text" name="estado" />
+        </div>
+        </section>
+
+        <section>
+        <div class="rua">
+          <label for="rua">Rua</label>
+          <input type="text" name="rua" placeholder="Digite a rua da ong" />
+        </div>
+
+        <div class="numero">
+          <label for="numero">Número</label>
+          <input type="text" name="numero" placeholder="Digite o número da ong"/>
+        </div>
+      </section>
+
+      <section>
+        <div class="telefone">
+          <label for="telefone">Telefone</label>
+          <input type="text" name="telefone" placeholder="Digite o telefone  da ong"/>
+        </div>
+
+        <div class="metaFinanceira">
+          <label for="metaFinanceira">Meta Financeira</label>
+          <input type="text" name="metaFinanceira" placeholder="Digite a meta financeira da ong"/>
+        </div>
+      </section>
+
+        <div class="necessidade">
+          <label for="necessidade">Necessidades</label>
+          <input type="text" name="necessidade" placeholder="Digite as necessidades da ong"/>
+        </div>
+
+        <section>
+        <div class="descricao">
+          <label for="descricao">Descrição</label>
+          <input type="text" name="descricao" placeholder="Digite uma descrição da ong..."/>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+        <a href="./login.html">Voltar para o login</a>
+      </section>
+      </form>
+    </main>
+  </body>
+</html>
