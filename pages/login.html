@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Causa Viva - Login</title>
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 <body>
+    <img src="../assets/images/logoAuth.png" alt="logoAuth" class="logo">
     <main>
-        <h1>login</h1>
+        <!-- "form" do login -->
+        <p class="title">BEM VINDO</p>
+
+        <p class="subtitle">Ficamos felizes em te ver denovo!</p class="subtitle">
+
+        <img class="logoLogin" src="../assets/images/logoLogin.png" alt="logoLogin">
+
+        <p class="subtitle">Ainda não possui uma conta?</p>
+
+        <a href="">Faça seu cadastro</a>
+        <a href="../pages/cadastroONG.html">Faça o cadastro da sua ONG</a>
+
+        <p>Faça seu login</p>
+        
+        <form action="">
+            <div>
+                <label for="emailLogin"></label>
+                <input type="email" name="emailLogin" placeholder="Email">
+            </div>
+
+            <div>
+                <label for="senhaLogin"></label>
+                <input type="password" name="senhaLogin" placeholder="Senha">
+            </div>
+
+            <button type="submit">Logar</button>
+        </form>
     </main>
 </body>
 </html>

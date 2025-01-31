@@ -13,18 +13,39 @@ body {
 
   min-height: 100vh;
 
-  margin-top: 120px;
 }
 
 h1 {
   color: var(--begeClaro);
 }
+/* Define a largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Cor do "thumb" (a parte móvel) */
+::-webkit-scrollbar-thumb {
+  background: var(--verde);
+  border-radius: 5px;
+}
+
+/* Quando o usuário passa o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--verdeEscuro);
+}
 main {
   background-color: var(--verdeClaro);
   padding: 45px 30px;
   border-radius: 30px;
   max-width: 60%;
+  overflow-y: scroll;
+  max-height: 70vh;
 }
 
 
@@ -159,9 +180,8 @@ button{
 }
 
 img{
-  width: 163px;
-  height: 112px;
+  width: 120px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
 }
