@@ -161,10 +161,6 @@ input, select{
   width: 100%;
 }
 
-/* input .descricao{
-  height: 40px;
-} */
-
 input::placeholder{
   color: var(--verdeEscuro);
 }
