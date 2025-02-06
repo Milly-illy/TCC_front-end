@@ -159,7 +159,6 @@ select {
   color: var(--azulClaro);
   background-color: var(--offWhite);
   border: none;
-  height: 50px;
   font-size: 24px;
   width: 100%;
   border-radius: 8px;

@@ -155,16 +155,20 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   color: var(--azulClaro);
   background-color: var(--offWhite);
   border: none;
-  height: 50px;
   font-size: 24px;
   width: 100%;
   border-radius: 8px;
   padding: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+textarea{
+    height: 250px;
+    resize: none;
 }
 
 input::placeholder {
