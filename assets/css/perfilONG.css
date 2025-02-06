@@ -3,53 +3,53 @@ body {
   background-color: var(--offWhite);
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
-header main{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--verde);
-    padding: 5px 60px;
+header main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--verde);
+  padding: 5px 60px;
 }
-header nav{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
 }
-header nav a{
-    color: var(--offWhite);
-    font-size: 20px;
-    font-weight: 500;
+header nav a {
+  color: var(--offWhite);
+  font-size: 20px;
+  font-weight: 500;
 }
-header .slogan{
-    background-color: var(--verdeClaro);
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    color: var(--verdeEscuro);
-}
-
-.foto{
-    width: 80px;
-    transition: transform 0.4s ease-in-out;
-    cursor: pointer;
+header .slogan {
+  background-color: var(--verdeClaro);
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: var(--verdeEscuro);
 }
 
-.foto:hover{
-    transform:scale(1.2);
+.foto {
+  width: 80px;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
 }
 
-.linkPerfil{
-    text-decoration: none;
-    color: var(--verdeClaro);
+.foto:hover {
+  transform: scale(1.2);
+}
+
+.linkPerfil {
+  text-decoration: none;
+  color: var(--verdeClaro);
 }
 
 .titulo {
@@ -94,9 +94,9 @@ button {
   margin-top: 55px;
 }
 
-.editarPerfil button{
-    width: 23%;
-    transition: all 400ms ease;
+.editarPerfil button {
+  width: 23%;
+  transition: all 400ms ease;
 }
 
 #editar {
@@ -105,9 +105,9 @@ button {
   height: 40px;
 }
 
-#editar:hover{
-    background-color: #ffee8f;
-    cursor: pointer;
+#editar:hover {
+  background-color: #ffee8f;
+  cursor: pointer;
 }
 
 #salvar {
@@ -116,9 +116,9 @@ button {
   height: 40px;
 }
 
-#salvar:hover{
-    background-color:   #8EE48E;
-    cursor: pointer;
+#salvar:hover {
+  background-color: #8ee48e;
+  cursor: pointer;
 }
 
 #cancelar {
@@ -127,9 +127,9 @@ button {
   height: 40px;
 }
 
-#cancelar:hover{
-    background-color: #E55959;
-    cursor: pointer;
+#cancelar:hover {
+  background-color: #e55959;
+  cursor: pointer;
 }
 
 .buttons {
@@ -144,9 +144,9 @@ button {
   border-radius: 3px;
 }
 
-.buttons button:hover{
-    background-color: #ffee8f;
-    cursor: pointer;
+.buttons button:hover {
+  background-color: #ffee8f;
+  cursor: pointer;
 }
 
 label {
@@ -179,14 +179,14 @@ section div {
   margin-top: 20px;
 }
 
-
 .fotoPerfil {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  width: 20%; 
+  width: 20%;
+  margin-top: 25px;
 }
 .fotoPerfil img {
   width: 70%;
@@ -194,7 +194,7 @@ section div {
 .fotoPerfil button {
   padding: 10px;
 }
-.confirmeSenhaPerfil {
+.confirmeSenhaOng {
   display: none;
 }
 footer {

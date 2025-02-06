@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Causa Viva - Perfil do Doador</title>
+    <title>Causa Viva - Perfil da ONG</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../assets/css/perfilDOADOR.css" />
+    <link rel="stylesheet" href="../assets/css/perfilONG.css" />
   </head>
   <body>
     <header>
@@ -14,86 +14,119 @@
           <img src="../assets/images/Logo Header.png" alt="logo" />
         </a>
         <nav>
-            <a href="./causas.html">Buscar Causas</a>
-            <a class="linkPerfil" href="./perfilDOADOR.html">Olá <b>Andressa</b></a>
-            <img class="foto" src="../assets/images/fotoPerfil.png">
+          <a class="linkPerfil" href="./perfilONG.html"
+            >Bom te ver <b>Amigos da vizinhança</b></a
+          >
+          <img class="foto" src="../assets/images/fotoPerfil_1.png" />
         </nav>
       </main>
       <div class="slogan"></div>
     </header>
 
     <main>
-      <h1 class="titulo">Meu Perfil</h1>
+      <h1 class="titulo">Seu Projeto</h1>
 
       <form action="">
         <section>
-          <div class="nomePerfl">
-            <label for="nomePerfl">Nome</label>
+          <div class="nomeOng">
+            <label for="nomeOng">Nome</label>
             <input
               type="text"
-              name="nomePerfl"
+              name="nomeOng"
               placeholder="Seu Nome"
-              value="Andressa ....."
+              value="Amigos da vizinhança"
               disabled
             />
           </div>
 
-          <div class="emailPerfil">
-            <label for="emailPerfil">Email</label>
+          <div class="nomeCriadores">
+            <label for="nomeCriadores">Criadores</label>
+            <input
+              type="text"
+              name="nomeCriadores"
+              placeholder="Seu Nome"
+              value="Cláudio Estevan e Jasmine Almeida"
+              disabled
+            />
+          </div>
+
+          <div class="emialOng">
+            <label for="emialOng">Email</label>
             <input
               type="email"
-              name="emailPerfil"
+              name="emialOng"
               placeholder="Seu Email"
               value="andressa@gmail.com"
               disabled
             />
           </div>
 
-          <div class="senhaPerfil">
-            <label for="senhaPerfil">Senha</label>
+          <div class="senhaOng">
+            <label for="senhaOng">Senha</label>
             <input
               type="password"
-              name="senhaPerfil"
+              name="senhaOng"
               placeholder="Sua Senha"
               value="12345678"
               disabled
             />
           </div>
 
-          <div class="confirmeSenhaPerfil">
-            <label for="confirmeSenhaPerfil">Confirme sua Senha</label>
+          <div class="confirmeSenhaOng">
+            <label for="confirmeSenhaOng">Confirme sua Senha</label>
             <input
               type="password"
-              name="confirmeSenhaPerfil"
+              name="confirmeSenhaOng"
               placeholder="Confirme sua Senha"
               value="12345678"
               disabled
             />
           </div>
-        </section>
 
-        <section class="causaPerfil">
-          <div>
-            <label for="causaPerfil">Causas em preferência</label>
-            <select name="causaPerfil" id="" disabled>
-              <option value="Proteção Animal">Proteção Animal</option>
-              <option value="Direitos Humanos e Sociais">
-                Direitos Humanos e Sociais
-              </option>
-              <option value="Meio Ambiente">Meio Ambiente</option>
-              <option value="Saúde e Bem-Estar">Saúde e Bem-Estar</option>
-              <option value="Educação e Cultura">Educação e Cultura</option>
-            </select>
-          </div>
-          <div class="telefonePerfil">
-            <label for="telefonePerfil">Telefone</label>
+          <div class="telefoneOng">
+            <label for="telefoneOng">Telefone</label>
             <input
               type="text"
-              name="telefonePerfil"
+              name="telefoneOng"
               placeholder="Seu Telefone"
               value="(14) 99857-0088"
               disabled
             />
+          </div>
+        </section>
+
+        <section class="necessidadesOng">
+          <div class="metaFinanceira">
+            <label for="metaFinanceira">Meta Financeira</label>
+            <input
+              type="text"
+              name="metaFinanceira"
+              placeholder="Sua meta financeira"
+              value="R$ 17.600"
+              disabled
+            />
+          </div>
+
+          <div class="cepOng">
+            <label for="cepOng">CEP</label>
+            <input
+              type="text"
+              name="cepOng"
+              placeholder="Seu Telefone"
+              value="17572100"
+              disabled
+            />
+          </div>
+
+          <div>
+            <label for="necessidadesOng">Necessidades</label>
+            <select name="necessidadesOng" id="" disabled>
+              <option value="Cadeiras">Cadeiras</option>
+              <option value="Ração">Ração</option>
+              <option value="Mesas">Mesas</option>
+              <option value="Comida">Comida</option>
+              <option value="Roupa">Roupa</option>
+            </select>
           </div>
           <div class="editarPerfil">
             <button id="editar">Editar</button>
@@ -105,7 +138,7 @@
         </section>
 
         <section class="fotoPerfil">
-          <img src="../assets/images/fotoPerfilDoador.png" alt="" />
+          <img src="../assets/images/fotoPerfilOng.png" alt="" />
           <div class="buttons">
             <button>Mudar</button>
             <button>Remover</button>

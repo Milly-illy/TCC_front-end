@@ -44,7 +44,7 @@ main {
   margin: 0 auto; 
 }
 
-a{
+main a{
   color: var(--begeClaro);
   text-decoration: none;
   border: 2px solid var(--begeClaro); 
