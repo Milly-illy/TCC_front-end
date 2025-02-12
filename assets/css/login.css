@@ -48,11 +48,18 @@ main a{
   color: var(--begeClaro);
   text-decoration: none;
   border: 2px solid var(--begeClaro); 
-  padding: 3px 6px;
-  border-radius: 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
   font-size: 20px;
   line-height: 2.3;
   text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: all 300ms ease;
+}
+
+a:hover{
+  background-color: var(--begeClaro);
+  color: var(--verde);
+  text-shadow: none;
 }
 
 p{
@@ -123,6 +130,7 @@ button{
   font-size: 20px;
   border-radius: 40px;
   margin: 40px;
+  cursor: pointer;
 }
 
 input[type="email"] {

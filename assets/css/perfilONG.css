@@ -89,12 +89,14 @@ button {
 .editarPerfil {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   color: var(--azulEscuro);
   gap: 30px;
   margin-top: 55px;
+  width: 100%;
 }
 
-.editarPerfil button {
+.editarPerfil #editar, #salvar, #cancelar {
   width: 23%;
   transition: all 400ms ease;
 }
@@ -130,6 +132,15 @@ button {
 #cancelar:hover {
   background-color: #e55959;
   cursor: pointer;
+}
+
+.addEventos{
+  background-color: var(--verde);
+  width: 50%;
+  padding: 10px;
+  color: var(--begeClaro);
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .buttons {

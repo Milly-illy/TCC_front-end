@@ -245,8 +245,8 @@ img:hover {
 
 button{
   border: none;
-  background-color: var(--verde);
-  color: var(--verdeEscuro);
+  background-color: var(--verdeEscuro);
+  color: var(--begeClaro);
   font-size: 17px;
   width: 100%;
   border-radius: 5px;
@@ -255,8 +255,8 @@ button{
 }
 
 button:hover{
-  background-color: var(--verdeEscuro);
-  color: var(--begeClaro);
+  background-color: var(--begeClaro);
+  color: var(--verdeEscuro);
   cursor: pointer;
 }
 
