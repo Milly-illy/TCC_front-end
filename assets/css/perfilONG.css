@@ -60,13 +60,27 @@ header .slogan {
   padding-bottom: 25px;
 }
 
-form {
+.gallery{
+  width: 100%;
+}
+
+.title_gallery{
+  color: var(--azulEscuro);
+  font-size: 35px;
+  margin-top: 250px;
+}
+
+main{
   background-color: var(--bege);
+  padding: 50px 60px;
+}
+
+form {
   display: flex;
   align-items: start;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px 60px;
+  /* padding: 50px 60px; */
   width: 100%;
 }
 

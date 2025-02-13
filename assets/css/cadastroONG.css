@@ -73,7 +73,7 @@ form div{
 }
 
 .causa{
-  width: 30%;
+  width: 35%;
 }
 
 .data{
@@ -81,6 +81,10 @@ form div{
 }
 
 .cep{
+  width: 30%;
+}
+
+.CPF_CNPJ{
   width: 30%;
 }
 
