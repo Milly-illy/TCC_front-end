@@ -70,6 +70,57 @@ header .slogan {
   margin-top: 250px;
 }
 
+.photos_gallery{
+  width: 100%;
+  background-color: var(--offWhite);  
+}
+
+.photos_gallery img{
+  width: 30%;
+}
+
+#picture__input {
+  display: none;
+}
+
+.picture {
+  width: 20%;
+  height: 500px;
+  aspect-ratio: 16/9;
+  background: var(--verdeClaro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--verdeEscuro);
+  border: 2px dashed currentcolor;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.picture:hover {
+  color: var(--verdeEscuro);
+  background: var(--bege);
+}
+
+.picture:active {
+  border-color: var(--verdeEscuro);
+  color: turquoise;
+  background: #eee;
+}
+
+.picture:focus {
+  color: var(--offWhite);
+  background: var(--verdeEscuro);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+}
+
 main{
   background-color: var(--bege);
   padding: 50px 60px;
@@ -146,6 +197,15 @@ button {
 #cancelar:hover {
   background-color: #e55959;
   cursor: pointer;
+}
+
+#salvar:disabled, #cancelar:disabled, #editar:disabled{
+  background-color: lightgray;
+}
+
+#salvar:disabled:hover, #cancelar:disabled:hover, #editar:disabled:hover{
+  background-color: lightgray;
+  cursor: default;
 }
 
 .addEventos{

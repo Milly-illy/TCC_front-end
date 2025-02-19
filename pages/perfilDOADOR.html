@@ -6,6 +6,7 @@
     <title>Causa Viva - Perfil do Doador</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../assets/css/perfilDOADOR.css" />
+    <script src="../assets/js/config.js" defer></script>
   </head>
   <body>
     <header>
@@ -30,10 +31,11 @@
           <div class="nomePerfl">
             <label for="nomePerfl">Nome</label>
             <input
+              class = "input"
               type="text"
               name="nomePerfl"
               placeholder="Seu Nome"
-              value="Andressa ....."
+              value="Andressa"
               disabled
             />
           </div>
@@ -41,6 +43,7 @@
           <div class="emailPerfil">
             <label for="emailPerfil">Email</label>
             <input
+              class = "input"
               type="email"
               name="emailPerfil"
               placeholder="Seu Email"
@@ -52,6 +55,7 @@
           <div class="senhaPerfil">
             <label for="senhaPerfil">Senha</label>
             <input
+              class = "input"
               type="password"
               name="senhaPerfil"
               placeholder="Sua Senha"
@@ -60,9 +64,10 @@
             />
           </div>
 
-          <div class="confirmeSenhaPerfil">
+          <div class="confirmeSenhaPerfil" id="confirmeSenha">
             <label for="confirmeSenhaPerfil">Confirme sua Senha</label>
             <input
+              class = "input"
               type="password"
               name="confirmeSenhaPerfil"
               placeholder="Confirme sua Senha"
@@ -75,7 +80,7 @@
         <section class="causaPerfil">
           <div>
             <label for="causaPerfil">Causas em preferência</label>
-            <select name="causaPerfil" id="" disabled>
+            <select class="input" name="causaPerfil" id="" disabled >
               <option value="Proteção Animal">Proteção Animal</option>
               <option value="Direitos Humanos e Sociais">
                 Direitos Humanos e Sociais
@@ -88,6 +93,7 @@
           <div class="telefonePerfil">
             <label for="telefonePerfil">Telefone</label>
             <input
+              class = "input"
               type="text"
               name="telefonePerfil"
               placeholder="Seu Telefone"
@@ -98,9 +104,9 @@
           <div class="editarPerfil">
             <button id="editar">Editar</button>
 
-            <button type="submit" id="salvar">Salvar</button>
+            <button type="submit" id="salvar" disabled>Salvar</button>
 
-            <button type="reset" id="cancelar">Cancelar</button>
+            <button type="reset" id="cancelar" disabled>Cancelar</button>
           </div>
         </section>
 

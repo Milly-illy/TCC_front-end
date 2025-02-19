@@ -132,6 +132,15 @@ button {
     cursor: pointer;
 }
 
+#salvar:disabled, #cancelar:disabled, #editar:disabled{
+  background-color: lightgray;
+}
+
+#salvar:disabled:hover, #cancelar:disabled:hover, #editar:disabled:hover{
+  background-color: lightgray;
+  cursor: default;
+}
+
 .buttons {
   display: flex;
   flex-direction: row;
