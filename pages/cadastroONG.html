@@ -6,7 +6,7 @@
     <title>Causa Viva - Cadastro da ONG</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../assets/css/cadastroONG.css" />
-    <script src="../assets/js/cadastro.js" defer></script>
+    <script src="../assets/js/cadastroONG.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -22,16 +22,10 @@
       <form action="">
         <section class="cadastroOng">
           <div class="upload-container">
-            <label for="file-upload" class="upload-label">
-              Arraste ou clique para selecionar a logo
+            <label class="picture" for="picture__input" tabIndex="0">
+              <span class="picture__image"></span>
             </label>
-            <input
-              type="file"
-              id="file-upload"
-              class="file-upload"
-              accept="image/*"
-              multiple
-            />
+            <input type="file" name="picture__input" id="picture__input">
           </div>
           <div class="inputs_logo">
             <div class="nome">
