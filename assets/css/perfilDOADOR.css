@@ -257,3 +257,36 @@ footer .links div a {
   text-decoration: none;
   color: var(--offWhite);
 }
+
+@media (max-width:1024px) {
+  form {
+    padding: 50px 30px;
+  }
+label {
+  color: var(--azul);
+  font-size: 22px;
+}
+.titulo {
+  font-size: 45px;
+}
+.fotoPerfil {
+  width: 25%; 
+}
+.editarPerfil button{
+  font-size: 17px;
+  width: 25%;
+}
+input,select {
+  font-size: 22px;
+}
+
+input::placeholder {
+  font-size: 22px;
+}
+header nav a{
+  font-size: 18px;
+}
+.logoInicio img{
+  width: 100px;
+}
+}

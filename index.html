@@ -4,31 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Causa Viva</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./assets/css/paginaInicial.css" />
-    <link rel="stylesheet" href="./assets/js/redirect.js">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="./assets/js/index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <script src="./assets/js/redirect.js" defer></script>
   </head>
   <body>
-    <header>
-      <main>
-        <a href="./index.html">
-          <img src="./assets/images/Logo Header.png" alt="logo" />
-        </a>
-        <nav>
-          <a href="./pages/cadastroONG.html">Cadastre sua ONG</a>
-          <a href="./pages/cadastroDOADOR.html">Seja um doador</a>
-        </nav>
-      </main>
-      <div class="slogan">
-        <p>Conectando corações, transformando vidas!</p>
-      </div>
-    </header>
-
     <main>
+      <section class="banner" id="banner">
+        <div class="text">
+          <p class="title">PLATAFORMA DE CONEXÃO PARA IMPACTO SOCIAL</p>
+          <p class="subtitle">
+            Facilitamos o engajamento e a transparência nas doações
+          </p>
+          <p class="content">
+            A nossa plataforma é a escolha ideal para organizações e doadores
+            que desejam fortalecer causas sociais, garantindo eficiência e
+            credibilidade na gestão de recursos.
+          </p>
+          <div class="links2">
+            <a href="/pages/cadastroDOADOR.html">Seja um doador</a>
+            <a href="/pages/cadastroONG.html">Cadastre sua ONG</a>
+          </div>
+        </div>
+        <img
+          src="./assets/images/index/logo verde.png"
+          alt="logo"
+          class="logo"
+        />
+      </section>
+      <section class="color"></section>
+      <section class="doar">
+        <p class="title">Por que doar?</p>
+        <div class="content">
+          <p>
+            Doar é mais do que um ato de <span>generosidade</span>; é uma
+            oportunidade de <span>transformar vidas</span> e fortalecer causas
+            que precisam de apoio. Muitas ONGs enfrentam desafios para manter
+            suas iniciativas devido à falta de <span>recursos</span> e
+            <span>visibilidade</span>. Ao contribuir, você ajuda a garantir que
+            <span>projetos sociais</span> continuem impactando
+            <span>comunidades</span>, promovendo <span>mudanças reais</span> e
+            <span>sustentáveis</span>. Com nossa plataforma, sua
+            <span>doação</span> chega de forma <span>segura</span> e
+            <span>transparente</span> a quem realmente precisa, permitindo que
+            você acompanhe o <span>impacto</span> gerado. Seja parte dessa rede
+            de <span>solidariedade</span> e faça a <span>diferença</span>!
+          </p>
+          <img src="./assets/images/index/doar.webp" alt="" />
+        </div>
+      </section>
+
+      <section class="causas">
+        <p class="title">Causas Apoiadas</p>
+        <div class="causas_cards">
+          <div class="causa_card">
+            <div class="card_inner">
+              <div class="face front">
+                <img src="./assets/images/image.png" alt="" />
+              </div>
+              <div class="face back">
+                <p class="descricao">
+                  Garantem direitos fundamentais, promovem a inclusão social e
+                  combatem a discriminação. Oferecem assistência jurídica, apoio
+                  a grupos vulneráveis e atuam na defesa da igualdade.
+                </p>
+              </div>
+            </div>
+            <p class="causa">Direitos Humanos e Sociais</p>
+          </div>
+          <div class="causa_card">
+            <div class="card_inner">
+              <div class="face front">
+                <img src="./assets/images/image-1.png" alt="" />
+              </div>
+              <div class="face back">
+                <p class="descricao">
+                  Preservam recursos naturais, promovem educação ambiental e
+                  incentivam práticas sustentáveis. Desenvolvem ações contra o
+                  desmatamento, a poluição e as mudanças climáticas.
+                </p>
+              </div>
+            </div>
+            <p class="causa">Meio Ambiente</p>
+          </div>
+          <div class="causa_card">
+            <div class="card_inner">
+              <div class="face front">
+                <img src="./assets/images/image-2.png" alt="" />
+              </div>
+              <div class="face back">
+                <p class="descricao">
+                  Oferecem assistência médica, psicológica e social para
+                  populações vulneráveis. Realizam campanhas de conscientização
+                  e ampliam o acesso a tratamentos de saúde.
+                </p>
+              </div>
+            </div>
+            <p class="causa">Saúde e Bem-Estar</p>
+          </div>
+          <div class="causa_card">
+            <div class="card_inner">
+              <div class="face front">
+                <img src="./assets/images/image-3.png" alt="" />
+              </div>
+              <div class="face back">
+                <p class="descricao">
+                  Ampliam o acesso à educação, oferecem apoio escolar e
+                  incentivam a cultura. Desenvolvem projetos de alfabetização,
+                  capacitação profissional e valorização das expressões
+                  artísticas.
+                </p>
+              </div>
+            </div>
+            <p class="causa">Educação e Cultura</p>
+          </div>
+          <div class="causa_card">
+            <div class="card_inner">
+              <div class="face front">
+                <img src="./assets/images/image-4.png" alt="" />
+              </div>
+              <div class="face back">
+                <p class="descricao">
+                  Resgatam, cuidam e promovem a adoção de animais abandonados.
+                  Combatem maus-tratos, conscientizam sobre bem-estar animal e
+                  atuam na preservação de espécies ameaçadas.
+                </p>
+              </div>
+            </div>
+            <p class="causa">Proteção Animal</p>
+          </div>
+        </div>
+      </section>
+
       <section class="ongs">
         <p class="title">Projetos em destaque</p>
         <div class="cards">
@@ -131,100 +243,7 @@
           </div>
         </div>
       </section>
-
-      <section class="sobre" id="sobre">
-        <p class="title">Sobre nós</p>
-        <article>
-          <p>
-            A <strong>Causa Viva</strong> nasceu para conectar corações e
-            transformar vidas. Acreditamos no poder da
-            <strong>solidariedade</strong> e na importância de unir ONGs a
-            doadores dispostos a <strong>fazer a diferença</strong>. Nossa
-            plataforma permite que ONGs se cadastrem,
-            <strong>compartilhem suas causas, projetos e necessidades</strong>,
-            enquanto doadores encontram oportunidades para
-            <strong>contribuir</strong>, seja por doações ou voluntariado.
-            Juntos, criamos uma rede de <strong>impacto</strong> positivo,
-            tornando a solidariedade mais acessível e eficiente.
-          </p>
-          <img src="./assets/images/ong.png" alt="quem somos" />
-        </article>
-      </section>
-
-      <section class="causas">
-        <p class="title">Causas Apoiadas</p>
-        <div class="causas_cards">
-          <div class="causa_card">
-            <div class="card_inner">
-              <div class="face front">
-                <img src="./assets/images/image.png" alt="" />
-              </div>
-              <div class="face back">
-                <p class="descricao">
-                  Garantem direitos fundamentais, promovem a inclusão social e
-                  combatem a discriminação. Oferecem assistência jurídica, apoio
-                  a grupos vulneráveis e atuam na defesa da igualdade.
-                </p>
-              </div>
-            </div>
-            <p class="causa">Direitos Humanos e Sociais</p>
-          </div>
-          <div class="causa_card">
-            <div class="card_inner">
-              <div class="face front">
-                <img src="./assets/images/image-1.png" alt="" />
-              </div>
-              <div class="face back">
-                <p class="descricao">
-                  Preservam recursos naturais, promovem educação ambiental e incentivam práticas sustentáveis. Desenvolvem ações contra o desmatamento, a poluição e as mudanças climáticas.
-                </p>
-              </div>
-            </div>
-            <p class="causa">Meio Ambiente</p>
-          </div>
-          <div class="causa_card">
-            <div class="card_inner">
-              <div class="face front">
-                <img src="./assets/images/image-2.png" alt="" />
-              </div>
-              <div class="face back">
-                <p class="descricao">
-                  Oferecem assistência médica, psicológica e social para populações vulneráveis. Realizam campanhas de conscientização e ampliam o acesso a tratamentos de saúde.
-                </p>
-              </div>
-            </div>
-            <p class="causa">Saúde e Bem-Estar</p>
-          </div>
-          <div class="causa_card">
-            <div class="card_inner">
-              <div class="face front">
-                <img src="./assets/images/image-3.png" alt="" />
-              </div>
-              <div class="face back">
-                <p class="descricao">
-                  Ampliam o acesso à educação, oferecem apoio escolar e incentivam a cultura. Desenvolvem projetos de alfabetização, capacitação profissional e valorização das expressões artísticas.
-                </p>
-              </div>
-            </div>
-            <p class="causa">Educação e Cultura</p>
-          </div>
-          <div class="causa_card">
-            <div class="card_inner">
-              <div class="face front">
-                <img src="./assets/images/image-4.png" alt="" />
-              </div>
-              <div class="face back">
-                <p class="descricao">
-                  Resgatam, cuidam e promovem a adoção de animais abandonados. Combatem maus-tratos, conscientizam sobre bem-estar animal e atuam na preservação de espécies ameaçadas.
-                </p>
-              </div>
-            </div>
-            <p class="causa">Proteção Animal</p>
-          </div>
-        </div>
-      </section>
     </main>
-
     <footer>
       <div class="links">
         <div>
@@ -245,7 +264,7 @@
       </div>
       <div class="logo">
         <p>Conectando corações</p>
-        <img src="./assets/images/logo footer.png" alt="logo">
+        <img src="./assets/images/logo footer.png" alt="logo" />
         <p>transformando vidas</p>
       </div>
     </footer>
