@@ -158,6 +158,9 @@ main {
   font-size: 24px;
   width: 50%;
 }
+.text2_p{
+  display: none;
+}
 .doar .content p span{
   font-weight: 600;
 }
@@ -240,6 +243,10 @@ main {
   cursor: default;
 }
 
+.descricao2{
+  display: none;
+}
+
 .causa_card .causa {
   position: absolute;
   bottom: -10px;
@@ -252,6 +259,7 @@ main {
   padding: 15px;
   border-radius: 10px;
   width: max-content;
+  text-align: center;
 }
 
 main .ongs{
@@ -477,7 +485,6 @@ footer .links div a{
   }
   .doar .content img{
     width: 45%;
-    border-radius: 3px;
   }
   .link_title{
     font-size: 26px;
@@ -488,13 +495,391 @@ footer .links div a{
 }
 
 @media (max-width:1339px) {
+  .banner .text .title{
+    font-size: 34px;
+  }
+  .banner .text .subtitle{
+    font-size: 22px;
+  }
+  .banner .text .content{
+    font-size: 28px;
+  }
+  .banner .logo{
+    width: 110px;
+  }
+  .banner .text a{
+    font-size: 14px;
+  }
+  .doar .content img{
+    width: 48%;
+  }
+  .causas_cards {
+    width: 95%;
+  }  
   .link_title{
     font-size: 25px;
   }
   footer .links div a{
     font-size: 22px;
   }
+}
+
+@media (max-width:1290px) {
+  .banner .text .title{
+    font-size: 33px;
+  }
+  .banner .text .subtitle{
+    font-size: 21px;
+  }
+  .banner .text .content{
+    font-size: 27px;
+  }
+  .banner .text a{
+    font-size: 13.8px;
+  }
+  .link_title{
+    font-size: 24px;
+  }
+}
+
+@media (max-width:1280px) {
+  .banner .text a{
+    font-size: 13.5px;
+  }
+  .banner .logo{
+    width: 100px;
+  }
+  footer .links div a{
+    font-size: 21px;
+  }
+}
+
+@media (max-width:1265px) {
+  .banner .text a{
+    font-size: 13.2px;
+  }
+  .banner .text .title{
+    font-size: 32px;
+  }
+  .banner .text .subtitle{
+    font-size: 20px;
+  }
+  .banner .text .content{
+    font-size: 26px;
+  }
+  main .cards .card {
+    min-width: 330px;
+    height: 460px;
+  }
+}
+
+@media (max-width:1251px) {
+  .links2{
+    flex-direction: column;
+    width: 100%;
+  }
+  .links2 a{
+    width: 60%;
+    text-align: center;
+  }
+  .banner .text a{
+    font-size: 16px;
+  }
+  .banner .logo{
+    width: 95px;
+  }
+  .causa_card {
+    width: 20%;
+    height: 250px;
+  }
+  main .cards .card {
+    min-width: 320px;
+    height: 450px;
+  }
+  .text1_p{
+    display: none;
+  }
+  .text2_p{
+    display: block;
+  }
+  .causa_card .causa {
+    font-size: 14.5px;
+    bottom: -20px;
+  }
+  .descricao {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width:1161px) {
+  .causa_card .causa {
+    font-size: 14.5px;
+    bottom: -20px;
+  }
+  .descricao {
+    font-size: 14px;
+  }
+  .causas .title {
+    font-size: 27px;
+  }
+  .doar .title{
+    font-size: 27px;
+  }
   .banner .text a{
     font-size: 15px;
+  }
+  .banner .text .title{
+    font-size: 31px;
+  }
+  .banner .text .subtitle{
+    font-size: 19px;
+  }
+  .banner .text .content{
+    font-size: 25px;
+  }
+  .doar .content p{
+    font-size: 23px;
+  }
+  main .ongs .title{
+    font-size: 27px;
+  }
+  .link_title{
+    font-size: 22px;
+  }
+  footer .links div a{
+    font-size: 19px;
+  }
+  footer .logo p {
+    font-size: 45px;
+  }
+  footer .logo img{
+    width: 130px;
+  }
+}
+
+@media (max-width:1117px) {
+  .banner .text a{
+    font-size: 16px;
+  }
+  .banner .text .title{
+    font-size: 30px;
+  }
+  .banner .text .subtitle{
+    font-size: 18px;
+  }
+  .banner .text .content{
+    font-size: 24px;
+  }
+  .links2 a{
+    width: 70%;
+  }
+  .doar .title{
+    font-size: 26px;
+  }
+  .doar .content p{
+    font-size: 21px;
+  }
+  .causas .title {
+    font-size: 26px;
+  }
+  main .ongs .title{
+    font-size: 26px;
+  }
+  .causa_card .causa {
+    font-size: 13px;
+    bottom: -25px;
+    font-weight: 500;
+  }
+  .causa_card {
+    width: 18%;
+    height: 220px;
+  }
+  .descricao {
+    font-size: 13px;
+  }
+  main .cards .card {
+    min-width: 300px;
+    height: 450px;
+  }
+  footer .logo p {
+    font-size: 40px;
+  }
+  footer .logo img{
+    width: 120px;
+  }
+  .link_title{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:1088px) {
+  main .cards .card {
+    min-width: 290px;
+  }
+  footer .links div a{
+    font-size: 19px;
+    font-weight: 100;
+  }
+  .descricao {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:1055px) {
+  main .cards .card {
+    min-width: 280px;
+  }
+}
+
+@media (max-width:1022px) {
+  main .cards .card {
+    min-width: 270px;
+  }
+  .descricao {
+    font-size: 11px;
+  }
+  footer .links div{
+    width: 25%;
+  }
+  .links2 a{
+    width: 72%;
+  }
+}
+
+@media (max-width:996px) {
+  .banner .text a{
+    font-size: 15px;
+  }
+  .links2 a{
+    width: 74%;
+  }
+  .doar .title{
+    font-size: 25px;
+  }
+  .doar .content p{
+    font-size: 20px;
+  }
+  .causas .title {
+    font-size: 25px;
+  }
+  .causa_card .causa {
+    font-size: 12.3px;
+  }
+  main .ongs .title{
+    font-size: 25px;
+  }
+  main .cards .card {
+    min-width: 260px;
+  }
+  .card .bottom {
+    font-size: 11px;
+  }
+}
+
+@media (max-width:955px) {
+  .banner .text .title{
+    font-size: 28px;
+  }
+  .banner .text .subtitle{
+    font-size: 17px;
+  }
+  .banner .text .content{
+    font-size: 22px;
+  }
+  main .cards .card {
+    min-width: 250px;
+  }
+}
+
+@media (max-width:938px) {
+  .banner .text .title{
+    font-size: 26px;
+  }
+  .banner .text a{
+    font-size: 14px;
+  }
+  .descricao{
+    display: none;
+  }
+  .descricao2{
+    display: inline;
+    font-size: 12px;
+  }
+  .doar .title{
+    font-size: 24px;
+  }
+  .doar .content p{
+    font-size: 19px;
+  }
+  .causas .title {
+    font-size: 24px;
+  }
+  .causa_card .causa {
+    font-size: 12.3px;
+  }
+  main .ongs .title{
+    font-size: 24px;
+  }
+}
+
+@media (max-width:938px) {
+  .doar .title{
+    font-size: 22px;
+  }
+  .doar .content p{
+    font-size: 18px;
+  }
+  .causas .title {
+    font-size: 22px;
+  }
+  .descricao2{
+    font-size: 11px;
+  }
+  main .ongs .title{
+    font-size: 22px;
+  }
+  main .cards .card {
+    min-width: 20px;
+  }
+  .card .bottom {
+    font-size: 10px;
+  }
+  .card .description {
+    font-size: 11px;
+  }
+  .card .ong {
+    font-size: 15px;
+  }
+  .meta .legenda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  main .cards .card {
+    min-width: 240px;
+    height: 410px;
+  }
+  footer .logo p {
+    font-size: 38px;
+  }
+  footer .logo img{
+    width: 110px;
+  }
+}
+
+@media (max-width:902px) {
+  .links2 a{
+    width: 77%;
+  }
+}
+
+@media (max-width:888px) {
+  main .cards .card {
+    min-width: 220px;
+    height: 400px;
   }
 }
