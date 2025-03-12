@@ -447,6 +447,8 @@ input[type="password"] {
 @media (max-width:375px) {
   .logo{
     width: 75px;
+    top: 8px;
+    left: 8px;
   }
   main{
     width: 75%;
@@ -484,7 +486,7 @@ input[type="password"] {
 
 @media (max-width:327px) {
   main {
-    width: 70%;
+    width: 100%;
     height: 345px;
   }
   main a{

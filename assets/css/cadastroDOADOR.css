@@ -301,7 +301,9 @@ button:hover{
         font-size: 27px;
     }
     img{
-        width: 90px;
+        width: 80px;
+        top: 5px;
+        left: 5px;
     }
 }
 
@@ -359,8 +361,8 @@ button:hover{
         font-size: 21px;
     }
     img{
-        width: 80px;
-        top: 8px;
-        left: 8px;
+        width: 75px;
+        top: 5px;
+        left: 5px;
     }
 }

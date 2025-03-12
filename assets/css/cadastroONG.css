@@ -166,7 +166,7 @@ input::placeholder, textarea::placeholder{
   color: var(--verdeEscuro);
 }
 
-img{
+.logo_link{
   width: 120px;
   position: absolute;
   top: 20px;
@@ -174,7 +174,7 @@ img{
   transition: transform 0.3s ease
 }
 
-img:hover {
+.logo_link:hover {
   transform: scale(1.2); /* Aumenta a imagem em 20% */
 }
 
@@ -305,7 +305,7 @@ button:hover{
   }
 }
 @media (max-width:1588px) {
-  img{
+  .logo_link{
     width: 110px;
   }
 }
@@ -348,7 +348,7 @@ button:hover{
     font-size: 14px;
     width: 100%;
   }
-  img{
+  .logo_link{
     width: 105px;
   }
   h1 {
@@ -359,7 +359,7 @@ button:hover{
     width: 100%;
   }
   .buttonSubmit{
-    width: 20%;;
+    width: 20%;
     height: 165px;
   }
   a{
@@ -493,7 +493,7 @@ button:hover{
   h1 {
     font-size: 25px;
   }
-  img{
+  .logo_link{
     width: 100px;
   }
   .cadastroOng .inputs_logo{
@@ -512,7 +512,7 @@ button:hover{
   .inputs_logo{
     width: 60%;
   }
-  img{
+  .logo_link{
     width:80px;
   }
 }
@@ -523,13 +523,83 @@ button:hover{
 }
 @media (max-width:510px) {
   .picture__img {
-    width: 100px;
+    width: 150px;
   }
   .picture {
-    width: 135px;
-    height: 145px;
+    width: 235px;
   }
   .inputs_logo{
     width: 100%;
+    margin: 0;
+  }
+  .cadastroOng{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .upload-container img {
+    position: relative;
+  }
+}
+@media (max-width:455px) {
+  .picture__img {
+    width: 120px;
+  }
+  .picture {
+    width: 210px;
+    height: 135px;
+  }
+  h1 {
+    font-size: 21px;
+    margin-top: 30px;
+  }
+  .logo_link{
+    top: 8px;
+    left: 8px;
+  }
+}
+@media (max-width:395px) {
+  .logo_link{
+    width: 70px;
+  }
+  .picture {
+    width: 200px;
+    height: 125px;
+  }
+  .picture__img {
+    width: 110px;
+  }
+  label{
+    font-size: 16px;
+  }
+  input, select, textarea{
+    font-size: 12px;
+  }
+  button{
+    font-size: 13px;
+  }
+  a{
+    font-size: 13px;
+  }
+  .buttonSubmit{
+    height: 50px;
+  }
+}
+@media (max-width:350px) {
+  h1{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .picture {
+    width: 190px;
+    height: 115px;
+  }
+  .picture__img {
+    width: 100px;
+  }
+}
+@media (max-width:320px) {
+  main{
+    max-width: 90%;
   }
 }
