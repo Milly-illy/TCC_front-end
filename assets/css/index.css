@@ -82,6 +82,13 @@ main {
     width: 50%;
     font-family: "Montserrat-Light";
 }
+.banner .text .content2{
+  font-size: 30px;
+  color: var(--begeClaro);
+  width: 50%;
+  font-family: "Montserrat-Light";
+  display: none;
+}
 .banner .text a{
     font-size: 20px;
     color: var(--begeClaro);
@@ -923,5 +930,246 @@ footer .links div a{
 @media (max-width:808px) {
   .banner .text a{
     font-size: 12px;
+  }
+}
+@media (max-width:746px) {
+  .links2 a{
+    width: 88%;
+  }
+  .banner .text .title{
+    font-size: 22px;
+  }
+  .banner .text .subtitle{
+    font-size: 13px;
+  }
+  .banner .text .content{
+    font-size: 18px;
+  }
+  .banner .logo{
+    width: 75px;
+  }
+  .meta .grafico {
+    height: 12px;
+  }
+}
+@media (max-width:732px) {
+  footer .logo p {
+    font-size: 34px;
+  }
+  footer .logo img{
+    width: 90px;
+  }
+  .banner .text a{
+    padding: 10px 20px;
+  }
+}
+@media (max-width:660px) {
+  .banner .text .title{
+    font-size: 20px;
+  }
+  .banner .text .subtitle{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .banner .text .content{
+    font-size: 16px;
+  }
+  .banner .logo{
+    width: 65px;
+  }
+  .banner .text a{
+    padding: 10px 15px;
+  }
+  .link_title{
+    font-size: 16px;
+  }
+  footer .links div a{
+    font-size: 16px;
+  }
+  footer .logo p {
+    font-size: 30px;
+  }
+  footer .logo img{
+    width: 75px;
+  }
+}
+@media (max-width:629px) {
+  footer .links{
+    width: 85%;
+  }
+  .banner .text a{
+    padding: 10px 10px;
+  }
+}
+@media (max-width:600px) {
+  footer .logo p {
+    font-size: 27px;
+  }
+  footer .logo img{
+    width: 65px;
+  }
+  .doar .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .doar .content p{
+    width: 100%;
+    text-align: justify;
+  }
+  .doar .content img{
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+@media (max-width:545px) {
+  .banner .text{
+    width: 75%;
+    
+    gap: 40px;
+    padding: 0 60px;
+}
+  .banner .text .title{
+    font-size: 18px;
+  }
+  .banner .text .subtitle{
+    font-size: 14px;
+  }
+  .banner .text .content{
+    font-size: 15px;
+  }
+  .banner .text a{
+    padding: 10px 10px;
+  }
+  footer .logo {
+    width: 90%;
+  }
+}
+@media (max-width:500px) {
+  .banner .text .title{
+    font-size: 17px;
+  }
+  .banner .text .subtitle{
+    font-size: 13px;
+  }
+  .banner .text .content{
+    font-size: 14px;
+  }
+  footer .logo p {
+    font-size: 25px;
+  }
+  footer .logo img{
+    width: 60px;
+  }
+}
+@media (max-width:428px) {
+  .banner .text{
+    padding: 0 30px;
+  }
+  .banner .text .title{
+    width: 53%;
+  }
+  .banner .text .subtitle{
+    width: 53%;
+  }
+  .banner .text .content{
+    display: none;
+  }
+  .banner .text .content2{
+    font-size: 14px;
+    display: block;
+    width: 53%;
+}
+.card .description{
+  padding: 18px;
+}
+  .doar .content img{
+    width: 80%;
+  }
+  footer .links{
+    width: 95%;
+  }
+  .link_title{
+    font-size: 14px;
+  }
+  footer .links div{
+    width: 35%;
+  }
+  footer .links div a{
+    font-size: 14px;
+  }
+  footer .logo p {
+    font-size: 21px;
+  }
+  footer .logo img{
+    width: 50px;
+  }
+}
+@media (max-width:390px) {
+  .banner .text .title{
+    font-size: 15px;
+  }
+  .banner .text .subtitle{
+    font-size: 11px;
+  }
+  .banner .text .content{
+    font-size: 12px;
+  }
+  .doar .content p{
+    font-size: 14px;
+  }
+  footer .links div{
+    width: 30%;
+  }
+  .link_title{
+    font-size: 13px;
+  }
+  footer .links div a{
+    font-size: 13px;
+  }
+  footer .logo {
+    width: 100%;
+  }
+  footer .logo p {
+    font-size: 19px;
+  }
+  footer .logo img{
+    width: 50px;
+  }
+}
+@media (max-width:350px) {
+  .banner .text .title{
+    font-size: 13px;
+  }
+  .banner .text .subtitle{
+    font-size: 9px;
+  }
+  .banner .text .content{
+    font-size: 10px;
+  }
+  .banner .text a{
+    font-size: 11px;
+  }
+  footer .logo img{
+    width: 40px;
+  }
+}
+@media (max-width:320px) {
+  .banner .text .title{
+    font-size: 12px;
+  }
+  .banner .text .subtitle{
+    font-size: 10px;
+  }
+  .banner .text .content{
+    font-size: 8px;
+  }
+  main .cards .card {
+    height: 380px;
+  }
+  footer .logo p {
+    font-size: 18px;
+  }
+  footer .logo img{
+    width: 35px;
   }
 }
