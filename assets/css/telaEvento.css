@@ -1,0 +1,456 @@
+body {
+    background-color: var(--offWhite);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+header main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--verde);
+    padding: 5px 60px;
+    height: 127px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+header nav a {
+    color: var(--offWhite);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header p {
+    color: var(--verdeClaro);
+    font-size: 20px;
+}
+
+header .slogan {
+    background-color: var(--verdeClaro);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: var(--verdeEscuro);
+}
+
+.foto {
+    width: 80px;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+
+.foto:hover {
+    transform: scale(1.2);
+}
+
+/* - - - - - - - - - - - - - Conteúdo - - - - - - - - - - - - - */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px
+}
+
+.sub-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--bege);
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.sub-main .titulo {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    color: var(--azulEscuro);
+}
+
+.subtitulo-p {
+    font-size: 20px;
+    color: var(--azulClaro);
+    margin: 10px
+}
+
+.subtitulo-p .subtitulo-b {
+    font-style: oblique;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.itens-direita,
+.itens-esquerda {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao {
+    background-color: var(--begeClaro);
+    width: 800px;
+    padding: 30px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.informacoes {
+    background-color: var(--begeClaro);
+    width: 800px;
+    height: auto;
+    padding: 30px;
+    font-size: 22px;
+}
+
+.informacoes .programacao,
+.informacoes .horario {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.informacoes .local {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin: 20px
+}
+
+.itens-direita .foto-dog {
+    width: 70vh
+}
+
+.botao {
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: var(--verdeNeon);
+    color: var(--offWhite);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70vh;
+    height: 6vh;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: var(--verde);
+}
+
+
+/* - - - - - - - - - - - - - Rodapé - - - - - - - - - - - - - */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--verde);
+    margin-top: 150px;
+    padding: 20px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--offWhite);
+    width: 80%;
+    padding-top: 40px;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+footer .logo p {
+    color: var(--offWhite);
+    font-family: "MoonDance";
+    font-size: 50px;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.link_title {
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--offWhite);
+}
+
+footer .links div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 20%;
+}
+
+footer .links div a {
+    font-size: 24px;
+    font-family: 'Montserrat-Light';
+    text-decoration: none;
+    color: var(--offWhite);
+
+  
+}
+@media (max-width:1440px) {
+
+    .botao {
+        font-size: 20px;
+        margin-top: 30px;
+        background-color: var(--verdeNeon);
+        color: var(--offWhite);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 55vh;
+        height: 6vh;
+        transition: background-color 0.3s ease;
+    }
+
+    .itens-direita .foto-dog {
+        width: 55vh
+    }
+        
+}
+
+
+@media (max-width:1024px) {
+
+    .itens-direita,
+    .itens-esquerda {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao {
+        background-color: var(--begeClaro);
+        width: 500px;
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .informacoes {
+        background-color: var(--begeClaro);
+        width: 500px;
+        height: auto;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .informacoes .programacao,
+    .informacoes .horario {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .informacoes .local {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin: 10px
+    }
+
+    .itens-direita .foto-dog {
+        width: 45vh
+    }
+
+    .botao {
+        font-size: 20px;
+        margin-top: 30px;
+        background-color: var(--verdeNeon);
+        color: var(--offWhite);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 45vh;
+        height: 6vh;
+        transition: background-color 0.3s ease;
+    }
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - - - - - */
+
+    footer {
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    footer .logo {
+        width: 80%;
+        padding-top: 40px;
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    footer .logo p {
+        font-size: 30px;
+    }
+
+    .link_title {
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--offWhite);
+    }
+
+    footer .links div a {
+        font-size: 20px;
+        font-family: 'Montserrat-Light';
+        text-decoration: none;
+        color: var(--offWhite);
+    }
+
+
+}
+
+@media (max-width:768px) {
+
+    header main{
+        padding: 5px 30px;
+        height: 110px;
+    }
+    header nav{
+        gap: 30px;
+    }
+    header nav a{
+        font-size: 18px;
+    }
+    header p{
+        font-size: 18px;
+    }
+
+    header img{
+        width: 100px;
+    }
+
+    header .foto{
+        width: 70px;
+    }
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+    .sub-main .titulo {
+        font-size: 40px;
+    }
+
+    .subtitulo-p {
+        font-size: 18px;
+        margin: 8px
+    }
+
+    .itens-direita,
+    .itens-esquerda {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao {
+        background-color: var(--begeClaro);
+        width: 320px;
+        padding: 20px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .informacoes {
+        background-color: var(--begeClaro);
+        width: 320px;
+        height: auto;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .informacoes .programacao,
+    .informacoes .horario {
+        padding: 5px;
+    }
+
+    .informacoes .local {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin: 6px
+    }
+
+    .itens-direita .foto-dog {
+        width: 40vh
+    }
+
+    .botao {
+        font-size: 20px;
+        margin-top: 30px;
+        background-color: var(--verdeNeon);
+        color: var(--offWhite);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 40vh;
+        height: 6vh;
+        transition: background-color 0.3s ease;
+    }
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - - - - - */
+
+    footer {
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    footer .logo {
+        width: 80%;
+        padding-top: 40px;
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    footer .logo p {
+        font-size: 30px;
+    }
+
+    .link_title {
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--offWhite);
+    }
+
+    footer .links div a {
+        font-size: 20px;
+        font-family: 'Montserrat-Light';
+        text-decoration: none;
+        color: var(--offWhite);
+    }
+}

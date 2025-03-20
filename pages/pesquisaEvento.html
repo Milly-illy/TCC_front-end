@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../assets/css/causas.css">
-  <title>Causa Viva - Nossas ONG´s</title>
+  <link rel="stylesheet" href="../assets/css/pesquisaEvento.css">
+  <link rel="icon" type="image/png" href="../assetstr/icons/iconsite.png">
+  <title>Eventos</title>
 </head>
 
 <body>
   <header>
     <main>
       <a href="../index.html">
-        <img src="../assets/images/Logo Header.png" alt="logo" />
-      </a>
+            <img src="../assets/images/Logo Header.png" alt="logo" />
+        </a>
       <nav>
-        <a href="#">Buscar Eventos</a>
-        <a class="linkPerfil" href="./perfilDOADOR.html">Olá <b>Andressa</b></a>
+        <a href="./pesquisaCausa.html">Buscar Causas</a>
+        <p href="#">Olá <b>Andressa</b></p>
         <img class="foto" src="../assets/images/fotoPerfil.png">
       </nav>
     </main>
@@ -25,7 +26,7 @@
     </div>
   </header>
   <div class="pesquisa">
-    <h1 class="titulo">Causas</h1>
+    <h1 class="titulo">Eventos</h1>
     <form>
         <label for="#"></label>
         <input class="input-pesquisa" type="search" id="#" name="#" placeholder="Pesquise por uma ong">
@@ -60,7 +61,7 @@
           <p class="data">Dia 19/01</p>
         </div>
         <div class="card-bottom">
-          <h2>Marcar Presença</h2>
+          <h2>Conferir Evento</h2>
         </div>
       </div>
       <div class="card">
@@ -79,7 +80,7 @@
           <p class="data">Dia 23/05</p>
         </div>
         <div class="card-bottom">
-          <h2>Marcar Presença</h2>
+          <h2>Conferir Evento</h2>
         </div>
       </div>
       <div class="card">
@@ -97,7 +98,7 @@
           <p class="data">Dia 25/08</p>
         </div>
         <div class="card-bottom">
-          <h2>Marcar Presença</h2>
+          <h2>Conferir Evento</h2>
         </div>
       </div>
     </div>
@@ -108,7 +109,7 @@
       <div>
         <p class="link_title">Seja Bem Vindo</p>
         <a href="#sobre">Descubra quem somos</a>
-        <a href="#sobre">De uma olhada nas nossas redes sociais :)</a>
+        <a href="#sobre">De uma olhada nas nossas redes sociais :</a>
       </div>
       <div>
         <p class="link_title">Ajuda</p>
@@ -128,5 +129,14 @@
     </div>
   </footer>
 </body>
+
+<script>
+  cards = document.getElementsByClassName('card-bottom');
+  for(let i = 0; i < cards.length; i++){
+    cards[i].addEventListener('click', function() {
+        window.location.href = 'telaEvento.html';
+    });
+  }
+</script>
 
 </html>

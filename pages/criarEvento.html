@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Causa Viva - Novo Evento</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../assets/css/criarEvento.css" />
+  <script src="../assets/js/config.js" defer></script>
+  <script src="../assets/js/perfilONG.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <main>
+      <a href="../index.html">
+        <img src="../assets/images/Logo Header.png" alt="logo" />
+      </a>
+      <nav>
+        <a class="linkPerfil" href="./perfilONG.html">Bom te ver <b>Amigos da vizinhança</b></a>
+        <img class="foto" src="../assets/images/fotoPerfil_1.png" />
+      </nav>
+    </main>
+    <div class="slogan"></div>
+  </header>
+
+  <h1 class="titulo">Novo Evento</h1>
+
+  <main>
+    <form action="">
+        <div class="nomeEvento">
+            <label for="">Nome do Evento</label>
+            <input type="text" name="nomeEvento" placeholder="Digite o nome do Evento">
+        </div>
+
+        <section>
+            <div class="upload-container">
+                <label class="picture" for="picture__input" tabIndex="0">
+                  <span class="picture__image"></span>
+                </label>
+                <input type="file" name="picture__input" id="picture__input">
+              </div>
+            <div class="descricao">
+                <label for="">Descrição</label>
+                <textarea name="descricaoEvento" id="" placeholder="Digite uma descrição do evento"></textarea>
+            </div>
+        </section>
+
+        <section>
+            <div class="cep">
+                <label for="">Cep</label>
+                <input type="text" name="cepEvento" placeholder="Digite o Cep">
+            </div>
+
+            <div class="cidade">
+                <label for="">Cidade</label>
+                <input type="text" name="cidadeEvento" placeholder="Digite a cidade">
+            </div>
+
+            <div class="bairro">
+                <label for="">Bairro</label>
+                <input type="text" name="bairroEvento" placeholder="Digite o bairro">
+            </div>
+        </section>
+
+        <section>
+            <div class="rua">
+                <label for="">Rua</label>
+                <input type="text" name="ruaEvento" placeholder="Digite a rua">
+            </div>
+
+            <div class="numero">
+                <label for="">Número</label>
+                <input type="text" name="numeroEvento" placeholder="Digite o número">
+            </div>
+
+            <div class="estado">
+                <label for="">Estado</label>
+                <input type="text" name="estadoEvento" placeholder="SP">
+            </div>
+        </section>
+
+        <section>
+            <div class="data">
+                <label for="">Data do Evento</label>
+                <input type="date" name="dataEvento" >
+            </div>
+
+            <div class="horaInicio">
+                <label for="">Horário de Início</label>
+                <input type="time" name="horaInicioEvento">
+            </div>
+
+            <div class="horaTermino">
+                <label for="">Horário de Término</label>
+                <input type="time" name="horaTerminoEvento">
+            </div>
+        </section>
+
+        <section>
+            <div class="quantidadePessoa">
+                <label for="">Quantidade de pessoas</label>
+                <input type="number" name="quantidadePessoaEvento" placeholder="Máximo de pessoas">
+            </div>
+
+            <div class="valor">
+                <label for="">Valor (R$)</label>
+                <input type="number" name="valorEvento" placeholder="10,00">
+            </div>
+        </section>
+
+        <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="links">
+      <div>
+        <p class="link_title">Seja Bem Vindo</p>
+        <a href="#sobre">Descubra quem somos</a>
+        <a href="#sobre">De uma olhada nas nossas redes sociais :</a>
+      </div>
+      <div>
+        <p class="link_title">Ajuda</p>
+        <a href="#sobre">Fale conosco</a>
+        <a href="#sobre">Central de Suporte</a>
+      </div>
+      <div>
+        <p class="link_title">Contato</p>
+        <a href="#sobre">Instagram</a>
+        <a href="#sobre">Whatsapp</a>
+      </div>
+    </div>
+    <div class="logo">
+      <p>Conectando corações</p>
+      <img src="../assets/images/logo footer.png" alt="logo" />
+      <p>transformando vidas</p>
+    </div>
+  </footer>
+</body>
+
+</html>
