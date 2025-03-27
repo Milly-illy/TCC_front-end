@@ -41,19 +41,11 @@ header .slogan{
     text-align: center;
     color: var(--verdeEscuro);
 }
-
-.foto{
-    width: 80px;
-    transition: transform 0.4s ease-in-out;
-    cursor: pointer;
-
+.setaVoltar{
+    width: 50px;
+    margin-left: 50px ;
+    margin-top: 50px;
 }
-
-.foto:hover{
-    transform:scale(1.2);
-}
-
-
 .titulo{
     margin-top: 20px;
     display: flex;

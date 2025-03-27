@@ -40,7 +40,12 @@ header .slogan {
     text-align: center;
     color: var(--verdeEscuro);
 }
-
+.setaVoltar{
+    width: 50px;
+    left: 50px;
+    top: 50px;
+    position: absolute;
+}
 .meta {
     margin-top: 20px;
     width: 100%;
@@ -48,6 +53,7 @@ header .slogan {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .meta p {
@@ -60,13 +66,7 @@ header .slogan {
     margin-top: 30px;
     font-size: 50px;
     color: var(--azulEscuro);
-    transition: all 400ms;
 }
-
-.titulo:hover {
-    transform: translateY(-5px);
-}
-
 .titulo2 {
     margin-top: 60px;
     margin-left: 120px;
@@ -74,7 +74,6 @@ header .slogan {
     font-size: 40px;
     color: var(--azulEscuro);
 }
-
 
 .meta-img {
     margin: 50px 0;
@@ -91,13 +90,6 @@ header .slogan {
     /* Para esconder as partes arredondadas da imagem */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     /* Sombra sutil */
-    transition: all 0.3s ease;
-}
-
-.meta .imgprincipal:hover {
-    transform: scale(1.05);
-    /* Aumenta a imagem ligeiramente */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 .buttoneinfo {
@@ -115,6 +107,22 @@ header .slogan {
     background-color: var(--verdeNeon);
     box-shadow: 0px 0px 0px rgb(255, 255, 255);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttoneinfo button a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: var(--begeClaro);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttoneinfo button:hover {
@@ -227,12 +235,21 @@ header .slogan {
     background-color: var(--bege);
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 0px 0px 20px 20px;
     transition: all 300ms ease;
     color: var(--azulEscuro);
+}
+
+.card-bottom a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--azulEscuro);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
 }
 
 .card-bottom:hover {
@@ -367,6 +384,11 @@ footer .links div a {
 
 
 @media (max-width:1440px) {
+    .setaVoltar{
+        width: 40px;
+        left: 40px;
+        top: 40px;
+    }
     .sobre_ong h2 {
         font-size: 20px;
         line-height: 35px;
@@ -467,6 +489,11 @@ footer .links div a {
     }
 }
 @media (max-width:1024px) {
+    .setaVoltar{
+        width: 35px;
+        left: 30px;
+        top: 30px;
+    }
     .meta p {
         font-size: 20px;
     }
@@ -507,6 +534,9 @@ footer .links div a {
         border: 0px;
         border-radius: 8px;
         font-size: 25px;
+    }
+    .card-bottom a{
+        font-size: 20px;
     }
     .sobre_ong h2 {
         font-size: 15px;
@@ -714,6 +744,11 @@ footer .links div a {
     }
 }
 @media (max-width:550px) {
+    .setaVoltar{
+        width: 30px;
+        left: 20px;
+        top: 20px;
+    }
     header nav {
         gap: 25px;
     }
@@ -789,6 +824,11 @@ footer .links div a {
     }
 }
 @media (max-width:400px) {
+    .setaVoltar{
+        width: 25px;
+        left: 15px;
+        top: 20px;
+    }
     header nav a {
         font-size: 11px;
     }
@@ -809,6 +849,9 @@ footer .links div a {
     }
 }
 @media (max-width:320px) {
+    .setaVoltar{
+        width: 20px;
+    }
     header main {
         padding: 5px 10px;
     }
