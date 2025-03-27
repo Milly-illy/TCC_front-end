@@ -24,94 +24,99 @@
     <div class="slogan"></div>
   </header>
 
-  <h1 class="titulo">Novo Evento</h1>
+  <div class="title">
+    <h1 class="titulo">Novo Evento</h1>
+    <a href="perfilONG.html">
+      <img class="setaVoltar" src="../assets/images/iconeVoltar.png" alt="">
+    </a>
+  </div>
 
   <main>
     <form action="">
-        <div class="nomeEvento">
-            <label for="">Nome do Evento</label>
-            <input type="text" name="nomeEvento" placeholder="Digite o nome do Evento">
+      <div class="nomeEvento">
+        <label for="">Nome do Evento</label>
+        <input type="text" name="nomeEvento" placeholder="Digite o nome do Evento">
+      </div>
+
+      <section>
+        <div class="upload-container">
+          <label class="picture" for="picture__input" tabIndex="0">
+            <span class="picture__image"></span>
+          </label>
+          <input type="file" name="picture__input" id="picture__input">
+        </div>
+        <div class="descricao">
+          <label for="">Descrição</label>
+          <textarea name="descricaoEvento" id="" placeholder="Digite uma descrição do evento"></textarea>
+        </div>
+      </section>
+
+      <section>
+        <div class="cep">
+          <label for="">Cep</label>
+          <input type="text" name="cepEvento" placeholder="Digite o Cep">
         </div>
 
-        <section>
-            <div class="upload-container">
-                <label class="picture" for="picture__input" tabIndex="0">
-                  <span class="picture__image"></span>
-                </label>
-                <input type="file" name="picture__input" id="picture__input">
-              </div>
-            <div class="descricao">
-                <label for="">Descrição</label>
-                <textarea name="descricaoEvento" id="" placeholder="Digite uma descrição do evento"></textarea>
-            </div>
-        </section>
-
-        <section>
-            <div class="cep">
-                <label for="">Cep</label>
-                <input type="text" name="cepEvento" placeholder="Digite o Cep">
-            </div>
-
-            <div class="cidade">
-                <label for="">Cidade</label>
-                <input type="text" name="cidadeEvento" placeholder="Digite a cidade">
-            </div>
-
-            <div class="bairro">
-                <label for="">Bairro</label>
-                <input type="text" name="bairroEvento" placeholder="Digite o bairro">
-            </div>
-        </section>
-
-        <section>
-            <div class="rua">
-                <label for="">Rua</label>
-                <input type="text" name="ruaEvento" placeholder="Digite a rua">
-            </div>
-
-            <div class="numero">
-                <label for="">Número</label>
-                <input type="text" name="numeroEvento" placeholder="Digite o número">
-            </div>
-
-            <div class="estado">
-                <label for="">Estado</label>
-                <input type="text" name="estadoEvento" placeholder="SP">
-            </div>
-        </section>
-
-        <section>
-            <div class="data">
-                <label for="">Data do Evento</label>
-                <input type="date" name="dataEvento" >
-            </div>
-
-            <div class="horaInicio">
-                <label for="">Horário de Início</label>
-                <input type="time" name="horaInicioEvento">
-            </div>
-
-            <div class="horaTermino">
-                <label for="">Horário de Término</label>
-                <input type="time" name="horaTerminoEvento">
-            </div>
-        </section>
-
-        <section>
-            <div class="quantidadePessoa">
-                <label for="">Quantidade de pessoas</label>
-                <input type="number" name="quantidadePessoaEvento" placeholder="Máximo de pessoas">
-            </div>
-
-            <div class="valor">
-                <label for="">Valor (R$)</label>
-                <input type="number" name="valorEvento" placeholder="Valor da entrada">
-            </div>
-        </section>
-
-        <div class="buttonSubmit">
-          <button type="submit">Enviar</button>
+        <div class="cidade">
+          <label for="">Cidade</label>
+          <input type="text" name="cidadeEvento" placeholder="Digite a cidade">
         </div>
+
+        <div class="bairro">
+          <label for="">Bairro</label>
+          <input type="text" name="bairroEvento" placeholder="Digite o bairro">
+        </div>
+      </section>
+
+      <section>
+        <div class="rua">
+          <label for="">Rua</label>
+          <input type="text" name="ruaEvento" placeholder="Digite a rua">
+        </div>
+
+        <div class="numero">
+          <label for="">Número</label>
+          <input type="text" name="numeroEvento" placeholder="Digite o número">
+        </div>
+
+        <div class="estado">
+          <label for="">Estado</label>
+          <input type="text" name="estadoEvento" placeholder="SP">
+        </div>
+      </section>
+
+      <section>
+        <div class="data">
+          <label for="">Data do Evento</label>
+          <input type="date" name="dataEvento">
+        </div>
+
+        <div class="horaInicio">
+          <label for="">Horário de Início</label>
+          <input type="time" name="horaInicioEvento">
+        </div>
+
+        <div class="horaTermino">
+          <label for="">Horário de Término</label>
+          <input type="time" name="horaTerminoEvento">
+        </div>
+      </section>
+
+      <section>
+        <div class="quantidadePessoa">
+          <label for="">Quantidade de pessoas</label>
+          <input type="number" name="quantidadePessoaEvento" placeholder="Máximo de pessoas">
+        </div>
+
+        <div class="valor">
+          <label for="">Valor (R$)</label>
+          <input type="number" name="valorEvento" placeholder="Valor da entrada">
+        </div>
+      </section>
+
+      <div class="buttonSubmit">
+        <button type="submit">Enviar</button>
+      </div>
     </form>
   </main>
 
