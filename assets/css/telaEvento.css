@@ -222,8 +222,6 @@ footer .links div a {
     font-family: 'Montserrat-Light';
     text-decoration: none;
     color: var(--offWhite);
-
-  
 }
 @media (max-width:1565px) {
     .itens-esquerda{
@@ -236,5 +234,87 @@ footer .links div a {
         font-size: 25px;
         width: 90%;
         height: 60px;
+    }
+}
+@media (max-width:1500px) {
+    .descricao {
+        width: 700px;
+        padding: 30px;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .informacoes {
+        width: 700px;
+        font-size: 20px;
+    }
+}
+@media (max-width:1350px) {
+    .link_title {
+        font-size: 26px;
+    }
+    footer .links div a {
+        font-size: 22px;
+    }
+    .setaVoltar{
+        width: 40px;
+    }
+}
+@media (max-width:1300px) {
+    .itens-direita .foto-dog {
+        width: 95%
+    }
+    .botao {
+        font-size: 25px;
+        width: 95%;
+        height: 60px;
+    }
+    .descricao {
+        width: 600px;
+        padding: 30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .informacoes {
+        width: 600px;
+        font-size: 18px;
+    }
+    .informacoes .local {
+        font-size: 22px;
+    }
+}
+@media (max-width:1250px) {
+    .itens-esquerda{
+        padding: 20px 15px 0px 15px;
+    }
+}
+@media (max-width:1200px) {
+    footer .links div {
+        width: 30%;
+    }
+}
+@media (max-width:1150px) {
+    .botao {
+        font-size: 22px;
+    }
+    .descricao {
+        width: 500px;
+        padding: 30px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .informacoes {
+        width: 500px;
+        font-size: 16px;
+    }
+    .informacoes .local {
+        font-size: 20px;
+    }
+}
+@media (max-width:1050px) {
+    footer .logo p {
+        font-size: 40px;
+    }
+    .logoFooter{
+        width: 130px;
     }
 }
