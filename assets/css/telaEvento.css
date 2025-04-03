@@ -317,4 +317,245 @@ footer .links div a {
     .logoFooter{
         width: 130px;
     }
+    .informacoes .local {
+        font-size: 18px;
+    }
+    .botao {
+        font-size: 20px;
+        height: 50px;
+    }
+}
+@media (max-width:1000px) {
+    .conteudo {
+        flex-direction: column;
+    }
+    header nav {
+        gap: 40px;
+    }
+    header main {
+        padding: 5px 40px;
+    }
+    .descricao {
+        width: 700px;
+        padding: 30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .informacoes {
+        width: 700px;
+        font-size: 20px;
+    }
+    .itens-direita .foto-dog {
+        width: 76%
+    }
+    .botao {
+        font-size: 25px;
+        width: 76%;
+        height: 60px;
+    }
+}
+@media (max-width:950px) {
+    .setaVoltar{
+        width: 35px;
+    }
+    .sub-main .titulo {
+        font-size: 42px;
+    }
+}
+@media (max-width:850px) {
+    .logoHeader{
+        width: 110px;
+    }
+    header nav a {
+        font-size: 18px;
+    }
+    header p {
+        font-size: 18px;
+    }
+    .link_title {
+        font-size: 24px;
+    }
+    footer .links div a {
+        font-size: 20px;
+    }
+    footer .logo p {
+        font-size: 35px;
+    }
+    .logoFooter{
+        width: 110px;
+    }
+}
+@media (max-width:800px) {
+    .logoHeader{
+        width: 100px;
+    }
+    header main {
+        padding: 5px 30px;
+    }
+    header nav a {
+        font-size: 17px;
+    }
+    header p {
+        font-size: 17px;
+    }
+    header nav {
+        gap: 30px;
+    }
+    .descricao {
+        width: 600px;
+        padding: 30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .informacoes {
+        width: 600px;
+        font-size: 20px;
+    }
+}
+@media (max-width:700px) {
+    .sub-main .titulo {
+        font-size: 35px;
+    }
+    .subtitulo-p {
+        font-size: 18px;
+    }
+    .descricao {
+        width: 550px;
+        font-size: 20px;
+    }
+    .informacoes {
+        width: 550px;
+        font-size: 20px;
+    }
+    .botao {
+        font-size: 23px;
+        width: 76%;
+        height: 50px;
+    }
+    footer .logo p {
+        font-size: 30px;
+    }
+    .logoFooter{
+        width: 90px;
+    }
+    .link_title {
+        font-size: 20px;
+    }
+    footer .links div a {
+        font-size: 18px;
+    }
+}
+@media (max-width:650px) {
+    .setaVoltar{
+        width: 30px;
+        left: 30px;
+    }
+    .descricao {
+        width: 480px;
+        font-size: 18px;
+    }
+    .informacoes {
+        width: 480px;
+        font-size: 18px;
+    }
+    footer .links div {
+        width: 33%;
+    }
+}
+@media (max-width:600px) {
+    header nav a {
+        font-size: 15px;
+    }
+    header p {
+        font-size: 15px;
+    }
+    header main {
+        height: 100px;
+    }
+    .logoHeader{
+        width: 90px;
+    }
+    .descricao {
+        width: 400px;
+        font-size: 16px;
+    }
+    .informacoes {
+        width: 400px;
+        font-size: 16px;
+    }
+    .informacoes .local {
+        font-size: 16px;
+    }
+    .botao {
+        font-size: 20px;
+        height: 50px;
+    }
+    .logoFooter{
+        width: 80px;
+    }
+    footer .links div {
+        width: 30%;
+    }
+    footer .links div a {
+        font-size: 15px;
+    }
+    footer .logo {
+        width: 90%;
+    }
+}
+@media (max-width:550px) {
+    footer .logo p {
+        font-size: 25px;
+    }
+}
+@media (max-width:500px) {
+    header main {
+        padding: 5px 20px;
+    }
+    header nav {
+        gap: 20px;
+    }
+    .logoHeader{
+        width: 80px;
+    }
+    .setaVoltar{
+        width: 25px;
+        left: 25px;
+    }
+    .descricao {
+        width: 350px;
+        font-size: 16px;
+    }
+    .informacoes {
+        width: 350px;
+        font-size: 16px;
+    }
+    .botao {
+        font-size: 18px;
+        height: 40px;
+    }
+    footer .links {
+        width: 90%;
+    }
+    
+}
+@media (max-width:450px) {
+    header nav a {
+        font-size: 12px;
+    }
+    .sub-main .titulo {
+        font-size: 32px;
+    }
+    .subtitulo-p {
+        font-size: 15px;
+    }
+    .logoHeader{
+        width: 70px;
+    }
+    .logoFooter{
+        width: 60px;
+    }
+    footer .logo p {
+        font-size: 22px;
+    }
 }
