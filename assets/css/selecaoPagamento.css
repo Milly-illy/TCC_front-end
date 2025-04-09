@@ -296,3 +296,45 @@ footer .links div a {
         width: 130px;
     }
 }
+@media (max-width:999px) {
+    .titulo-card {
+        font-size: 32px;
+    }
+    .valor {
+        font-size: 50px;
+    }
+    #card2 {
+        border-right: none;
+        border-left: none;
+    }
+    #card3 {
+        border-left: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.13);
+    }
+    #card4 {
+        border-top: none;
+        border-right: none;
+    }
+    #card5 {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    #card6 {
+        border-bottom: none;
+        border-right: none;
+    }
+    footer .logo p {
+        font-size: 45px;
+    }
+    .logoFooter{
+        width: 120px;
+    }
+}
+@media (max-width:950px) {
+    .setaVoltar {
+        width: 40px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+}
