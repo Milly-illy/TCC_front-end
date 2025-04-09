@@ -543,6 +543,9 @@ footer .links div a {
     header nav a {
         font-size: 12px;
     }
+    .sub-main{
+        padding: 20px 0;
+    }
     .sub-main .titulo {
         font-size: 32px;
     }
@@ -557,5 +560,112 @@ footer .links div a {
     }
     footer .logo p {
         font-size: 22px;
+    }
+}
+@media (max-width:400px) {
+    .descricao {
+        width: 300px;
+        font-size: 15px;
+    }
+    .informacoes {
+        width: 300px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    footer .logo {
+        width: 95%;
+    }
+    .logoFooter{
+        width: 55px;
+    }
+    footer .logo p {
+        font-size: 20px;
+    }
+}
+@media (max-width:375px) {
+    .link_title {
+        font-size: 18px;
+    }
+    footer .links div a {
+        font-size: 15px;
+    }
+    footer .links div {
+        width: 35%;
+    }
+    footer .links {
+        width: 95%;
+    }
+}
+@media (max-width:350px) {
+    header nav a {
+        font-size: 11px;
+    }
+    header p {
+        font-size: 13px;
+    }
+    .descricao {
+        width: 250px;
+        font-size: 13px;
+    }
+    .informacoes .local {
+        font-size: 15px;
+    }
+    .informacoes {
+        width: 250px;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .botao {
+        font-size: 17px;
+        height: 35px;
+    }
+    footer .links div {
+        width: 33%;
+    }
+    .link_title {
+        font-size: 16px;
+    }
+    footer .links div a {
+        font-size: 13px;
+    }
+    .sub-main .titulo {
+        font-size: 28px;
+    }
+    .subtitulo-p {
+        font-size: 14px;
+    }
+    footer .logo {
+        width: 100%;
+    }
+    .logoFooter{
+        width: 50px;
+    }
+    footer .logo p {
+        font-size: 18px;
+    }
+}
+@media (max-width:320px) {
+    header main {
+        padding: 5px 10px;
+    }
+    .logoHeader{
+        width: 60px;
+    }
+    header main {
+        height: 80px;
+    }
+    .logoFooter{
+        width: 45px;
+    }
+    footer .logo p {
+        font-size: 17px;
+    }
+    .main{
+        margin: 70px 0;
+    }
+    .setaVoltar{
+        width: 25px;
+        left: 20px;
+        top: 22px;
     }
 }

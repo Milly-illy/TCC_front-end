@@ -1,16 +1,17 @@
-body{
+body {
     min-height: 100vh;
     background-color: var(--offWhite);
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
 }
-header main{
+
+header main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,45 +20,51 @@ header main{
     padding: 5px 60px;
     height: 127px;
 }
-header nav{
+
+header nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 50px;
 }
-header nav a{
+
+header nav a {
     color: var(--offWhite);
     font-size: 20px;
     font-weight: 500;
 }
-header p{
+
+header p {
     color: var(--verdeClaro);
     font-size: 20px;
 }
-header .slogan{
+
+header .slogan {
     background-color: var(--verdeClaro);
     width: 100%;
     padding: 5px;
     text-align: center;
     color: var(--verdeEscuro);
 }
-.setaVoltar{
+
+.setaVoltar {
     width: 50px;
-    margin-left: 50px ;
+    margin-left: 50px;
     margin-top: 50px;
 }
-.titulo{
+
+.titulo {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
     font-size: 50px;
-    color: var(--azulEscuro);  
+    color: var(--azulEscuro);
     transition: all 400ms;
-}   
+}
 
-.titulo2{
+.titulo2 {
     transition: all 400ms;
     margin-top: 60px;
     margin-left: 120px;
@@ -66,14 +73,14 @@ header .slogan{
     color: var(--azulEscuro);
 }
 
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.sub-main{
+.sub-main {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -83,26 +90,29 @@ header .slogan{
     height: auto;
     padding-bottom: 80px;
 }
-.sub-main form{
+
+.sub-main form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.sub-main form .cards{
+
+.sub-main form .cards {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
 }
-.sub-main .titulo{
+
+.sub-main .titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px;
     font-size: 30px;
-    color: var(--azulEscuro);  
+    color: var(--azulEscuro);
     transition: all 400ms;
 
 }
@@ -116,67 +126,71 @@ header .slogan{
     flex-direction: column;
     justify-content: center;
     width: 30%;
-    position: relative; 
+    position: relative;
     min-width: 300px;
     height: 220px;
-    transition: background-color 0.4s ease; 
+    transition: background-color 0.4s ease;
 }
 
 .card input {
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
-    opacity: 0; 
-    cursor: pointer; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
 }
 
-.card:has(input[type="radio"]:checked){
+.card:has(input[type="radio"]:checked) {
     background-color: var(--verdeClaro);
 }
 
-
-
-#card1{
+#card1 {
     border-top: none;
     border-left: none;
 }
-#card2{
+
+#card2 {
     border-top: none;
 }
-#card3{
+
+#card3 {
     border-top: none;
     border-right: none;
 }
-#card4{
+
+#card4 {
     border-bottom: none;
     border-left: none;
 }
-#card5{
+
+#card5 {
     border-bottom: none;
 }
-#card6{
+
+#card6 {
     border-bottom: none;
     border-right: none;
 }
 
-.titulo-card{
+.titulo-card {
     margin-top: 20px;
     margin-bottom: 15px;
     font-size: 35px;
     text-align: center;
-    color: var(--azulEscuro);  
+    color: var(--azulEscuro);
 }
 
-.valor{
+.valor {
     text-align: center;
     font-size: 60px;
-    color: var(--azulEscuro);  
+    color: var(--azulEscuro);
 }
-.button{
+
+.button {
     margin-top: 50px
 }
 
-.button button{ 
+.button button {
     color: var(--azulEscuro);
     background-color: var(--begeClaro);
     font-size: 40px;
@@ -184,246 +198,101 @@ header .slogan{
     height: auto;
     padding: 10px 60px 10px 60px;
     border: 0px;
-    box-shadow: 8px 8px rgba(0, 0, 0, 0.3);    
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease;
     cursor: pointer;
-
 }
 
-.button button:hover{ 
+.button button:hover {
     transform: scale(1.08);
 }
+
 /* - - - - - - - - - - - - - Rodapé - - - - - - - - - - - - - */
 
 footer {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--verde);
 
-margin-top: 150px;
-padding: 20px;
+    margin-top: 150px;
+    padding: 20px;
 }
+
 footer .logo {
-display: flex;
-align-items: center;
-justify-content: center;
-border-top: 2px solid var(--offWhite);
-width: 80%;
-padding-top: 40px;
-margin-top: 40px;
-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--offWhite);
+    width: 80%;
+    padding-top: 40px;
+    margin-top: 40px;
+    gap: 10px;
 }
 footer .logo p {
-color: var(--offWhite);
-font-family: "MoonDance";
-font-size: 50px;
+    color: var(--offWhite);
+    font-family: "MoonDance";
+    font-size: 50px;
 }
-footer .links{
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 80%;
-margin: 0 auto;
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
-.link_title{
-font-weight: 600;
-font-size: 28px;
-color: var(--offWhite);
+.link_title {
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--offWhite);
 }
-footer .links div{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-text-align: center;
-gap: 15px;
-width: 20%;
+footer .links div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 20%;
 }
-footer .links div a{
-font-size: 24px;
-font-family: 'Montserrat-Light';
-text-decoration: none;
-color: var(--offWhite);
+footer .links div a {
+    font-size: 24px;
+    font-family: 'Montserrat-Light';
+    text-decoration: none;
+    color: var(--offWhite);
 }
-
-@media (max-width: 1024px) {
-    .titulo{
-        margin-top: 20px;
-        margin: 20px;
-        font-size: 40px;
-        color: var(--azulEscuro);  
-        transition: all 400ms;
-    }   
-
-    .titulo:hover, .titulo2:hover{
-        transform: translateY(-6px);
-
-    }
-
-    .sub-main .titulo{
-        margin: 40px;
+@media (max-width:1400px) {
+    .titulo-card {
         font-size: 30px;
     }
-
-    .sub-main{
-        width: 90%;
-        height: auto;
-        padding-bottom: 60px;
-
+    .valor {
+        font-size: 55px;
     }
-
-    .card{
-        border: 1px solid rgba(0, 0, 0, 0.13);
-        border-radius: 1px;
-        min-width: 230px;
-        height: 200px;
+    .button button {
+        font-size: 38px;
     }
-
-    
-    .titulo-card{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 24px;
-    }
-
-    .valor{
-        font-size: 50px;
-        color: var(--azulEscuro);  
-    }
-
-    .button{
-        margin-top: 40px;
-    }
-
-    .button button{ 
-        color: var(--azulEscuro);
-        background-color: var(--begeClaro);
-        font-size: 30px;
-        width: auto;
-        height: auto;
-        padding: 10px 50px 10px 50px;
-        border: 0px;
-        box-shadow: 8px 8px rgba(0, 0, 0, 0.3);    
-        transition: all 0.4s ease;
-        cursor: pointer;
-
-    }
-
-    footer {
-        margin-top: 60px;
-        padding: 15px;
-        }
-        footer .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-top: 2px solid var(--offWhite);
-        width: 80%;
-        padding-top: 40px;
-        margin-top: 40px;
-        gap: 10px;
-        }
-        footer .logo p {
-        color: var(--offWhite);
-        font-family: "MoonDance";
-        font-size: 40px;
-        text-align: center;
-        }
 }
-
-
-
-@media (max-width: 768px) {
-    .titulo{
-        margin-top: 20px;
-        margin: 20px;
+@media (max-width:1050px) {
+    .titulo {
+        font-size: 45px;
+    }
+    .titulo-card {
+        font-size: 26px;
+    }
+    .valor {
+        font-size: 45px;
+    }
+    .button button {
         font-size: 30px;
-        color: var(--azulEscuro);  
-        transition: all 400ms;
-    }   
-
-    .titulo:hover, .titulo2:hover{
-        transform: translateY(-6px);
-
-    }
-
-    .sub-main .titulo{
-        margin: 25px;
-        font-size: 25px;
-    }
-
-    .sub-main{
-        width: 90%;
-        height: auto;
-        padding-bottom: 50px;
-
-    }
-
-    .card{
-        border: 1px solid rgba(0, 0, 0, 0.13);
-        border-radius: 1px;
-        min-width: 200px;
-        height: 170px;
-    }
-
-    
-    .titulo-card{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 20px;
-    }
-
-    .valor{
-        font-size: 35px;
-        color: var(--azulEscuro);  
-    }
-
-    .button{
-        margin-top: 30px;
-    }
-
-    .button button{ 
-        color: var(--azulEscuro);
-        background-color: var(--begeClaro);
-        font-size: 25px;
-        width: auto;
-        height: auto;
-        padding: 10px 40px 10px 40px;
-        border: 0px;
-        box-shadow: 8px 8px rgba(0, 0, 0, 0.3);    
-        transition: all 0.4s ease;
-        cursor: pointer;
-
-    }
-
-    /* - - - - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - - - - - */ 
-
-
-    footer {            
-        margin-top: 80px;
-        padding: 15px;
-    }
-    footer .logo {
-        width: 80%;
-        padding-top: 40px;
-        margin-top: 40px;
-        gap: 10px;
-    }
-    footer .logo p {
-        font-size: 30px;
-    }
-    .link_title{
-        font-weight: 600;
-        font-size: 20px;
-        color: var(--offWhite);
     }
     footer .links div a {
-            font-size: 20px;
-            font-family: 'Montserrat-Light';
-            text-decoration: none;
-            color: var(--offWhite);
+        font-size: 22px;
     }
-
+    .link_title {
+        font-size: 24px;
+    }
+    .logoFooter{
+        width: 130px;
+    }
 }
