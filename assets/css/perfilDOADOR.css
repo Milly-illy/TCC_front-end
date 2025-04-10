@@ -36,22 +36,10 @@ header .slogan{
     text-align: center;
     color: var(--verdeEscuro);
 }
-
-.foto{
-    width: 80px;
-    transition: transform 0.4s ease-in-out;
-    cursor: pointer;
-}
-
-.foto:hover{
-    transform:scale(1.2);
-}
-
 .linkPerfil{
     text-decoration: none;
     color: var(--verdeClaro);
 }
-
 .titulo {
   margin-top: 30px;
   font-size: 50px;
@@ -59,7 +47,6 @@ header .slogan{
   text-align: center;
   padding-bottom: 25px;
 }
-
 form {
   background-color: var(--bege);
   display: flex;
@@ -69,14 +56,12 @@ form {
   padding: 50px 60px;
   width: 100%;
 }
-
 form div {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-
 button {
   /* background-color: var(--amarelo); */
   color: var(--azulEscuro);
@@ -85,7 +70,6 @@ button {
   width: 100%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 .editarPerfil {
   display: flex;
   flex-direction: row;
@@ -93,76 +77,62 @@ button {
   gap: 30px;
   margin-top: 55px;
 }
-
 .editarPerfil button{
     width: 23%;
     transition: all 400ms ease;
 }
-
 #editar {
   background-color: var(--amarelo);
   border-radius: 5px;
   height: 40px;
 }
-
 #editar:hover{
     background-color: #ffee8f;
     cursor: pointer;
 }
-
 #salvar {
   background-color: rgb(180, 238, 180);
   border-radius: 5px;
   height: 40px;
 }
-
 #salvar:hover{
     background-color:   #8EE48E;
     cursor: pointer;
 }
-
 #cancelar {
   background-color: rgb(243, 131, 131);
   border-radius: 5px;
   height: 40px;
 }
-
 #cancelar:hover{
     background-color: #E55959;
     cursor: pointer;
 }
-
 #salvar:disabled, #cancelar:disabled, #editar:disabled{
   background-color: lightgray;
 }
-
 #salvar:disabled:hover, #cancelar:disabled:hover, #editar:disabled:hover{
   background-color: lightgray;
   cursor: default;
 }
-
 .buttons {
   display: flex;
   flex-direction: row;
   gap: 20px;
   width: 100%;
 }
-
 .buttons button {
   background-color: var(--amarelo);
   border-radius: 3px;
 }
-
 .buttons button:hover{
     background-color: #ffee8f;
     cursor: pointer;
 }
-
 label {
   color: var(--azul);
   font-size: 24px;
 }
-
 input,
 select {
   color: var(--azulClaro);
@@ -174,11 +144,9 @@ select {
   padding: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 input::placeholder {
   font-size: 24px;
 }
-
 section {
   width: 35%;
   margin-top: -20px;
@@ -186,8 +154,6 @@ section {
 section div {
   margin-top: 20px;
 }
-
-
 .fotoPerfil {
   display: flex;
   align-items: center;
@@ -259,34 +225,140 @@ footer .links div a {
 }
 
 @media (max-width:1024px) {
-  form {
-    padding: 50px 30px;
+  header main{
+    padding: 5px 50px;
   }
-label {
-  color: var(--azul);
-  font-size: 22px;
+  header nav{
+    gap: 40px;
 }
-.titulo {
-  font-size: 45px;
+  .logoHeader{
+    width: 100px;
+  }
+  header nav a{
+    font-size: 18px;
+  }
+  section {
+    width: 32%;
+  }
+  label {
+    font-size: 20px;
+  }
+  input,  select {
+    font-size: 19px;
+  }
+  .titulo {
+    font-size: 42px;
+  }
+  .editarPerfil {
+    gap: 20px;
+  }
+  .editarPerfil button{
+    width: 40%;
+  }
+  .fotoPerfil {
+    gap: 10px;
+    width: 25%; 
+  }
+  .fotoPerfil img {
+    width: 75%;
+  }
+  .link_title {
+    font-size: 24px;
+  }
+  footer .links div a {
+    font-size: 20px;
+  }
+  footer .links div {
+    width: 30%;
+  }
+  footer .logo p {
+    font-size: 40px;
+  }
+  .logoFooter{
+    width: 120px;
+  }
 }
-.fotoPerfil {
-  width: 25%; 
+@media (max-width:890px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    width: 70%;
+  }
+  .editarPerfil{
+    order: 1;
+  }
+  .editarPerfil {
+    gap: 30px;
+  }
+  .section1{
+    margin-top: 20px;
+    order: 2;
+  }
+  .section2{
+    margin-top: 5px;
+    order: 3;
+  }
+  .fotoPerfil {
+    gap: 20px;
+    width: 35%; 
+    margin: 0;
+  }
+  .fotoPerfil img {
+    width: 68%;
+  }
 }
-.editarPerfil button{
-  font-size: 17px;
-  width: 25%;
+@media (max-width:817px) {
+  .link_title {
+    font-size: 20px;
+  }
+  footer .links div a {
+    font-size: 18px;
+  }
+  footer .logo p {
+    font-size: 34px;
+  }
+  .logoFooter{
+    width: 100px;
+  }
 }
-input,select {
-  font-size: 22px;
+@media (max-width:700px) {
+  header main{
+    padding: 5px 30px;
+  }
+  header nav{
+    gap: 30px;
+  }
+  .logoHeader{
+    width: 90px;
+  }
+  header nav a{
+    font-size: 16px;
+  }
+  .titulo {
+    font-size: 35px;
+  }
+  .fotoPerfil img {
+    width: 85%;
+  }
+  .logoFooter{
+    width: 90px;
+  }
+  footer .logo {
+    width: 90%;
+  }
 }
-
-input::placeholder {
-  font-size: 22px;
-}
-header nav a{
-  font-size: 18px;
-}
-.logoInicio img{
-  width: 100px;
-}
+@media (max-width:617px) {
+  .fotoPerfil {
+    gap: 20px;
+    width: 40%; 
+    margin: 0;
+  }
+  .logoFooter{
+    width: 80px;
+  }
+  footer .logo p {
+    font-size: 30px;
+  }
 }

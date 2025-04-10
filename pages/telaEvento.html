@@ -26,9 +26,16 @@
     </header>
 
     <div class="pesquisa">
-        <a href="./telaONG.html">
+        <a href="#" onclick="voltarPagina(event)">
             <img class="setaVoltar" src="../assets/images/iconeVoltar.png" alt="">
-        </a>
+          </a>
+          
+          <script>
+            function voltarPagina(event) {
+              event.preventDefault(); // evita que a página role para o topo
+              window.history.back(); // volta para a página anterior
+            }
+          </script>
         <div class="main">
 
             <div class="sub-main">

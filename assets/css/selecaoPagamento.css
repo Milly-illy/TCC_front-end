@@ -90,14 +90,12 @@ header .slogan {
     height: auto;
     padding-bottom: 80px;
 }
-
 .sub-main form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
 .sub-main form .cards {
     display: flex;
     align-items: center;
@@ -105,19 +103,15 @@ header .slogan {
     width: 100%;
     flex-wrap: wrap;
 }
-
 .sub-main .titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin: 50px;
     font-size: 30px;
     color: var(--azulEscuro);
-    transition: all 400ms;
-
 }
-
-
 .card {
     border: 1px solid rgba(0, 0, 0, 0.13);
     border-radius: 1px;
@@ -131,7 +125,6 @@ header .slogan {
     height: 220px;
     transition: background-color 0.4s ease;
 }
-
 .card input {
     position: absolute;
     width: 100%;
@@ -139,39 +132,31 @@ header .slogan {
     opacity: 0;
     cursor: pointer;
 }
-
 .card:has(input[type="radio"]:checked) {
     background-color: var(--verdeClaro);
 }
-
 #card1 {
     border-top: none;
     border-left: none;
 }
-
 #card2 {
     border-top: none;
 }
-
 #card3 {
     border-top: none;
     border-right: none;
 }
-
 #card4 {
     border-bottom: none;
     border-left: none;
 }
-
 #card5 {
     border-bottom: none;
 }
-
 #card6 {
     border-bottom: none;
     border-right: none;
 }
-
 .titulo-card {
     margin-top: 20px;
     margin-bottom: 15px;
@@ -179,17 +164,14 @@ header .slogan {
     text-align: center;
     color: var(--azulEscuro);
 }
-
 .valor {
     text-align: center;
     font-size: 60px;
     color: var(--azulEscuro);
 }
-
 .button {
     margin-top: 50px
 }
-
 .button button {
     color: var(--azulEscuro);
     background-color: var(--begeClaro);
@@ -336,5 +318,281 @@ footer .links div a {
         width: 40px;
         margin-left: 40px;
         margin-top: 40px;
+    }
+}
+@media (max-width:900px) {
+    .logoHeader{
+        width: 110px;
+    }
+    header main {
+        padding: 5px 50px;
+        height: 120px;
+    }
+    header nav {
+        gap: 40px;
+    }
+    header nav a {
+        font-size: 18px;
+    }
+    header p {
+        font-size: 18px;
+    }
+    footer .links div a {
+        font-size: 20px;
+    }
+    .link_title {
+        font-size: 22px;
+    }
+    .logoFooter{
+        width: 100px;
+    }
+    footer .logo {
+        width: 90%;
+    }
+}
+@media (max-width:850px) {
+    .titulo {
+        font-size: 40px;
+    }
+    .sub-main .titulo {
+        font-size: 26px;
+    }
+    .titulo-card {
+        font-size: 28px;
+        margin: 8px;
+    }
+    .valor {
+        font-size: 45px;
+    }
+    .button button {
+        font-size: 28px;
+    }
+}
+@media (max-width:800px) {
+    .logoHeader{
+        width: 100px;
+    }
+    header main {
+        padding: 5px 40px;
+        height: 110px;
+    }
+    .setaVoltar {
+        width: 35px;
+        margin-left: 35px;
+        margin-top: 35px;
+    }
+    footer .logo p {
+        font-size: 40px;
+    }
+    .logoFooter{
+        width: 90px;
+    }
+}
+@media (max-width:700px) {
+    footer .links div {
+        width: 30%;
+    }
+    footer .logo p {
+        font-size: 35px;
+    }
+}
+@media (max-width:666px) {
+    .titulo-card {
+        font-size: 30px;
+    }
+    .valor {
+        font-size: 50px;
+    }
+    #card1 {
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        border-left: 1px solid rgba(0, 0, 0, 0.13);
+    }
+    #card2 {
+        border-right: 1px solid rgba(0, 0, 0, 0.13);
+        border-left: 1px solid rgba(0, 0, 0, 0.13);
+    }
+    #card3 {
+        border-left: 1px solid rgba(0, 0, 0, 0.13);
+        border-right: 1px solid rgba(0, 0, 0, 0.13);
+    }
+    #card4 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13);;
+        border-left: 1px solid rgba(0, 0, 0, 0.13);
+        border-right: 1px solid rgba(0, 0, 0, 0.13);
+    }
+    #card5 {
+        border-left: 1px solid rgba(0, 0, 0, 0.13);
+        border-right: 1px solid rgba(0, 0, 0, 0.13);
+    }
+    #card6 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+        border-right: 1px solid rgba(0, 0, 0, 0.13);
+    }
+}
+@media (max-width:630px) {
+    .sub-main .titulo {
+        font-size: 23px;
+    }
+    .logoFooter{
+        width: 80px;
+    }
+    footer .logo p {
+        font-size: 30px;
+    }
+}
+@media (max-width:550px) {
+    .logoHeader{
+        width: 90px;
+    }
+    header main {
+        padding: 5px 20px;
+        height: 110px;
+    }
+    header nav {
+        gap: 30px;
+    }
+    header nav a {
+        font-size: 15px;
+    }
+    header p {
+        font-size: 15px;
+    }
+    .setaVoltar {
+        width: 30px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .sub-main .titulo {
+        font-size: 20px;
+    }
+    .titulo-card {
+        font-size: 27px;
+    }
+    .valor {
+        font-size: 40px;
+    }
+    .button button {
+        font-size: 25px;
+    }
+    footer .links div a {
+        font-size: 17px;
+    }
+    .link_title {
+        font-size: 19px;
+    }
+    .logoFooter{
+        width: 65px;
+    }
+    footer .logo p {
+        font-size: 28px;
+    }
+    footer .logo {
+        width: 95%;
+    }
+}
+@media (max-width:450px) {
+    .logoHeader{
+        width: 80px;
+    }
+    header nav a {
+        font-size: 13px;
+    }
+    header p {
+        font-size: 13px;
+    }
+    header nav {
+        gap: 20px;
+    }
+    header main {
+        padding: 5px 20px;
+        height: 90px;
+    }   
+    .sub-main .titulo {
+        font-size: 22px;
+    }
+    .setaVoltar {
+        width: 25px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .titulo-card {
+        font-size: 25px;
+    }
+    .valor {
+        font-size: 33px;
+    }
+    footer .links div a {
+        font-size: 15px;
+    }
+    .link_title {
+        font-size: 17px;
+    }
+    .logoFooter{
+        width: 55px;
+    }
+    footer .logo p {
+        font-size: 22px;
+    }
+}
+@media (max-width:400px) {
+    .logoHeader{
+        width: 70px;
+    }
+    header main {
+        height: 80px;
+    } 
+    .titulo-card {
+        font-size: 20px;
+    }
+    .valor {
+        font-size: 28px;
+    }
+    .card {
+        min-width: 250px;
+        height: 180px;
+    }
+    footer .links {
+        width: 90%;
+    }
+    .button button {
+        font-size: 20px;
+    }
+    footer .links div a {
+        font-size: 13px;
+    }
+    .link_title {
+        font-size: 15px;
+    }
+    footer .logo p {
+        font-size: 19px;
+    }
+    .logoFooter{
+        width: 50px;
+    }
+    footer .logo {
+        width: 100%;
+    }
+}
+@media (max-width:350px) {
+    header main {
+        padding: 5px 15px;
+        height: 70px;
+    } 
+    header nav a {
+        font-size: 12px;
+    }
+    header p {
+        font-size: 12px;
+    }
+}
+@media (max-width:320px) {
+    footer .logo p {
+        font-size: 18px;
+    }
+    .logoFooter{
+        width: 40px;
     }
 }
