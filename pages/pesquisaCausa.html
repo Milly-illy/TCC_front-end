@@ -1,115 +1,420 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../assets/css/pesquisaCausa.css">
-  <link rel="icon" type="image/png" href="../assetstr/icons/iconsite.png">
-  <title>Causa Viva - Causas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../assets/css/menu.css" />
+  <link rel="stylesheet" href="../assets/css/pesquisaCausa.css" />
+  <title>Causa Viva - Nossas ONG´s</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="../assets/js/redirect.js" defer></script>
+  <script src="../assets/js/menu.js" defer></script>
 </head>
 
 <body>
+
   <header>
-    <main>
-        <a href="../index.html">
-            <img src="../assets/images/Logo Header.png" alt="logo" />
-        </a>
-      <nav>
-        <a href="./pesquisaEvento.html">Buscar Eventos</a>
-        <p href="#">Olá <b>Andressa</b></p>
-        <img class="foto" src="../assets/images/fotoPerfil.png">
-      </nav>
-    </main>
-    <div class="slogan">
+    <div class="main">
+      <a href="index.html">
+        <img src="../assets/images/Logo Header.png" alt="logo" />
+      </a>
+      <div class="text">
+        <nav>
+          <p class="linkPerfil">Olá <strong>Usuário</strong></p>
+        </nav>
+        <div class="menu">
+          <div class="menu_icon open" id="menu_icon">
+            <div class="barra" id="barra1"></div>
+            <div class="barra" id="barra2"></div>
+            <div class="barra" id="barra3"></div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="slogan"></div>
   </header>
+
   <div class="pesquisa">
-    <h1 class="titulo">Causas</h1>
+    <h1 class="titulo">Confira nossas ONGs</h1>
     <form>
-        <label for="#"></label>
-        <input class="input-pesquisa" type="search" id="#" name="#" placeholder="Pesquise por uma ong">
-        <select class="select-pesquisa" id="categoria" name="categoria">
-            <form action="">
-                <option value="" disabled selected>Selecione uma causa</option>
-                <option value="direitos">Direitos Humanos e Sociais</option>
-                <option value="ambiente">Meio Ambiente</option>
-                <option value="saude">Saúde e Bem-Estar</option>
-                <option value="educacao">Educação e Cultura</option>
-                <option value="cultura">Proteção Animal</option>
-            </form>
-        </select>
+      <input class="input-pesquisa" type="search" placeholder="Pesquise por uma ong" />
+      <select class="select-pesquisa" name="categoria">
+        <option value="" disabled selected>Selecione uma causa</option>
+        <option value="direitos">Direitos Humanos e Sociais</option>
+        <option value="ambiente">Meio Ambiente</option>
+        <option value="saude">Saúde e Bem-Estar</option>
+        <option value="educacao">Educação e Cultura</option>
+        <option value="cultura">Proteção Animal</option>
+      </select>
     </form>
   </div>
-  <div class="eventos">
-    <h1 class="titulo2">Proteção Animal</h1>
-    <div class="cards">
-      <div class="card">
-        <div class="img">
-          <img src="../assets/images/bazar.png" alt="" />
+
+  <main>
+    <div class="ongs">
+      <h1 class="titulo2">Nome da Causa</h1>
+      <div class="cards">
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
         </div>
-        <h1 class="titulo-card">Bazar Solidário</h1>
-        <p>
-          Venha, traga seu brinquedo e nos
-          ajude a reunir o maior número
-          possível de brinquedos para os
-          nossos amiguinhos.
-        </p>
-        <div class="card_icons">
-          <p class="local">São paulo, SP</p>
-          <p class="data">Dia 19/01</p>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
         </div>
-        <div class="card-bottom">
-          <h2>Conferir Evento</h2>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="img">
-          <img src="../assets/images/doacaocomida.png" alt="" />
-        </div>
-        <h1 class="titulo-card">Doação de Comida</h1>
-        <p>
-          Traga sua doação de ração e nos
-          ajude a reunir o maior número
-          possível de alimentos para os
-          nossos amiguinhos
-        </p>
-        <div class="card_icons">
-          <p class="local">São paulo, SP</p>
-          <p class="data">Dia 23/05</p>
-        </div>
-        <div class="card-bottom">
-          <h2>Conferir Evento</h2>
+
+      <h1 class="titulo2">Nome da Causa</h1>
+      <div class="cards">
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="img">
-          <img src="../assets/images/feiraadocao.png" alt="" />
+
+      <h1 class="titulo2">Nome da Causa</h1>
+      <div class="cards">
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
         </div>
-        <h1 class="titulo-card">Feira de Adoção</h1>
-        <p>
-          Venha, nos ajude a encontrar
-          um lar para os nossos amiguinhos!
-          Participe da nossa Feira de Adoção 
-        </p>
-        <div class="card_icons">
-          <p class="local">São paulo, SP</p>
-          <p class="data">Dia 25/08</p>
-        </div>
-        <div class="card-bottom">
-          <h2>Conferir Evento</h2>
+      </div>
+
+      <h1 class="titulo2">Nome da Causa</h1>
+      <div class="cards">
+        <div class="card" id="1">
+          <div class="img">
+            <img src="../assets/images/card1.png" alt="Logo ONG" />
+            <p class="ong">Nome da ONG</p>
+          </div>
+          <p class="description">Descrição da ONG.</p>
+          <div class="meta">
+            <div class="grafico">
+              <div class="total50"></div>
+            </div>
+            <div class="legenda">
+              <p>50%</p>
+              <p>R$500 Arrecadados</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="cidade">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>São Paulo, SP</p>
+            </div>
+            <div class="causa">
+              <i class="fa-solid fa-tag"></i>
+              <p>Meio Ambiente</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <footer>
     <div class="links">
       <div>
         <p class="link_title">Seja Bem Vindo</p>
         <a href="#sobre">Descubra quem somos</a>
-        <a href="#sobre">De uma olhada nas nossas redes sociais :</a>
+        <a href="#sobre">Dê uma olhada nas nossas redes sociais :)</a>
       </div>
       <div>
         <p class="link_title">Ajuda</p>
@@ -124,7 +429,7 @@
     </div>
     <div class="logo">
       <p>Conectando corações</p>
-      <img src="../assetstr/icons/logofooter.png" alt="logo">
+      <img class="logoFooter" src="../assets/images/logo footer.png" alt="logo" />
       <p>transformando vidas</p>
     </div>
   </footer>
