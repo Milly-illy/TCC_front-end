@@ -28,9 +28,16 @@
   
 
   <div class="meta">
-    <a href="../index.html">
+    <a href="#" onclick="voltarPagina(event)">
       <img class="setaVoltar" src="../assets/images/iconeVoltar.png" alt="">
     </a>
+    
+    <script>
+      function voltarPagina(event) {
+        event.preventDefault(); // evita que a página role para o topo
+        window.history.back(); // volta para a página anterior
+      }
+    </script>
     <h1 class="titulo">Pata amiga</h1>
     <p>Criado por Camilly e Pedro Henrique</p>
     <div class="meta-img">
