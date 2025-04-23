@@ -2,7 +2,6 @@ body {
   min-height: 100vh;
   background-color: var(--offWhite);
 }
-
 header {
   display: flex;
   align-items: center;
@@ -10,7 +9,6 @@ header {
   flex-direction: column;
   width: 100%;
 }
-
 header main {
   display: flex;
   align-items: center;
@@ -19,20 +17,17 @@ header main {
   background-color: var(--verde);
   padding: 5px 60px;
 }
-
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 50px;
 }
-
 header nav a {
   color: var(--offWhite);
   font-size: 20px;
   font-weight: 500;
 }
-
 header .slogan {
   background-color: var(--verdeClaro);
   width: 100%;
@@ -40,19 +35,16 @@ header .slogan {
   text-align: center;
   color: var(--verdeEscuro);
 }
-
 .linkPerfil {
   text-decoration: none;
   color: var(--verdeClaro);
 }
-
 .setaVoltar {
   width: 50px;
   left: 50px;
   top: 30px;
   position: absolute;
 }
-
 .titulo {
   margin-top: 30px;
   font-size: 50px;
@@ -74,7 +66,6 @@ main {
   margin: 0 auto;
   position: relative;
 }
-
 input,
 textarea {
   background-color: var(--verde);
@@ -86,13 +77,11 @@ textarea {
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 input::placeholder,
 textarea::placeholder {
   color: var(--bege);
   font-size: 18px;
 }
-
 section {
   display: flex;
   width: 100%;
@@ -100,22 +89,18 @@ section {
   justify-content: space-between;
   margin: 16px 0;
 }
-
 label {
   display: block;
   color: var(--verdeEscuro);
   font-size: 24px;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .nomeEvento {
   width: 100%;
 }
-
 .descricao {
   width: 80%;
 }
-
 .descricao textarea {
   width: 100%;
   height: 180px;
@@ -125,55 +110,42 @@ label {
   text-align: start;
   resize: none;
 }
-
 .cep {
   width: 25%;
 }
-
 .cidade {
   width: 35%;
 }
-
 .bairro {
   width: 30%;
 }
-
 .rua {
   width: 55%;
 }
-
 .numero {
   width: 18%;
 }
-
 .estado {
   width: 18%;
 }
-
 .data {
   width: 40%;
 }
-
 .horaInicio {
   width: 25%;
 }
-
 .horaTermino {
   width: 25%;
 }
-
 .quantidadePessoa {
   width: 40%;
 }
-
 .valor {
   width: 55%;
 }
-
 #picture__input {
   display: none;
 }
-
 .picture {
   width: 200px;
   height: 200px;
@@ -192,41 +164,33 @@ label {
   padding: 20px;
   text-align: center;
 }
-
 .picture:hover {
   color: var(--begeClaro);
   background: var(--verdeClaro);
 }
-
 .picture:active {
   border-color: var(--verdeClaro);
   color: var(--verdeEscuro);
   background: #eee;
 }
-
 .picture:focus {
   color: var(--offWhite);
   background: var(--verdeEscuro);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .picture__img {
   width: 160px;
 }
-
 .file-upload {
   display: none;
 }
-
 .upload-container {
   height: 200px;
   margin-top: 11px;
 }
-
 .upload-container:hover {
   background-color: var(--begeClaro);
 }
-
 button {
   color: var(--bege);
   background-color: var(--verdeEscuro);
@@ -238,13 +202,11 @@ button {
   margin-top: 30px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .buttonSubmit {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-
 footer {
   display: flex;
   align-items: center;
@@ -255,7 +217,6 @@ footer {
   margin-top: 150px;
   padding: 20px;
 }
-
 footer .logo {
   display: flex;
   align-items: center;
@@ -266,13 +227,11 @@ footer .logo {
   margin-top: 40px;
   gap: 10px;
 }
-
 footer .logo p {
   color: var(--offWhite);
   font-family: "MoonDance";
   font-size: 50px;
 }
-
 footer .links {
   display: flex;
   align-items: center;
@@ -280,13 +239,11 @@ footer .links {
   width: 80%;
   margin: 0 auto;
 }
-
 .link_title {
   font-weight: 600;
   font-size: 28px;
   color: var(--offWhite);
 }
-
 footer .links div {
   display: flex;
   align-items: center;
@@ -296,7 +253,6 @@ footer .links div {
   gap: 15px;
   width: 20%;
 }
-
 footer .links div a {
   font-size: 24px;
   font-family: "Montserrat-Light";
@@ -304,294 +260,233 @@ footer .links div a {
   color: var(--offWhite);
 }
 
+/*---------- responsividade ----------*/
+
 @media (max-width:1440px) {
   .picture {
     width: 190px;
     height: 190px;
   }
-
   .upload-container {
     height: 190px;
   }
-
   .descricao {
     width: 75%;
   }
-
   .descricao textarea {
     height: 170px;
   }
 }
-
 @media (max-width:1300px) {
   footer .links div {
     width: 30%;
   }
 }
-
 @media (max-width:1200px) {
   main {
     padding: 40px 60px;
     width: 85%;
   }
-
   .titulo {
     font-size: 45px;
   }
-
   label {
     font-size: 21px;
   }
-
   button {
     font-size: 22px;
     padding: 10px 100px;
   }
 }
-
 @media (max-width:1150px) {
   .numero {
     width: 22%;
   }
-
   .estado {
     width: 13%;
   }
 }
-
 @media (max-width:1100px) {
   .linkPerfil {
     font-size: 18px;
   }
-
   .logoHeader {
     width: 110px;
   }
-
   label {
     font-size: 18px;
   }
-
   input,
   textarea {
     font-size: 15px;
   }
-
   input::placeholder,
   textarea::placeholder {
     font-size: 15px;
   }
-
   .picture {
     font-size: 15px;
   }
-
   .descricao {
     width: 71%;
   }
-
   button {
     font-size: 19px;
     padding: 10px 80px;
   }
-
   .link_title {
     font-size: 25px;
   }
-
   footer .links div a {
     font-size: 22px;
   }
-
   .logoFooter {
     width: 150px;
   }
-
   footer .logo {
     width: 90%;
   }
-
   footer .logo p {
     font-size: 40px;
   }
 }
-
 @media (max-width:950px) {
   .setaVoltar {
     width: 40px;
     left: 40px;
   }
-  
+
   .linkPerfil {
     font-size: 17px;
   }
-
   .logoHeader {
     width: 100px;
   }
-
   .titulo {
     font-size: 40px;
   }
-
   .descricao {
     width: 68%;
   }
-
   .data {
     width: 33%;
   }
-
   .horaInicio {
     width: 29%;
   }
-
   .horaTermino {
     width: 29%;
   }
-
   .link_title {
     font-size: 23px;
   }
-
   footer .links div a {
     font-size: 20px;
   }
-
   .logoFooter {
     width: 130px;
   }
 }
-
 @media (max-width:850px) {
   header main {
     padding: 5px 35px;
   }
-
   main {
     padding: 30px 40px;
   }
 }
-
 @media (max-width:800px) {
   .linkPerfil {
     font-size: 16px;
   }
-
   .logoHeader {
     width: 90px;
   }
-
   .titulo {
     font-size: 35px;
   }
-
   .picture {
     width: 180px;
     height: 180px;
   }
-
   .upload-container {
     height: 180px;
   }
-
   .descricao {
     width: 65%;
   }
-
   .rua {
     width: 50%;
   }
-
   .numero {
     width: 28%;
   }
-
   .estado {
     width: 13%;
   }
-
   .data {
     width: 30%;
   }
-
   .horaInicio {
     width: 30%;
   }
-
   .horaTermino {
     width: 30%;
   }
-
   .link_title {
     font-size: 21px;
   }
-
   footer .links div a {
     font-size: 19px;
   }
-
   .logoFooter {
     width: 120px;
   }
 }
-
 @media (max-width:768px) {
   label {
     font-size: 16px;
   }
-
   input,
   textarea {
     font-size: 14px;
   }
-
   input::placeholder,
   textarea::placeholder {
     font-size: 14px;
   }
-
   .descricao {
     width: 61%;
   }
-
   button {
     font-size: 16px;
     padding: 10px 50px;
     margin-top: 10px;
   }
 }
-
 @media (max-width:700px) {
   .data {
     width: 28%;
   }
-
   .horaInicio {
     width: 32%;
   }
-
   .horaTermino {
     width: 32%;
   }
-
   .link_title {
     font-size: 19px;
   }
-
   footer .links div a {
     font-size: 17px;
   }
-
   .logoFooter {
     width: 100px;
   }
-
   footer .logo p {
     font-size: 33px;
   }
 }
-
 @media (max-width:650px) {
   .setaVoltar {
     width: 25px;
@@ -602,198 +497,153 @@ footer .links div a {
     align-items: center;
     margin: 0;
   }
-
   section label {
     margin-top: 12px;
   }
-
   .picture {
     width: 200px;
     height: 200px;
   }
-
   .upload-container {
     height: 200px;
   }
-
   .descricao {
     width: 100%;
     margin-top: 10px;
   }
-
   .picture {
     margin-top: 0;
   }
-
   .cep {
     width: 100%;
   }
-
   .cidade {
     width: 100%;
   }
-
   .bairro {
     width: 100%;
   }
-
   .rua {
     width: 100%;
   }
-
   .numero {
     width: 100%;
   }
-
   .estado {
     width: 100%;
   }
-
   .data {
     width: 100%;
   }
-
   .horaInicio {
     width: 100%;
   }
-
   .horaTermino {
     width: 100%;
   }
-
   .quantidadePessoa {
     width: 100%;
   }
-
   .valor {
     width: 100%;
   }
-
   button {
     padding: 10px 60px;
     margin-top: 25px;
   }
-
   .link_title {
     font-size: 17px;
   }
-
   footer .links div a {
     font-size: 15px;
   }
-
   .logoFooter {
     width: 90px;
   }
-
   footer .logo p {
     font-size: 30px;
   }
 }
-
 @media (max-width:550px) {
   .linkPerfil {
     font-size: 14px;
   }
-
   .logoHeader {
     width: 80px;
   }
-
   .titulo {
     font-size: 30px;
   }
-
   .logoFooter {
     width: 80px;
   }
-
   footer .logo p {
     font-size: 25px;
   }
-
   footer .links {
     width: 90%;
   }
 }
-
 @media (max-width:450px) {
   main {
     padding: 30px 20px;
   }
-
   .link_title {
     font-size: 15px;
   }
-
   .logoFooter {
     width: 60px;
   }
-
   footer .logo p {
     font-size: 22px;
   }
 }
-
 @media (max-width:423px) {
   .logoHeader {
     width: 70px;
   }
-
   header main {
     padding: 5px 15px;
   }
-
   .linkPerfil {
     font-size: 12px;
   }
-
   footer .logo {
     width: 100%;
   }
 }
-
 @media (max-width:385px) {
   .link_title {
     font-size: 13px;
   }
-
   footer .links div a {
     font-size: 13px;
   }
-
   footer .logo p {
     font-size: 20px;
   }
 }
-
 @media (max-width:360px) {
   .logoFooter {
     width: 50px;
   }
-
   footer .logo p {
     font-size: 18px;
   }
 }
-
 @media (max-width:326px) {
   .titulo {
     font-size: 25px;
   }
-
   .logoHeader {
     width: 60px;
   }
-
   header main {
     padding: 5px 10px;
   }
-
   .logoFooter {
     width: 40px;
   }
-
   footer .logo p {
     font-size: 17px;
   }

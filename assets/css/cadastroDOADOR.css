@@ -12,14 +12,11 @@ body {
     gap: 20px;
   
     min-height: 100vh;
-  
 }
-
 h1 {
     color: var(--begeClaro);
     text-shadow: 8px 6px 7px rgba(0, 0, 0, 0.5);
 }
-
 img{
     width: 120px;
     position: absolute;
@@ -27,35 +24,27 @@ img{
     left: 20px;
     transition: transform 0.3s ease
 }
-
 img:hover {
     transform: scale(1.2); /* Aumenta a imagem em 20% */
 }
-
 .nome{
     width: 100%;
 }
-
 .email{
     width: 55%;
 }
-
 .password{
     width: 40%;
 }
-
 .confirmePassword{
     width: 40%;
 }
-
 .causa{
     width: 55%;
 }
-
 .telefone{
     width: 60%;
 }
-
 main {
     background-color: var(--verdeClaro);
     padding: 45px 30px;
@@ -63,7 +52,6 @@ main {
     max-width: 45%;
     max-height: 70vh;
 }
-  
 form {
     display: flex;
     align-items: center;
@@ -71,32 +59,27 @@ form {
     flex-wrap: wrap;
     gap: 20px;
 }
-
 section{
     width: 100%;
     display: flex;
     align-items: start;
     justify-content: space-between;
 }
-
 form div{
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
   }
-
 a{
     text-decoration: underline;
     color: var(--begeClaro);
     text-align: start;
 }
-
 label{
     color: var(--begeClaro);
     font-size: 20px;
 }
-
 input, select{
     background-color: var(--verde);
     border: none;
@@ -106,15 +89,12 @@ input, select{
     border-radius: 4px;
     width: 100%;
 }
-
 input::placeholder{
     color: var(--verdeEscuro);
 }
-
 .buttonsMedia{
     display: none;
 }
-
 button{
     border: none;
     background-color: var(--verdeEscuro);
@@ -125,13 +105,11 @@ button{
     padding: 10px;
     transition: all 400ms ease;
 }
-
 button:hover{
     background-color: var(--bege);
     color: var(--verdeEscuro);
     cursor: pointer;
 }
-
 .buttonSubmit{
     width: 23%;
     display: flex;
@@ -141,6 +119,8 @@ button:hover{
     gap: 30px;
     padding-top: 25px;
 }
+
+/*---------- responsividade ----------*/
 
 @media (max-width:1041px) {
     h1 {

@@ -92,7 +92,7 @@ select option {
     transition: all 400ms;
     margin-top: 60px;
     margin-left: 120px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-size: 40px;
     color: var(--azulEscuro);
 }
@@ -101,11 +101,12 @@ select option {
 }
 .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     flex-wrap: nowrap ;
-    overflow: scroll;
+    overflow-x: auto;
     gap: 70px;
     margin: 0 80px;
+    margin-bottom: 100px;
 }
 .card {
     background-color: var(--begeClaro);
@@ -116,8 +117,11 @@ select option {
     align-items: center;
     min-width: 380px;
     max-width: 380px;
+    min-height: 450px;
+    position: relative;
 }
 .card-bottom {
+    bottom: 0;
     margin-top: 0px;
     background-color: var(--bege);
     width: 100%;
@@ -160,11 +164,9 @@ select option {
     width: 80%;
     margin: 10px auto;
 }
-
 .card_icons p {
     width: 70%;
 }
-
 .local,
 .data {
     width: 50px;
@@ -174,28 +176,23 @@ select option {
     padding-left: 10px;
     color: rgb(130, 130, 130);
 }
-
 .local {
     background-image: url(../assetstr/icons/location_icon.png);
 }
-
 .data {
     background-image: url(../assetstr/icons/date_icon.png);
 }
-
 .sobre_ong {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
 .sobre_ong h2 {
     color: var(--azul);
     width: 700px;
     text-align: start;
     user-select: none;
 }
-
 .sobre_ong_img {
     width: 800px;
     overflow: hidden;
@@ -203,15 +200,12 @@ select option {
     transition: all 0.3s ease;
     border-radius: 10px;
 }
-
 .sobre_ong_img:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.06);
 }
 
-
 /* Rodapé */
-
 
 footer {
     display: flex;
@@ -222,7 +216,6 @@ footer {
     margin-top: 150px;
     padding: 20px;
 }
-
 footer .logo {
     display: flex;
     align-items: center;
@@ -233,13 +226,11 @@ footer .logo {
     margin-top: 40px;
     gap: 10px;
 }
-
 footer .logo p {
     color: var(--offWhite);
     font-family: "MoonDance";
     font-size: 50px;
 }
-
 footer .links {
     display: flex;
     align-items: center;
@@ -247,13 +238,11 @@ footer .links {
     width: 80%;
     margin: 0 auto;
 }
-
 .link_title {
     font-weight: 600;
     font-size: 28px;
     color: var(--offWhite);
 }
-
 footer .links div {
     display: flex;
     align-items: center;
@@ -263,7 +252,6 @@ footer .links div {
     gap: 15px;
     width: 20%;
 }
-
 footer .links div a {
     font-size: 24px;
     font-family: 'Montserrat-Light';
@@ -271,3 +259,442 @@ footer .links div a {
     color: var(--offWhite);
 }
 
+/*---------- responsividade ----------*/
+
+@media (max-width:1300px) {
+    .cards {
+        margin: 0 60px;
+    }
+    .card {
+        min-width: 350px;
+        max-width: 350px;
+    }
+    .card img {
+        width: 350px;
+    }
+    .card p{
+        font-size: 17px;
+        padding: 0 10px;
+    }
+    .card .local{
+        font-size: 15px;
+    }
+    .card .data{
+        font-size: 15px;
+    }
+    .titulo-card {
+        font-size: 30px;
+    }
+    .card-bottom {
+        height: 80px;
+        position: absolute;
+    }
+    .card-bottom h2 {
+        font-size: 30px;
+        margin: 20px
+    }
+}
+@media (max-width:1250px) {
+    .logoHeader{
+        width: 110px;
+    }
+    footer .logo p {
+        font-size: 45px;
+    }
+    .logoFooter{
+        width: 130px;
+    }
+    .link_title {
+        font-size: 24px;
+    }
+    footer .links div a {
+        font-size: 20px;
+    }
+    .titulo2 {
+        font-size: 35px;
+    }
+}
+@media (max-width:1000px) {
+    .cards {
+        margin: 0 50px;
+    }
+    .card {
+        min-width: 330px;
+        max-width: 330px;
+    }
+    .card img {
+        width: 330px;
+    }
+    .card p{
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    .titulo-card {
+        font-size: 25px;
+    }
+    .card-bottom {
+        height: 70px;
+    }
+    .card-bottom h2 {
+        font-size: 25px;
+        margin: 20px
+    }
+}
+@media (max-width:900px) {
+    .logoHeader{
+        width: 100px;
+    }
+    header p{
+        font-size: 18px;
+    }
+    .card{
+        min-height: 430px;
+    }
+    .titulo{
+        font-size: 45px;
+    }
+    .titulo2{
+        font-size: 30px;
+    }
+    footer .logo p {
+        font-size: 40px;
+    }
+    .logoFooter{
+        width: 110px;
+    }
+    footer .links div {
+        width: 30%;
+    }
+}
+@media (max-width:800px) {
+    .titulo{
+        font-size: 40px;
+    }
+    .input-pesquisa {
+        font-size: 20px;
+        width: 400px;
+        height: 50px;
+    }
+    .link_title {
+        font-size: 22px;
+    }
+    footer .links div a {
+        font-size: 18px;
+    }
+    footer .logo{
+        width: 90%;
+    }
+    footer .logo p {
+        font-size: 35px;
+    }
+    .logoFooter{
+        width: 90px;
+    }
+}
+@media (max-width:700px) {
+    header main{
+        padding: 5px 40px;
+    }
+    .titulo{
+        font-size: 35px;
+    }
+    .titulo2{
+        font-size: 28px;
+        margin-left: 60px;
+    }
+    .cards {
+        margin: 0 40px;
+    }
+    .input-pesquisa {
+        font-size: 18px;
+        width: 350px;
+        height: 45px;
+    }
+    .select-pesquisa {
+        font-size: 18px;
+        width: 240px;
+        height: 45px;
+    }
+    .link_title {
+        font-size: 20px;
+    }
+    footer .links div a {
+        font-size: 17px;
+    }
+    footer .logo p {
+        font-size: 32px;
+    }
+    .logoFooter{
+        width: 80px;
+    }
+}
+@media (max-width:600px) {
+    .logoHeader{
+        width: 90px;
+    }
+    .input-pesquisa {
+        font-size: 18px;
+        width: 260px;
+        height: 45px;
+        padding-left: 20px;
+    }
+    .select-pesquisa {
+        font-size: 18px;
+        width: 200px;
+        height: 45px;
+    }
+    .card {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .card img {
+        width: 300px;
+    }
+    .card p{
+        font-size: 16px;
+        padding: 0 25px;
+    }
+    .card .local{
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .card .data{
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .link_title {
+        font-size: 18px;
+    }
+    footer .links div a {
+        font-size: 16px;
+    }
+}
+@media (max-width:550px) {
+    .link_title {
+        font-size: 18px;
+    }
+    footer .links div a {
+        font-size: 16px;
+    }
+    footer .logo p {
+        font-size: 28px;
+    }
+    .logoFooter{
+        width: 65px;
+    }
+}
+@media (max-width:500px) {
+    .titulo{
+        font-size: 30px;
+    }
+    .titulo2{
+        font-size: 23px;
+        margin-left: 50px;
+    }
+    form{
+        text-align: center;
+    }
+    .input-pesquisa {
+        font-size: 17px;
+        width: 350px;
+        height: 40px;
+        padding-left: 20px;
+    }
+    .select-pesquisa {
+        margin-top: 20px;
+        font-size: 17px;
+        width: 270px;
+        height: 40px;
+    }
+    .card {
+        min-width: 280px;
+        max-width: 280px;
+        min-height: 380px;
+    }
+    .card img {
+        width: 280px;
+    }
+    .titulo-card {
+        font-size: 20px;
+    }
+    .card-bottom {
+        height: 55px;
+    }
+    .card-bottom h2 {
+        font-size: 20px;
+        margin: 20px
+    }
+    .card p{
+        font-size: 16px;
+        padding: 0 45px;
+    }
+    .card .local{
+        font-size: 13px;
+        padding: 0;
+        text-align: center;
+    }
+    .card .data{
+        font-size: 13px;
+        padding: 0;
+        text-align: center;
+    }
+    .card_icons{
+        width: 90%;
+    }
+    footer .logo p {
+        font-size: 23px;
+    }
+    .logoFooter{
+        width: 56px;
+    }
+    footer .logo{
+        width: 95%;
+    }
+}
+@media (max-width:450px) {
+    .logoHeader{
+        width: 80px;
+    }
+    header p{
+        font-size: 16px;
+    }
+    header main{
+        padding: 5px 25px;
+    }
+    footer .links{
+        width: 90%;
+    }
+    .link_title {
+        font-size: 16px;
+    }
+    footer .links div a {
+        font-size: 15px;
+    }
+    footer .logo p {
+        font-size: 22px;
+    }
+    .logoFooter{
+        width: 55px;
+    }
+}
+@media (max-width:400px) {
+    .logoHeader{
+        width: 70px;
+    }
+    header p{
+        font-size: 15px;
+    }
+    .input-pesquisa {
+        font-size: 17px;
+        width: 320px;
+        height: 40px;
+        padding-left: 20px;
+    }
+    .select-pesquisa {
+        margin-top: 20px;
+        font-size: 17px;
+        width: 250px;
+        height: 40px;
+    }
+    .cards {
+        margin: 0 30px;
+    }
+    .link_title {
+        font-size: 15px;
+    }
+    footer .links div a {
+        font-size: 14px;
+    }
+    footer .logo p {
+        font-size: 20px;
+    }
+    .logoFooter{
+        width: 50px;
+    }
+}
+@media (max-width:350px) {
+    .logoHeader{
+        width: 60px;
+    }
+    header p{
+        font-size: 14px;
+    }
+    .titulo{
+        font-size: 26px;
+    }
+    .titulo2{
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .input-pesquisa {
+        font-size: 15px;
+        width: 280px;
+        height: 40px;
+        padding-left: 20px;
+    }
+    .select-pesquisa {
+        margin-top: 20px;
+        font-size: 15px;
+        width: 220px;
+        height: 40px;
+    }
+    .card {
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 380px;
+    }
+    .card img {
+        width: 250px;
+    }
+    .titulo-card {
+        font-size: 20px;
+    }
+    .card-bottom {
+        height: 55px;
+    }
+    .card-bottom h2 {
+        font-size: 18px;
+        margin: 20px
+    }
+    .card p{
+        font-size: 14px;
+        padding: 0 65px;
+    }
+    .link_title {
+        font-size: 14px;
+    }
+    footer .links div a {
+        font-size: 13px;
+    }
+    footer .logo p {
+        font-size: 17px;
+    }
+    .logoFooter{
+        width: 40px;
+    }
+}
+@media (max-width:320px) {
+    .input-pesquisa {
+        font-size: 15px;
+        width: 250px;
+        height: 40px;
+        padding-left: 20px;
+    }
+    .select-pesquisa {
+        margin-top: 20px;
+        font-size: 15px;
+        width: 210px;
+        height: 40px;
+    }
+    .card {
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 370px;
+    }
+    .link_title {
+        font-size: 13px;
+    }
+    footer .links div a {
+        font-size: 12px;
+    }
+}
