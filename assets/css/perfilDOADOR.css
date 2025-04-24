@@ -3,6 +3,8 @@ body {
   background-color: var(--offWhite);
 }
 
+/*- - - - - - - - - - navbar - - - - - - - - - -*/
+
 header{
     display: flex;
     align-items: center;
@@ -36,6 +38,9 @@ header .slogan{
     text-align: center;
     color: var(--verdeEscuro);
 }
+
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
+
 .linkPerfil{
     text-decoration: none;
     color: var(--verdeClaro);
@@ -171,6 +176,9 @@ section div {
 .confirmeSenhaPerfil {
   display: none;
 }
+
+/*- - - - - - - - - - rodapé - - - - - - - - - -*/
+
 footer {
   display: flex;
   align-items: center;
@@ -223,6 +231,8 @@ footer .links div a {
   text-decoration: none;
   color: var(--offWhite);
 }
+
+/*- - - - - - - - - - responsividade - - - - - - - - - -*/
 
 @media (max-width:1024px) {
   header main{

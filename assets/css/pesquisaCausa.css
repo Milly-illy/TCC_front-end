@@ -4,6 +4,8 @@ body {
     overflow-x: hidden;
 }
 
+/*- - - - - - - - - - navbar - - - - - - - - - -*/
+
 header {
     display: flex;
     align-items: center;
@@ -48,6 +50,9 @@ header .slogan {
     text-align: center;
     color: var(--verdeEscuro);
 }
+
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
+
 .foto {
     width: 80px;
     transition: transform 0.4s ease-in-out;
@@ -271,7 +276,7 @@ main .cards .card {
     gap: 5px;
 }
 
-/* - - - - - - - - - - - - - Rodapé - - - - - - - - - - - - - */
+/*- - - - - - - - - - rodapé - - - - - - - - - -*/
 
 footer {
     display: flex;
@@ -325,6 +330,8 @@ footer .links div a {
     text-decoration: none;
     color: var(--offWhite);
 }
+
+/*- - - - - - - - - - responsividade - - - - - - - - - -*/
 
 @media (max-width:1024px) {
     main .cards .card {

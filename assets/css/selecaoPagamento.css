@@ -3,6 +3,8 @@ body {
     background-color: var(--offWhite);
 }
 
+/*- - - - - - - - - - navbar - - - - - - - - - -*/
+
 header {
     display: flex;
     align-items: center;
@@ -10,7 +12,6 @@ header {
     flex-direction: column;
     width: 100%;
 }
-
 header main {
     display: flex;
     align-items: center;
@@ -20,25 +21,21 @@ header main {
     padding: 5px 60px;
     height: 127px;
 }
-
 header nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 50px;
 }
-
 header nav a {
     color: var(--offWhite);
     font-size: 20px;
     font-weight: 500;
 }
-
 header p {
     color: var(--verdeClaro);
     font-size: 20px;
 }
-
 header .slogan {
     background-color: var(--verdeClaro);
     width: 100%;
@@ -47,12 +44,14 @@ header .slogan {
     color: var(--verdeEscuro);
 }
 
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
+
+
 .setaVoltar {
     width: 50px;
     margin-left: 50px;
     margin-top: 50px;
 }
-
 .titulo {
     margin-top: 20px;
     display: flex;
@@ -63,7 +62,6 @@ header .slogan {
     color: var(--azulEscuro);
     transition: all 400ms;
 }
-
 .titulo2 {
     transition: all 400ms;
     margin-top: 60px;
@@ -72,14 +70,12 @@ header .slogan {
     font-size: 40px;
     color: var(--azulEscuro);
 }
-
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
 .sub-main {
     display: flex;
     align-items: center;
@@ -184,12 +180,11 @@ header .slogan {
     transition: all 0.4s ease;
     cursor: pointer;
 }
-
 .button button:hover {
     transform: scale(1.08);
 }
 
-/* - - - - - - - - - - - - - Rodapé - - - - - - - - - - - - - */
+/*---------- rodapé ----------*/
 
 footer {
     display: flex;
@@ -201,7 +196,6 @@ footer {
     margin-top: 150px;
     padding: 20px;
 }
-
 footer .logo {
     display: flex;
     align-items: center;
@@ -244,6 +238,9 @@ footer .links div a {
     text-decoration: none;
     color: var(--offWhite);
 }
+
+/*---------- responsividade ----------*/
+
 @media (max-width:1400px) {
     .titulo-card {
         font-size: 30px;

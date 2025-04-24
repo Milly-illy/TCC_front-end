@@ -14,7 +14,6 @@ body {
 
   overflow-y: hidden;
 }
-
 main {
   display: flex;
   width: 80%;
@@ -26,6 +25,9 @@ main {
   background-color: var(--verdeClaro);
 }
 
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
+
+
 .logo{
   width: 120px;
   position: absolute;
@@ -33,11 +35,9 @@ main {
   left: 20px;
   transition: transform 0.3s ease
 }
-
 .logo:hover {
   transform: scale(1.2); /* Aumenta a imagem em 20% */
 }
-
 .logoLogin{
   display: flex;
   justify-content: center;
@@ -45,7 +45,6 @@ main {
   width: 300px;
   margin: 0 auto; 
 }
-
 main a{
   color: var(--begeClaro);
   text-decoration: none;
@@ -56,30 +55,25 @@ main a{
   line-height: 2.3;
   transition: all 300ms ease;
 }
-
 a:hover{
   background-color: var(--begeClaro);
   color: var(--verde);
   text-shadow: none;
 }
-
 p{
   color: var(--begeClaro);
 }
-
 .title{
   font-size: 40px;
   font-weight: bold;
   text-shadow: 8px 6px 7px rgba(0, 0, 0, 0.5);
 }
-
 .subtitle{
   font-size: 20px;
   white-space: nowrap;
   line-height: 2.5;
   text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 .form1{
   background-color: var(--verde);
   padding: 10px;
@@ -90,7 +84,6 @@ p{
   width: 50%;
   border-radius: 15px 0 0 15px;
 }
-
 .form2{
   padding: 10px;
   display: flex;
@@ -99,18 +92,15 @@ p{
   text-align: center;
   width: 50%;
 }
-
 .form2 .links{
   display: none;
 }
-
 .title2{
   font-size: 40px;
   font-weight: bold;
   text-shadow: 8px 6px 7px rgba(0, 0, 0, 0.5);
   margin-bottom: 70px;
 }
-
 input{
   background-color: var(--verde);
   border: none;
@@ -121,12 +111,10 @@ input{
   font-size: 18px;
   margin: 15px;
 }
-
 input::placeholder{
   color: var(--verdeClaro);
   font-size: 18px;
 }
-
 button{
   background-color: var(--verde);
   color: var(--begeClaro);
@@ -138,12 +126,10 @@ button{
   cursor: pointer;
   transition: all 400ms ease;
 }
-
 button:hover{
   background-color: var(--bege);
   color: var(--verdeEscuro);
 }
-
 input[type="email"] {
   background-image: url("../images/email_login.png"); /* URL do ícone */
   background-repeat: no-repeat;
@@ -151,7 +137,6 @@ input[type="email"] {
   background-size: 25px;
   padding-left: 35px; /* Espaço para o ícone */
 }
-
 input[type="password"] {
   background-image: url("../images/password_login.png"); /* URL do ícone */
   background-repeat: no-repeat;
@@ -160,7 +145,7 @@ input[type="password"] {
   padding-left: 35px; /* Espaço para o ícone */
 }
 
-
+/*- - - - - - - - - - responsividade - - - - - - - - - -*/
 
 @media (max-width:1024px) {
   main {
@@ -171,53 +156,41 @@ input[type="password"] {
   main a{
     font-size: 15px;
   }
-
   .title{
     font-size: 30px;
   }
-
   .logoLogin{
     width: 200px;
   }
-
   .subtitle{
     font-size: 18px;
   } 
-  
   .logo{
     width: 100px;
   }
-
   .title2{
     font-size: 30px;
     margin-bottom: 40px;
   }
-
   input{
     font-size: 18px;
   }
-  
   input::placeholder{
     font-size: 18px;
   }
-
   button{
     font-size: 18px;
     padding: 3px 45px;
   }
-
   input[type="email"] {
     background-size: 20px;
     padding-left: 30px; 
   }
-  
   input[type="password"] {
     background-size: 20px;
     padding-left: 30px; 
   }
-  
 }
-
 @media (max-width:900px) {
   main {
     width: 75%;
@@ -264,7 +237,6 @@ input[type="password"] {
     background-size: 19px;
   }
 }
-
 @media (max-width:710px) {
   main {
     height: 375px;
@@ -299,7 +271,6 @@ input[type="password"] {
     background-size: 17px;
   }
 }
-
 @media (max-width:710px) {
   main {
     height: 365px;
@@ -325,7 +296,6 @@ input[type="password"] {
     padding-left: 25px; 
   }
 }
-
 @media (max-width:610px) {
   main {
     height: 355px;
@@ -346,7 +316,6 @@ input[type="password"] {
     font-size: 12px;
   } 
 }
-
 @media (max-width:567px) {
   main {
     height: 345px;
@@ -387,7 +356,6 @@ input[type="password"] {
     font-size: 12px;
   }
 }
-
 @media (max-width:530px) {
   .logo{
     width: 80px;
@@ -443,7 +411,6 @@ input[type="password"] {
     font-size: 15px;
   }
 }
-
 @media (max-width:375px) {
   .logo{
     width: 75px;
@@ -477,13 +444,11 @@ input[type="password"] {
     font-size: 14px;
   }
 }
-
 @media (max-width:349px) {
   main a{
     font-size: 12px;
   }
 }
-
 @media (max-width:327px) {
   main {
     width: 80%;

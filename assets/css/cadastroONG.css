@@ -14,6 +14,9 @@ body {
   min-height: 100vh;
 
 }
+
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
+
 h1 {
   color: var(--begeClaro);
   text-shadow: 8px 6px 7px rgba(0, 0, 0, 0.5);
@@ -247,7 +250,7 @@ button:hover{
   height: 175px;
 }
 
-/*---------- responsividade ----------*/
+/*- - - - - - - - - - responsividade - - - - - - - - - -*/
 
 @media (max-width:1631px) {
   .inputs_logo{

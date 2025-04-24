@@ -2,6 +2,9 @@ body {
   min-height: 100vh;
   background-color: var(--offWhite);
 }
+
+/*- - - - - - - - - - navbar - - - - - - - - - -*/
+
 header {
   display: flex;
   align-items: center;
@@ -35,6 +38,9 @@ header .slogan {
   text-align: center;
   color: var(--verdeEscuro);
 }
+
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
+
 .linkPerfil {
   text-decoration: none;
   color: var(--verdeClaro);
@@ -207,6 +213,9 @@ button {
   width: 100%;
   justify-content: center;
 }
+
+/*- - - - - - - - - - rodapé - - - - - - - - - -*/
+
 footer {
   display: flex;
   align-items: center;
@@ -260,7 +269,7 @@ footer .links div a {
   color: var(--offWhite);
 }
 
-/*---------- responsividade ----------*/
+/*- - - - - - - - - - responsividade - - - - - - - - - -*/
 
 @media (max-width:1440px) {
   .picture {

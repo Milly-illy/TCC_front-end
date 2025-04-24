@@ -2,6 +2,8 @@ body {
     background-color: var(--offWhite);
 }
 
+/*- - - - - - - - - - navbar - - - - - - - - - -*/
+
 header {
     display: flex;
     align-items: center;
@@ -9,7 +11,6 @@ header {
     flex-direction: column;
     width: 100%;
 }
-
 header main {
     display: flex;
     align-items: center;
@@ -19,25 +20,21 @@ header main {
     padding: 5px 60px;
     height: 127px;
 }
-
 header nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 50px;
 }
-
 header nav a {
     color: var(--offWhite);
     font-size: 20px;
     font-weight: 500;
 }
-
 header p {
     color: var(--verdeClaro);
     font-size: 20px;
 }
-
 header .slogan {
     background-color: var(--verdeClaro);
     width: 100%;
@@ -46,7 +43,7 @@ header .slogan {
     color: var(--verdeEscuro);
 }
 
-/* - - - - - - - - - - - - - Conteúdo - - - - - - - - - - - - - */
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
 
 .pesquisa{
     padding: 5px 0;
@@ -64,7 +61,6 @@ header .slogan {
     align-items: center;
     margin-top: 100px;
 }
-
 .sub-main {
     display: flex;
     align-items: center;
@@ -75,30 +71,25 @@ header .slogan {
     height: auto;
     padding: 40px;
 }
-
 .sub-main .titulo {
     display: flex;
     flex-direction: column;
     font-size: 50px;
     color: var(--azulEscuro);
 }
-
 .subtitulo-p {
     font-size: 20px;
     color: var(--azulClaro);
     margin: 10px
 }
-
 .subtitulo-p .subtitulo-b {
     font-style: oblique;
 }
-
 .conteudo {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 .itens-direita {
     padding: 20px 0;
     display: flex;
@@ -111,7 +102,6 @@ header .slogan {
     flex-direction: column;
     align-items: center;
 }
-
 .descricao {
     background-color: var(--begeClaro);
     width: 800px;
@@ -119,7 +109,6 @@ header .slogan {
     font-size: 24px;
     margin-bottom: 30px;
 }
-
 .informacoes {
     background-color: var(--begeClaro);
     width: 800px;
@@ -127,25 +116,21 @@ header .slogan {
     padding: 30px;
     font-size: 22px;
 }
-
 .informacoes .programacao,
 .informacoes .horario {
     display: flex;
     justify-content: space-between;
     padding: 14px;
 }
-
 .informacoes .local {
     display: flex;
     justify-content: center;
     font-size: 24px;
     margin: 20px
 }
-
 .itens-direita .foto-dog {
     width: 70%
 }
-
 .botao {
     font-size: 25px;
     margin-top: 30px;
@@ -158,13 +143,11 @@ header .slogan {
     height: 60px;
     transition: background-color 0.3s ease;
 }
-
 .botao:hover {
     background-color: var(--verde);
 }
 
-
-/* - - - - - - - - - - - - - Rodapé - - - - - - - - - - - - - */
+/*- - - - - - - - - - rodapé - - - - - - - - - -*/
 
 footer {
     display: flex;
@@ -175,7 +158,6 @@ footer {
     margin-top: 150px;
     padding: 20px;
 }
-
 footer .logo {
     display: flex;
     align-items: center;
@@ -186,13 +168,11 @@ footer .logo {
     margin-top: 40px;
     gap: 10px;
 }
-
 footer .logo p {
     color: var(--offWhite);
     font-family: "MoonDance";
     font-size: 50px;
 }
-
 footer .links {
     display: flex;
     align-items: center;
@@ -200,13 +180,11 @@ footer .links {
     width: 80%;
     margin: 0 auto;
 }
-
 .link_title {
     font-weight: 600;
     font-size: 28px;
     color: var(--offWhite);
 }
-
 footer .links div {
     display: flex;
     align-items: center;
@@ -216,13 +194,15 @@ footer .links div {
     gap: 15px;
     width: 20%;
 }
-
 footer .links div a {
     font-size: 24px;
     font-family: 'Montserrat-Light';
     text-decoration: none;
     color: var(--offWhite);
 }
+
+/*- - - - - - - - - - responsividade - - - - - - - - - -*/
+
 @media (max-width:1565px) {
     .itens-esquerda{
         padding: 20px 10px 0px 30px;

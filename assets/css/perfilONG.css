@@ -3,6 +3,8 @@ body {
   background-color: var(--offWhite);
 }
 
+/*- - - - - - - - - - navbar - - - - - - - - - -*/
+
 header {
   display: flex;
   align-items: center;
@@ -37,21 +39,20 @@ header .slogan {
   color: var(--verdeEscuro);
 }
 
+/*- - - - - - - - - - conteúdo - - - - - - - - - -*/
+
 .foto {
   width: 80px;
   transition: transform 0.4s ease-in-out;
   cursor: pointer;
 }
-
 .foto:hover {
   transform: scale(1.2);
 }
-
 .linkPerfil {
   text-decoration: none;
   color: var(--verdeClaro);
 }
-
 .titulo {
   margin-top: 30px;
   font-size: 50px;
@@ -59,30 +60,24 @@ header .slogan {
   text-align: center;
   padding-bottom: 25px;
 }
-
 .gallery{
   width: 100%;
 }
-
 .title_gallery{
   color: var(--azulEscuro);
   font-size: 35px;
   margin-top: 250px;
 }
-
 .photos_gallery{
   width: 100%;
   background-color: var(--offWhite);  
 }
-
 .photos_gallery img{
   width: 30%;
 }
-
 #picture__input {
   display: none;
 }
-
 .picture {
   width: 20%;
   height: 500px;
@@ -99,33 +94,27 @@ header .slogan {
   outline: none;
   overflow: hidden;
 }
-
 .picture:hover {
   color: var(--verdeEscuro);
   background: var(--bege);
 }
-
 .picture:active {
   border-color: var(--verdeEscuro);
   color: turquoise;
   background: #eee;
 }
-
 .picture:focus {
   color: var(--offWhite);
   background: var(--verdeEscuro);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .picture__img {
   max-width: 100%;
 }
-
 main{
   background-color: var(--bege);
   padding: 50px 60px;
 }
-
 form {
   display: flex;
   align-items: start;
@@ -134,14 +123,12 @@ form {
   /* padding: 50px 60px; */
   width: 100%;
 }
-
 form div {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-
 button {
   /* background-color: var(--amarelo); */
   color: var(--azulEscuro);
@@ -150,7 +137,6 @@ button {
   width: 100%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 .editarPerfil {
   display: flex;
   flex-direction: row;
@@ -160,54 +146,44 @@ button {
   margin-top: 55px;
   width: 100%;
 }
-
 .editarPerfil #editar, #salvar, #cancelar {
   width: 23%;
   transition: all 400ms ease;
 }
-
 #editar {
   background-color: var(--amarelo);
   border-radius: 5px;
   height: 40px;
 }
-
 #editar:hover {
   background-color: #ffee8f;
   cursor: pointer;
 }
-
 #salvar {
   background-color: rgb(180, 238, 180);
   border-radius: 5px;
   height: 40px;
 }
-
 #salvar:hover {
   background-color: #8ee48e;
   cursor: pointer;
 }
-
 #cancelar {
   background-color: rgb(243, 131, 131);
   border-radius: 5px;
   height: 40px;
 }
-
 #cancelar:hover {
   background-color: #e55959;
   cursor: pointer;
 }
-
 #salvar:disabled, #cancelar:disabled, #editar:disabled{
   background-color: lightgray;
 }
-
 #salvar:disabled:hover, #cancelar:disabled:hover, #editar:disabled:hover{
   background-color: lightgray;
   cursor: default;
 }
-
 .addEventos{
   background-color: var(--verde);
   width: 50%;
@@ -220,29 +196,24 @@ button {
   text-decoration: none;
   font-size: 20px;
 }
-
 .buttons {
   display: flex;
   flex-direction: row;
   gap: 20px;
   width: 100%;
 }
-
 .buttons button {
   background-color: var(--amarelo);
   border-radius: 3px;
 }
-
 .buttons button:hover {
   background-color: #ffee8f;
   cursor: pointer;
 }
-
 label {
   color: var(--azul);
   font-size: 24px;
 }
-
 input,
 select,
 textarea {
@@ -259,11 +230,9 @@ textarea{
     height: 250px;
     resize: none;
 }
-
 input::placeholder {
   font-size: 24px;
 }
-
 section {
   width: 35%;
   margin-top: -20px;
@@ -271,7 +240,6 @@ section {
 section div {
   margin-top: 20px;
 }
-
 .fotoPerfil {
   display: flex;
   align-items: center;
@@ -290,6 +258,9 @@ section div {
 .confirmeSenhaOng {
   display: none;
 }
+
+/*- - - - - - - - - - rodapé - - - - - - - - - -*/
+
 footer {
   display: flex;
   align-items: center;
