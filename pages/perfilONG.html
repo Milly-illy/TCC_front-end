@@ -9,24 +9,45 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="../assets/css/perfilONG.css" />
 
-    <script src="../assets/js/config.js" defer></script>
+    <script src="../assets/js/perfilONG.js" defer></script>
 </head>
 
 <body>
     <!-- Mensagens de sucesso ou erro apareceriam aqui -->
 
+    <div class="modal" id="modal">
+        <div class="modal-top">
+            <h2>Cadastre sua conta do mercado pago</h2>
+            <img src="../assets/images/icones/close.svg" id="closeModal" class="close">
+        </div>
+        <div class="modal-bottom">
+
+            <h1>Bem vindo ao futuro!</h1>
+            <p>Para facilitar o recebimento de pagamentos e gerenciar suas transações, cadastre sua conta do
+                MercadoPago
+                agora. Com isso, você poderá realizar pagamentos de forma mais rápida e segura.
+                Clique no botão abaixo para inserir seus dados e conectar sua conta.</p>
+
+            <hr>
+            <div class="botao-modal">
+                <img src="../assets/images/icones/mercado-pago.png" class="icone-modal-top">
+                <button class="botao">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
     <div class="overlay" id="overlay"></div>
 
     <header>
-      <main>
-        <a href="../index.html">
-          <img src="../assets/images/logo/Logo Header.png" alt="logo" />
-        </a>
-        <nav>
-          <a class="linkPerfil" href="./perfilONG.html">Bom te ver <b>Amigos da vizinhança</b></a>
-        </nav>
-      </main>
-      <div class="slogan"></div>
+        <main>
+            <a href="../index.html">
+                <img src="../assets/images/logo/Logo Header.png" alt="logo" />
+            </a>
+            <nav>
+                <a class="linkPerfil" href="./perfilONG.html">Bom te ver <b>Amigos da vizinhança</b></a>
+            </nav>
+        </main>
+        <div class="slogan"></div>
     </header>
 
     <main>
@@ -36,15 +57,18 @@
                 <section>
                     <div class="nomeOng">
                         <label for="nomeOng">Nome</label>
-                        <input class="input" type="text" name="nome" placeholder="Seu Nome" value="Causa Viva" disabled />
+                        <input class="input" type="text" name="nome" placeholder="Seu Nome" value="Causa Viva"
+                            disabled />
                     </div>
                     <div class="nomeCriadores">
                         <label for="nomeCriadores">Criadores</label>
-                        <input class="input" type="text" name="donos" placeholder="Nome dos Criadores" value="João e Maria" disabled />
+                        <input class="input" type="text" name="donos" placeholder="Nome dos Criadores"
+                            value="João e Maria" disabled />
                     </div>
                     <div class="emialOng">
                         <label for="emialOng">Email</label>
-                        <input class="input" type="email" name="email" placeholder="Seu Email" value="contato@causaviva.org" disabled />
+                        <input class="input" type="email" name="email" placeholder="Seu Email"
+                            value="contato@causaviva.org" disabled />
                     </div>
                     <div class="metaFinanceira">
                         <label for="metaFinanceira">Meta Financeira</label>
@@ -52,11 +76,13 @@
                     </div>
                     <div class="cnpjOng">
                         <label for="cnpjOng">CNPJ</label>
-                        <input class="input" type="text" name="documento" placeholder="CNPJ da ONG" value="00.000.000/0001-00" disabled />
+                        <input class="input" type="text" name="documento" placeholder="CNPJ da ONG"
+                            value="00.000.000/0001-00" disabled />
                     </div>
                     <div class="descricaoOng">
                         <label for="descricaoOng">Descrição</label>
-                        <textarea class="input" name="descricao" disabled>Trabalhamos com ações sociais na região metropolitana.</textarea>
+                        <textarea class="input" name="descricao"
+                            disabled>Trabalhamos com ações sociais na região metropolitana.</textarea>
                     </div>
                 </section>
 
@@ -97,7 +123,8 @@
                     </div>
                     <div>
                         <label for="necessidadesOng">Necessidades</label>
-                        <input class="input" type="text" name="necessidades" value="Alimentos, roupas, brinquedos" disabled>
+                        <input class="input" type="text" name="necessidades" value="Alimentos, roupas, brinquedos"
+                            disabled>
                     </div>
                     <div class="editarPerfil">
                         <button id="editar" type="button">Editar</button>
@@ -109,7 +136,7 @@
             </form>
             <section class="fotoPerfil">
                 <div class="img">
-                    <img src="logos/logo.png" alt="Foto de perfil" />
+                    <img src="../assets/images/logo/logoAuth.png" alt="Foto de perfil" />
                 </div>
                 <form action="#" class="buttons" method="POST" enctype="multipart/form-data">
                     <label for="upload" class="upload-label">Clique aqui para mudar a foto</label>
@@ -121,78 +148,93 @@
         <section class="gallery">
             <h2 class="title_gallery">Sua Galeria</h2>
             <div class="slider">
+                <p class="voltar seta">&gt;</p>
                 <div class="images-wrapper" id="images-wrapper">
                     <div class="images">
                         <div class="img">
-                            <button type="button">
-                                <img src="../assets/images/icones/delete.svg" alt="delete">
-                            </button>
-                            <img src="../assets/images/galeria/galeria-ong.jpg" alt="Imagem da galeria 1">
+                            <form action="" class="deleteForm" method="POST">
+                                <button type="submit">
+                                    <img src="../assets/images/icones/delete.svg" alt="delete">
+                                </button>
+                            </form>
+                            <img src="../assets/images/galeria/photo1.png">
                         </div>
                         <div class="img">
-                            <button type="button">
-                                <img src="../assets/images/icones/delete.svg" alt="delete">
-                            </button>
-                            <img src="../assets/images/galeria/galeria-ong.jpg" alt="Imagem da galeria 2">
+                            <form action="" class="deleteForm" method="POST">
+                                <button type="submit">
+                                    <img src="../assets/images/icones/delete.svg" alt="delete">
+                                </button>
+                            </form>
+                            <img src="../assets/images/galeria/photo2.png">
                         </div>
                         <div class="img">
-                          <button type="button">
-                              <img src="../assets/images/icones/delete.svg" alt="delete">
-                          </button>
-                          <img src="../assets/images/galeria/galeria-ong.jpg" alt="Imagem da galeria 2">
-                      </div>
-                      <div class="img">
-                        <button type="button">
-                            <img src="../assets/images/icones/delete.svg" alt="delete">
-                        </button>
-                        <img src="../assets/images/galeria/galeria-ong.jpg" alt="Imagem da galeria 2">
-                    </div>
-                    <div class="img">
-                      <button type="button">
-                          <img src="../assets/images/icones/delete.svg" alt="delete">
-                      </button>
-                      <img src="../assets/images/galeria/galeria-ong.jpg" alt="Imagem da galeria 2">
-                  </div>
-                  <div class="img">
-                            <button type="button">
-                                <img src="../assets/images/icones/delete.svg" alt="delete">
-                            </button>
-                            <img src="../assets/images/galeria/galeria-ong.jpg" alt="Imagem da galeria 2">
-                        </div>    
+                            <form action="" class="deleteForm" method="POST">
+                                <button type="submit">
+                                    <img src="../assets/images/icones/delete.svg" alt="delete">
+                                </button>
+                            </form>
+                            <img src="../assets/images/galeria/photo3.png">
+                        </div>
+                        <div class="img">
+                            <form action="" class="deleteForm" method="POST">
+                                <button type="submit">
+                                    <img src="../assets/images/icones/delete.svg" alt="delete">
+                                </button>
+                            </form>
+                            <img src="../assets/images/galeria/photo4.png">
+                        </div>
+                        <div class="img">
+                            <form action="" class="deleteForm" method="POST">
+                                <button type="submit">
+                                    <img src="../assets/images/icones/delete.svg" alt="delete">
+                                </button>
+                            </form>
+                            <img src="../assets/images/galeria/photo1.png">
+                        </div>
+                        <div class="img">
+                            <form action="" class="deleteForm" method="POST">
+                                <button type="submit">
+                                    <img src="../assets/images/icones/delete.svg" alt="delete">
+                                </button>
+                            </form>
+                            <img src="../assets/images/galeria/photo2.png">
+                        </div>
                     </div>
                 </div>
-                <p class="seta">></p>
+                <p class="proxima seta">&gt;</p>
             </div>
-            <form class="addimg" action="#" method="POST" enctype="multipart/form-data">
+            <form class="addimg" action="{{ route('ong.addimg') }}" method="POST" enctype="multipart/form-data">
+
                 <label for="add" class="add-label">Adicionar fotos</label>
-                <input type="file" id="add" name="image" accept="image/png, image/jpeg, image/jpg" hidden />
+                <input type="file" id="add" name="image" accept="image/png, image/jpeg, image/jpg" hidden
+                    onchange="this.form.submit()" />
             </form>
         </section>
     </main>
 
     <footer>
-      <div class="links">
-        <div>
-          <p class="link_title">Seja Bem Vindo</p>
-          <a href="#sobre">Descubra quem somos</a>
-          <a href="#sobre">De uma olhada nas nossas redes sociais :</a>
+        <div class="links">
+            <div>
+                <p class="link_title">Seja Bem Vindo</p>
+                <a href="#sobre">Descubra quem somos</a>
+                <a href="#sobre">De uma olhada nas nossas redes sociais :</a>
+            </div>
+            <div>
+                <p class="link_title">Ajuda</p>
+                <a href="#sobre">Fale conosco</a>
+                <a href="#sobre">Central de Suporte</a>
+            </div>
+            <div>
+                <p class="link_title">Contato</p>
+                <a href="#sobre">Instagram</a>
+                <a href="#sobre">Whatsapp</a>
+            </div>
         </div>
-        <div>
-          <p class="link_title">Ajuda</p>
-          <a href="#sobre">Fale conosco</a>
-          <a href="#sobre">Central de Suporte</a>
+        <div class="logo">
+            <p>Conectando corações</p>
+            <img src="../assets/images/logo/logo footer.png" alt="logo" />
+            <p>transformando vidas</p>
         </div>
-        <div>
-          <p class="link_title">Contato</p>
-          <a href="#sobre">Instagram</a>
-          <a href="#sobre">Whatsapp</a>
-        </div>
-      </div>
-      <div class="logo">
-        <p>Conectando corações</p>
-        <img src="../assets/images/logo/logo footer.png" alt="logo" />
-        <p>transformando vidas</p>
-      </div>
     </footer>
 </body>
 

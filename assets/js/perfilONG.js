@@ -1,17 +1,17 @@
-const meta = document.getElementById("metaFinanceira");
-meta.addEventListener("input", function (e) {
-    let value = e.target.value.replace(/\D/g, "");
+// const meta = document.getElementById("metaFinanceira");
+// meta.addEventListener("input", function (e) {
+//     let value = e.target.value.replace(/\D/g, "");
 
-    if (value.length > 8) {
-        value = value.substring(0, 8);
-    }
+//     if (value.length > 8) {
+//         value = value.substring(0, 8);
+//     }
 
-    value = (parseFloat(value) / 100).toFixed(2);
+//     value = (parseFloat(value) / 100).toFixed(2);
 
-    value = value.replace(".", ",").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+//     value = value.replace(".", ",").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-    e.target.value = "R$ " + value;
-});
+//     e.target.value = "R$ " + value;
+// });
 
 const edit = document.getElementById("editar");
 const save = document.getElementById("salvar");
@@ -136,3 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+const modal = document.getElementById("modal");
+const close = document.getElementById("closeModal");
+
+close.addEventListener("click", function(){
+  modal.style.display = "none";
+})
