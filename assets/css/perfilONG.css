@@ -3,19 +3,22 @@ body {
   background-color: var(--offWhite);
   overflow-x: hidden;
 }
-main{
+
+main {
   /* margin: 50px 0; */
   background-color: var(--bege);
   padding: 30px 60px;
 }
-.msg{
+
+.msg {
   position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.msg p{
+
+.msg p {
   width: 50%;
   border-radius: 0px 0px 10px 10px;
   border-top: none;
@@ -25,24 +28,29 @@ main{
   animation: msg 3s linear both;
   box-shadow: 0px 5px 20px 2px var(--verdeEscuro);
 }
-.sucMsg{
+
+.sucMsg {
   background-color: var(--verdeClaro);
   border: 2px solid var(--verde);
   color: var(--verdeEscuro);
 }
+
 .errorMsg {
   background-color: rgb(255, 148, 148);
   border: 2px solid rgb(170, 0, 0);
   color: rgb(170, 0, 0);
 }
+
 @keyframes msg {
-  0%{
+  0% {
     opacity: 1;
   }
-  75%{
+
+  75% {
     opacity: 1;
   }
-  100%{
+
+  100% {
     opacity: 0;
   }
 }
@@ -54,6 +62,7 @@ header {
   flex-direction: column;
   width: 100%;
 }
+
 header main {
   display: flex;
   align-items: center;
@@ -62,17 +71,20 @@ header main {
   background-color: var(--verde);
   padding: 5px 60px;
 }
+
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 50px;
 }
+
 header nav a {
   color: var(--offWhite);
   font-size: 20px;
   font-weight: 500;
 }
+
 header .slogan {
   background-color: var(--verdeClaro);
   width: 100%;
@@ -98,22 +110,22 @@ header .slogan {
   padding-bottom: 60px;
 }
 
-.gallery{
+.gallery {
   width: 100%;
 }
 
-.title_gallery{
+.title_gallery {
   color: var(--azulEscuro);
   font-size: 35px;
   margin-top: 100px;
 }
 
-.photos_gallery{
+.photos_gallery {
   width: 100%;
-  background-color: var(--offWhite);  
+  background-color: var(--offWhite);
 }
 
-.photos_gallery img{
+.photos_gallery img {
   width: 30%;
 }
 
@@ -158,12 +170,14 @@ header .slogan {
 .picture__img {
   max-width: 100%;
 }
-.form{
+
+.form {
   display: flex;
   align-items: start;
   justify-content: space-between;
   width: 100%;
 }
+
 form {
   display: flex;
   align-items: start;
@@ -199,7 +213,9 @@ button {
   width: 100%;
 }
 
-.editarPerfil #editar, #salvar, #cancelar {
+.editarPerfil #editar,
+#salvar,
+#cancelar {
   width: 23%;
   transition: all 400ms ease;
 }
@@ -237,29 +253,37 @@ button {
   cursor: pointer;
 }
 
-#salvar:disabled, #cancelar:disabled, #editar:disabled{
+#salvar:disabled,
+#cancelar:disabled,
+#editar:disabled {
   background-color: lightgray;
 }
 
-#salvar:disabled:hover, #cancelar:disabled:hover, #editar:disabled:hover{
+#salvar:disabled:hover,
+#cancelar:disabled:hover,
+#editar:disabled:hover {
   background-color: lightgray;
   cursor: default;
 }
-input:disabled, textarea:disabled{
+
+input:disabled,
+textarea:disabled {
   opacity: 0.6;
 }
 
-.num_estOng{
+.num_estOng {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   gap: 50px;
 }
-.num_estOng div{
+
+.num_estOng div {
   margin-top: 0;
 }
-.addEventos{
+
+.addEventos {
   background-color: var(--verde);
   width: 50%;
   padding: 10px;
@@ -289,9 +313,10 @@ textarea {
   padding: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-textarea{
-    height: 250px;
-    resize: none;
+
+textarea {
+  height: 250px;
+  resize: none;
 }
 
 input::placeholder {
@@ -302,6 +327,7 @@ section {
   width: 45%;
   margin-top: -20px;
 }
+
 section div {
   margin-top: 20px;
 }
@@ -313,26 +339,29 @@ section div {
   flex-direction: column;
   gap: 10px;
   width: 20%;
+}
+
+.fotoPerfil .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.fotoPerfil .img {
-   width: 200px;
-   height: 200px;
-   border-radius: 50%;
-   overflow: hidden;
-   align-items: center;
-}
-.fotoPerfil .img img{
+
+.fotoPerfil .img img {
   height: 100%;
 }
+
 .buttons {
   display: flex;
   flex-direction: row;
   gap: 20px;
   width: 100%;
 }
+
 .buttons input {
   background-color: var(--verdeClaro);
   color: var(--offWhite);
@@ -345,11 +374,14 @@ section div {
   text-align: center;
   font-size: 18px;
 }
+
 .buttons input:hover {
   background-color: var(--verde);
   cursor: pointer;
 }
-.upload-label, .add-label {
+
+.upload-label,
+.add-label {
   background-color: var(--verde);
   color: var(--offWhite);
   font-weight: 600;
@@ -364,18 +396,20 @@ section div {
   margin: 0 auto;
 }
 
-.upload-label:hover, .add-label:hover {
+.upload-label:hover,
+.add-label:hover {
   background-color: var(--verdeEscuro);
 }
 
-.addimg{
+.addimg {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
-.addimg label{
+
+.addimg label {
   width: 50%;
 }
 
@@ -384,7 +418,8 @@ section div {
   width: 100%;
   overflow: hidden;
 }
-.slider .message{
+
+.slider .message {
   font-size: 20px;
   font-weight: 500;
   color: var(--azulEscuro);
@@ -415,11 +450,13 @@ section div {
   overflow: hidden;
   position: relative;
 }
-.images .img img:nth-child(2){
+
+.images .img img:nth-child(2) {
   min-height: 100%;
   min-width: 100%;
 }
-.images .img form{
+
+.images .img form {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -427,7 +464,8 @@ section div {
   opacity: 0;
   transition: all 400ms ease;
 }
-.images .img form button{
+
+.images .img form button {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -436,10 +474,12 @@ section div {
   justify-content: center;
   cursor: pointer;
 }
-.images .img form button img{
+
+.images .img form button img {
   width: 100px;
 }
-.images .img:hover .deleteForm{
+
+.images .img:hover .deleteForm {
   opacity: 1;
 }
 
@@ -478,6 +518,7 @@ footer {
   margin-top: 150px;
   padding: 20px;
 }
+
 footer .logo {
   display: flex;
   align-items: center;
@@ -488,11 +529,13 @@ footer .logo {
   margin-top: 40px;
   gap: 10px;
 }
+
 footer .logo p {
   color: var(--offWhite);
   font-family: "MoonDance";
   font-size: 50px;
 }
+
 footer .links {
   display: flex;
   align-items: center;
@@ -500,11 +543,13 @@ footer .links {
   width: 80%;
   margin: 0 auto;
 }
+
 .link_title {
   font-weight: 600;
   font-size: 28px;
   color: var(--offWhite);
 }
+
 footer .links div {
   display: flex;
   align-items: center;
@@ -514,6 +559,7 @@ footer .links div {
   gap: 15px;
   width: 20%;
 }
+
 footer .links div a {
   font-size: 24px;
   font-family: "Montserrat-Light";
@@ -558,7 +604,8 @@ footer .links div a {
     cursor: pointer;
     transition: all 250ms ease;
   }
-  & .close:hover{
+
+  & .close:hover {
     transform: scale3d(1.1, 1.1, 1.1);
   }
 }
@@ -571,7 +618,7 @@ footer .links div a {
   background-color: var(--offWhite);
   font-size: 20px;
 
-  & h1{
+  & h1 {
     color: var(--azulEscuro);
   }
 
@@ -618,43 +665,161 @@ footer .links div a {
     margin-top: -30px;
     margin-left: 40px;
   }
+
   .modal {
     left: 16%;
   }
-  
 }
+
 @media (max-width:1400px) {
   .modal {
     left: 14%;
   }
+
   .images-wrapper {
     width: 1200px;
     margin-top: -30px;
     margin-left: 40px;
   }
+
   .images .img {
     width: 400px;
     height: 250px;
   }
-  .fotoPerfil{
+
+  .fotoPerfil {
     width: 25%;
   }
 }
+
 @media (max-width:1350px) {
   .images-wrapper {
     width: 1150px;
     margin-top: -30px;
     margin-left: 40px;
   }
+
   .images .img {
     width: 384px;
     height: 250px;
   }
-  .addEventos{
+
+  .addEventos {
     font-size: 18px;
     width: 60%;
   }
-  .fotoPerfil{
-    
+
+  .upload-label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:1300px) {
+  .modal {
+    left: 11%;
+  }
+
+  main {
+    padding: 20px 40px;
+  }
+
+  .images-wrapper {
+    width: 1140px;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+
+  .images .img {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width:1250px) {
+  .images-wrapper {
+    width: 1090px;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width:1200px) {
+  .modal {
+    left: 9%;
+  }
+
+  .images-wrapper {
+    width: 1040px;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width:1150px) {
+  .modal {
+    left: 6%;
+  }
+
+  header main {
+    padding: 5px 40px;
+  }
+
+  .images-wrapper {
+    width: 990px;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 21px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  .fotoPerfil .img img {
+    height: 85%;
+  }
+
+  .upload-label {
+    font-size: 15px;
+  }
+
+  .editarPerfil #editar,
+  #salvar,
+  #cancelar {
+    width: 27%;
+  }
+}
+
+@media (max-width:1100px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fotoPerfil {
+    width: 30%;
+    order: 1;
+  }
+  .form form {
+    flex-direction: column;
+    order: 2;
+    align-items: center;
+  }
+  section {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .titulo{
+    padding-bottom: 20px;
+  }
+  .dataCriacao{
+    margin-top: 40px;
+  }
+  .nomeOng{
+    margin-top: 50px;
   }
 }
