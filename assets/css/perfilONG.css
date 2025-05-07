@@ -822,4 +822,12 @@ footer .links div a {
   .nomeOng{
     margin-top: 50px;
   }
+  .images-wrapper {
+    width: 940px;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+  footer .links div {
+    width: 30%;
+  }
 }
