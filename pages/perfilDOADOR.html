@@ -1,146 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Causa Viva - Perfil do Doador</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../assets/css/perfilDOADOR.css" />
     <script src="../assets/js/config.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <main>
-        <a href="../index.html" class="logoInicio">
-          <img class="logoHeader" src="../assets/images/logo/Logo Header.png" alt="logo" />
-        </a>
-        <nav>
-            <a class="linkPerfil" href="./perfilDOADOR.html">Olá <b>Andressa</b></a>
-        </nav>
-      </main>
-      <div class="slogan"></div>
+        <main>
+            <a href="../index.html" class="logoInicio">
+                <img class="logoHeader" src="../assets/images/logo/Logo Header.png" alt="logo" />
+            </a>
+            <nav>
+                <a class="linkPerfil" href="./perfilDOADOR.html">Olá <b>Andressa</b></a>
+            </nav>
+        </main>
+        <div class="slogan"></div>
     </header>
-
     <main>
-      <h1 class="titulo">Meu Perfil</h1>
+        <h1 class="titulo">Meu Perfil</h1>
 
-      <form action="">
-        <section class="section1">
-          <div class="nomePerfl">
-            <label for="nomePerfl">Nome</label>
-            <input
-              class = "input"
-              type="text"
-              name="nomePerfl"
-              placeholder="Seu Nome"
-              value="Andressa"
-              disabled
-            />
-          </div>
+        <form action="">
+            <section class="section1">
+                <div class="nomePerfl">
+                    <label for="nomePerfl">Nome</label>
+                    <input class="input" type="text" name="nomePerfl" placeholder="Seu Nome" value="Andressa"
+                        disabled />
+                </div>
 
-          <div class="emailPerfil">
-            <label for="emailPerfil">Email</label>
-            <input
-              class = "input"
-              type="email"
-              name="emailPerfil"
-              placeholder="Seu Email"
-              value="andressa@gmail.com"
-              disabled
-            />
-          </div>
+                <div class="emailPerfil">
+                    <label for="emailPerfil">Email</label>
+                    <input class="input" type="email" name="emailPerfil" placeholder="Seu Email"
+                        value="andressa@gmail.com" disabled />
+                </div>
 
-          <div class="senhaPerfil">
-            <label for="senhaPerfil">Senha</label>
-            <input
-              class = "input"
-              type="password"
-              name="senhaPerfil"
-              placeholder="Sua Senha"
-              value="12345678"
-              disabled
-            />
-          </div>
+                <div class="senhaPerfil">
+                    <label for="senhaPerfil">Senha</label>
+                    <input class="input" type="password" name="senhaPerfil" placeholder="Sua Senha" value="12345678"
+                        disabled />
+                </div>
 
-          <div class="confirmeSenhaPerfil" id="confirmeSenha">
-            <label for="confirmeSenhaPerfil">Confirme sua Senha</label>
-            <input
-              class = "input"
-              type="password"
-              name="confirmeSenhaPerfil"
-              placeholder="Confirme sua Senha"
-              value="12345678"
-              disabled
-            />
-          </div>
-        </section>
+                <div class="confirmeSenhaPerfil" id="confirmeSenha">
+                    <label for="confirmeSenhaPerfil">Confirme sua Senha</label>
+                    <input class="input" type="password" name="confirmeSenhaPerfil" placeholder="Confirme sua Senha"
+                        value="12345678" disabled />
+                </div>
+            </section>
+            <section class="section2">
+                <div>
+                    <label for="causaPerfil">Causas em preferência</label>
+                    <select class="input" name="causaPerfil" id="" disabled>
+                        <option value="Proteção Animal">Proteção Animal</option>
+                        <option value="Direitos Humanos e Sociais">
+                            Direitos Humanos e Sociais
+                        </option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Saúde e Bem-Estar">Saúde e Bem-Estar</option>
+                        <option value="Educação e Cultura">Educação e Cultura</option>
+                    </select>
+                </div>
+                <div class="telefonePerfil">
+                    <label for="telefonePerfil">Telefone</label>
+                    <input class="input" type="text" name="telefonePerfil" placeholder="Seu Telefone"
+                        value="(14) 99857-0088" disabled />
+                </div>
+                <div class="editarPerfil">
+                    <button id="editar">Editar</button>
+                    <button type="submit" id="salvar" disabled>Salvar</button>
+                    <button type="reset" id="cancelar" disabled>Cancelar</button>
+                </div>
+            </section>
+            <section class="fotoPerfil">
+                <img src="../assets/images/fotoPerfilDoador.png" alt="" />
+                <div class="buttons">
+                    <button>Mudar</button>
+                    <button>Remover</button>
+                </div>
+            </section>
+        </form>
+        <div class="estatisticas">
+            <div class="titulo-div">
+                <h1 class="titulo">Minhas contribuições</h1>
+            </div>
+            <div style="border-top: 1px solid #ccc; width: 85%; margin: 4vh 0 4vh 0;"></div>
 
-        <section class="section2">
-          <div>
-            <label for="causaPerfil">Causas em preferência</label>
-            <select class="input" name="causaPerfil" id="" disabled >
-              <option value="Proteção Animal">Proteção Animal</option>
-              <option value="Direitos Humanos e Sociais">
-                Direitos Humanos e Sociais
-              </option>
-              <option value="Meio Ambiente">Meio Ambiente</option>
-              <option value="Saúde e Bem-Estar">Saúde e Bem-Estar</option>
-              <option value="Educação e Cultura">Educação e Cultura</option>
-            </select>
-          </div>
-          <div class="telefonePerfil">
-            <label for="telefonePerfil">Telefone</label>
-            <input
-              class = "input"
-              type="text"
-              name="telefonePerfil"
-              placeholder="Seu Telefone"
-              value="(14) 99857-0088"
-              disabled
-            />
-          </div>
-          <div class="editarPerfil">
-            <button id="editar">Editar</button>
+            <div class="titulo2" style="color: var(--azul);">Parabéns! você alcançou mais de <b>R$1.000 <!--BANCO DE DADOS--> </b> em doações</div>
+            <div class="divisoria" style="background-color: var(--azul);">
+                <h1>Minhas doações</h1>
+            </div>
+            <div class="doacoes">
+                <h1>Total doado:</h1>
+                <h1><b>R$ 1.300.00</b></h1> <!--BANCO DE DADOS-->
+            </div>
+            <div class="doacoes">
+                <h1 class="titulo2">Últimas doações:</h1>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="first" scope="col">Data</th>
+                        <th scope="col">ONG</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="first">13/05/2025</td> <!--BANCO DE DADOS-->
+                        <td>Vozes Invisíveis - Direitos Humanos</td> <!--BANCO DE DADOS-->
+                        <td>R$120</td> <!--BANCO DE DADOS-->
+                    </tr>
+                    <tr>
+                        <td class="first">12/05/2025</td> <!--BANCO DE DADOS-->
+                        <td>Patas do Amanhã - Proteção animal</td> <!--BANCO DE DADOS-->
+                        <td>R$150</td> <!--BANCO DE DADOS-->
+                    </tr>
+                    <tr>
+                        <td class="first">12/05/2025</td> <!--BANCO DE DADOS-->
+                        <td>Eco Comunidade - Meio Ambiente</td> <!--BANCO DE DADOS-->
+                        <td>R$100</td> <!--BANCO DE DADOS-->
+                    </tr>
+                </tbody>
+            </table>
+            <div class="divisoria" style="background-color: var(--verdeNeon );">
+                <h1 class="titulo2">Eventos</h1>
+            </div>
 
-            <button type="submit" id="salvar" disabled>Salvar</button>
-
-            <button type="reset" id="cancelar" disabled>Cancelar</button>
-          </div>
-        </section>
-
-        <section class="fotoPerfil">
-          <img src="../assets/images/fotoPerfilDoador.png" alt="" />
-          <div class="buttons">
-            <button>Mudar</button>
-            <button>Remover</button>
-          </div>
-        </section>
-      </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="first" scope="col">Data</th>
+                        <th scope="col">ONG</th>
+                        <th scope="col">Local</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="first">20/05/2025</td> <!--BANCO DE DADOS-->
+                        <td>Vozes Invisíveis - Direitos Humanos</td> <!--BANCO DE DADOS-->
+                        <td>Jundiaí - SP</td> <!--BANCO DE DADOS-->
+                    </tr>
+                    <tr>
+                        <td class="first">24/02/2025</td> <!--BANCO DE DADOS-->
+                        <td>Vozes Invisíveis - Direitos Humanos</td> <!--BANCO DE DADOS-->
+                        <td>Jundiaí - SP</td> <!--BANCO DE DADOS-->
+                    </tr>
+                    <tr>
+                        <td class="first">18/01/2025</td> <!--BANCO DE DADOS-->
+                        <td>Patas do Amanhã - Proteção animal</td> <!--BANCO DE DADOS-->
+                        <td>Itupeva - SP</td> <!--BANCO DE DADOS-->
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-event">
+                <button id="#">Ver mais eventos</button> <!--ROTA PARA A PÁGINA DE EVENTOS-->
+                <button id="#">Ver mais ONG´s</button> <!--ROTA PARA A PÁGINA DAS ONGS-->
+            </div>
     </main>
-
     <footer>
-      <div class="links">
-        <div>
-          <p class="link_title">Seja Bem Vindo</p>
-          <a href="#sobre">Descubra quem somos</a>
-          <a href="#sobre">De uma olhada nas nossas redes sociais :</a>
+        <div class="links">
+            <div>
+                <p class="link_title">Seja Bem Vindo</p>
+                <a href="#sobre">Descubra quem somos</a>
+                <a href="#sobre">De uma olhada nas nossas redes sociais :</a>
+            </div>
+            <div>
+                <p class="link_title">Ajuda</p>
+                <a href="#sobre">Fale conosco</a>
+                <a href="#sobre">Central de Suporte</a>
+            </div>
+            <div>
+                <p class="link_title">Contato</p>
+                <a href="#sobre">Instagram</a>
+                <a href="#sobre">Whatsapp</a>
+            </div>
         </div>
-        <div>
-          <p class="link_title">Ajuda</p>
-          <a href="#sobre">Fale conosco</a>
-          <a href="#sobre">Central de Suporte</a>
+        <div class="logo">
+            <p>Conectando corações</p>
+            <img class="logoFooter" src="../assets/images/logo/logo footer.png" alt="logo" />
+            <p>transformando vidas</p>
         </div>
-        <div>
-          <p class="link_title">Contato</p>
-          <a href="#sobre">Instagram</a>
-          <a href="#sobre">Whatsapp</a>
-        </div>
-      </div>
-      <div class="logo">
-        <p>Conectando corações</p>
-        <img class="logoFooter" src="../assets/images/logo/logo footer.png" alt="logo" />
-        <p>transformando vidas</p>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>
