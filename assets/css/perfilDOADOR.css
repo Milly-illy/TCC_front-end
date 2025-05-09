@@ -57,6 +57,13 @@ header .slogan {
   text-align: center;
   padding-bottom: 25px;
 }
+.tituloContribuicao {
+  margin-top: 30px;
+  font-size: 50px;
+  color: var(--azulEscuro);
+  text-align: center;
+  padding-bottom: 25px;
+}
 
 form {
   background-color: var(--bege);
@@ -297,7 +304,7 @@ tbody>tr:nth-of-type(even) {
   width: 85%;
   margin: 50px 0 50px 50px;
 
-  button {
+  a {
       border: 0px;
       border-radius: 4px;
       font-size: 20px;
@@ -308,9 +315,11 @@ tbody>tr:nth-of-type(even) {
       height: auto;
       transition: all 0.4s;
       cursor: pointer;
+      text-align: center;
+      text-decoration: none;
   }
 
-  button:hover {
+  a:hover {
       background-color: var(--verdeNeon);
   }
 }
@@ -379,6 +388,21 @@ footer .links div a {
 
 /* /- - - - - - - - - - responsividade - - - - - - - - - -/ */
 
+@media (max-width:1440px) {
+  .first {
+    width: 350px
+  }
+}
+@media (max-width:1200px) {
+  .first {
+    width: 300px
+  }
+}
+@media (max-width:1100px) {
+  .first {
+    width: 250px
+  }
+}
 @media (max-width:1024px) {
   header main {
       padding: 5px 50px;
@@ -411,6 +435,9 @@ footer .links div a {
 
   .titulo {
       font-size: 42px;
+  }
+  .tituloContribuicao{
+    font-size: 42px;
   }
 
   .editarPerfil {
@@ -448,6 +475,34 @@ footer .links div a {
 
   .logoFooter {
       width: 120px;
+  }
+  table {
+    font-size: 20px;
+  }
+  .doacoes h1{
+    font-size: 23px;
+  }
+  .titulo3{
+    font-size: 23px;
+  }
+  .button-event {
+    gap: 20px;
+    width: 85%;
+    margin: 50px 0 50px 50px;
+  
+    a {
+        font-size: 17px;
+        width: 170px;
+    }
+  }
+  .first {
+    width: 200px
+  }
+  .divisoria{
+    font-size: 14px;
+  }
+  .titulo2{
+    font-size: 25px;
   }
 }
 
@@ -487,6 +542,12 @@ footer .links div a {
 
   .fotoPerfil img {
       width: 68%;
+  }
+  table {
+    font-size: 18px;
+  }
+  .first {
+    width: 150px
   }
 }
 
@@ -528,6 +589,9 @@ footer .links div a {
   .titulo {
       font-size: 35px;
   }
+  .tituloContribuicao{
+    font-size: 35px;
+  }
 
   .fotoPerfil img {
       width: 85%;
@@ -539,6 +603,17 @@ footer .links div a {
 
   footer .logo {
       width: 90%;
+  }
+  .titulo2{
+    font-size: 20px;
+    width: 450px;
+    text-align: center;
+  }
+  td{
+    width: 400px;
+  }
+  .td2{
+    width: 200px;
   }
 }
 
@@ -555,6 +630,21 @@ footer .links div a {
 
   footer .logo p {
       font-size: 30px;
+  }
+  .myDoacao{
+    font-size: 25px;
+  }
+  .button-event {
+    gap: 20px;
+    width: 85%;
+    margin: 50px 0 50px 0px;
+    align-items: center;
+    justify-content: center;
+  
+    a {
+        font-size: 17px;
+        width: 170px;
+    }
   }
 }
 
@@ -649,6 +739,28 @@ footer .links div a {
   footer .logo p {
       font-size: 20px;
   }
+  .titulo2{
+    width: 350px;
+  }
+  .doacoes h1{
+    font-size: 18px;
+  }
+  table {
+    font-size: 15px;
+  }
+  .myDoacao{
+    font-size: 20px;
+  }
+  .button-event {
+    gap: 20px;
+    width: 85%;
+    margin: 50px 0 50px 0px;
+  
+    a {
+        font-size: 14px;
+        width: 140px;
+    }
+  }
 }
 
 @media (max-width:400px) {
@@ -667,9 +779,18 @@ footer .links div a {
   .titulo {
       font-size: 30px;
   }
+  .tituloContribuicao{
+    font-size: 30px;
+  }
 
   .logoFooter {
       width: 50px;
+  }
+  .first{
+    width: 60px;
+  }
+  td{
+    padding: 13px;
   }
 }
 
@@ -693,6 +814,17 @@ footer .links div a {
   .logoFooter {
       width: 50px;
   }
+  .button-event {
+    gap: 20px;
+    width: 85%;
+    margin: 50px 0 50px 0px;
+    flex-direction: column;
+  
+    a {
+        font-size: 14px;
+        width: 170px;
+    }
+  }
 }
 
 @media (max-width:350px) {
@@ -715,11 +847,17 @@ footer .links div a {
   footer .logo p {
       font-size: 16px;
   }
+  .titulo2{
+    font-size: 17px;
+  }
 }
 
 @media (max-width:325px) {
   .titulo {
       font-size: 25px;
+  }
+  .tituloContribuicao{
+    font-size: 24px;
   }
 
   section {
