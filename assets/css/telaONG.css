@@ -250,63 +250,7 @@ body {
     transform: scale(1.06);
 }
 
-/*- - - - - - - - - - rodapé - - - - - - - - - -*/
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--verde);
-
-    margin-top: 150px;
-    padding: 20px;
-}
-footer .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid var(--offWhite);
-    width: 80%;
-    padding-top: 40px;
-    margin-top: 40px;
-    gap: 10px;
-}
-footer .logo p {
-    color: var(--offWhite);
-    font-family: "MoonDance";
-    font-size: 50px;
-}
-footer .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-}
-.link_title {
-    font-weight: 600;
-    font-size: 28px;
-    color: var(--offWhite);
-}
-footer .links div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    width: 20%;
-}
-footer .links div a {
-    font-size: 24px;
-    font-family: 'Montserrat-Light';
-    text-decoration: none;
-    color: var(--offWhite);
-}
-
 /*- - - - - - - - - - responsividade - - - - - - - - - -*/
-
 
 @media (max-width:1440px) {
     .setaVoltar{
@@ -462,21 +406,6 @@ footer .links div a {
         width: 45%;
         height: 35%;
     }
-    footer .logo p {
-        font-size: 40px;
-    }
-    footer .logo img{
-        width: 120px;
-    }
-    .link_title {
-        font-size: 20px;
-    }
-    footer .links div a {
-        font-size: 20px;
-    }
-    footer .links div {
-        width: 30%;
-    }
 }
 @media (max-width:950px) {
     .titulo {
@@ -591,9 +520,6 @@ footer .links div a {
     .titulo2 {
         font-size: 28px;
     }
-    footer .logo p{
-        font-size: 35px
-    }
 }
 @media (max-width:700px) {
     .titulo {
@@ -617,18 +543,6 @@ footer .links div a {
         width: 75%;
         margin-top: 30px;
     }
-    .link_title{
-        font-size: 17px;
-    }
-    footer .links div a{
-        font-size: 17px;
-    }
-    footer .logo p{
-        font-size: 30px
-    }
-    footer .logo img{
-        width: 100px;
-    }
 }
 @media (max-width:650px) {
     .meta .imgprincipal {
@@ -640,20 +554,6 @@ footer .links div a {
     .buttoneinfo button {
         width: 490px;
         height: 45px;
-    }
-}
-@media (max-width:600px) {
-    .link_title{
-        font-size: 15px;
-    }
-    footer .links div a{
-        font-size: 15px;
-    }
-    footer .logo p{
-        font-size: 27px
-    }
-    footer .logo img{
-        width: 80px;
     }
 }
 @media (max-width:550px) {
@@ -674,23 +574,6 @@ footer .links div a {
     }
     .titulo2 {
         font-size: 25px;
-    }
-    .link_title{
-        font-size: 13px;
-    }
-    footer .links div a{
-        font-size: 13px;
-    }
-    footer .logo p{
-        font-size: 24px
-    }
-    footer .logo img{
-        width: 70px;
-    }
-}
-@media (max-width:500px) {
-    footer .logo {
-        width: 100%;
     }
 }
 @media (max-width:450px) {
@@ -723,9 +606,7 @@ footer .links div a {
         height: 35px;
         font-size: 18px;
     }
-    footer .links {
-        width: 95%;
-    }
+    
 }
 @media (max-width:400px) {
     .setaVoltar{
@@ -735,15 +616,6 @@ footer .links div a {
     }
     .sobre_ong_img {
         width: 95%;
-    }
-    .link_title{
-        font-size: 12px;
-    }
-    footer .logo p{
-        font-size: 20px
-    }
-    footer .logo img{
-        width: 60px;
     }
 }
 @media (max-width:320px) {
@@ -775,11 +647,5 @@ footer .links div a {
         width: 250px;
         height: 35px;
         font-size: 16px;
-    }
-    footer .logo p{
-        font-size: 17px
-    }
-    footer .logo img{
-        width: 45px;
     }
 }

@@ -468,67 +468,6 @@ section div {
   right: 10px;
 }
 
-/*- - - - - - - - - - rodapé - - - - - - - - - -*/
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--verde);
-
-  margin-top: 150px;
-  padding: 20px;
-}
-
-footer .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid var(--offWhite);
-  width: 80%;
-  padding-top: 40px;
-  margin-top: 40px;
-  gap: 10px;
-}
-
-footer .logo p {
-  color: var(--offWhite);
-  font-family: "MoonDance";
-  font-size: 50px;
-}
-
-footer .links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.link_title {
-  font-weight: 600;
-  font-size: 28px;
-  color: var(--offWhite);
-}
-
-footer .links div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 15px;
-  width: 20%;
-}
-
-footer .links div a {
-  font-size: 24px;
-  font-family: "Montserrat-Light";
-  text-decoration: none;
-  color: var(--offWhite);
-}
-
 /*- - - - - - - - - - modal - - - - - - - - - -*/
 
 .modal {
@@ -793,9 +732,6 @@ footer .links div a {
     margin-top: -30px;
     margin-left: 40px;
   }
-  footer .links div {
-    width: 30%;
-  }
 }
 @media (max-width:1050px) {
   .modal {
@@ -807,12 +743,6 @@ footer .links div a {
     width: 890px;
     margin-top: -30px;
     margin-left: 40px;
-  }
-  footer .logo p {
-    font-size: 45px;
-  }
-  .logoFooter{
-    width: 140px;
   }
 }
 @media (max-width:1000px) {
@@ -850,12 +780,6 @@ footer .links div a {
     width: 790px;
     margin-top: -30px;
     margin-left: 40px;
-  }
-  footer .logo p {
-    font-size: 40px;
-  }
-  .logoFooter{
-    width: 120px;
   }
 }
 @media (max-width:900px) {
@@ -933,13 +857,6 @@ footer .links div a {
     padding: 10px 12px;
     font-weight: 500;
   }
-  .link_title {
-    font-weight: 600;
-    font-size: 24px;
-  }
-  footer .links div a {
-    font-size: 20px;
-  }
 }
 @media (max-width:850px) {
   .modal {
@@ -991,19 +908,6 @@ footer .links div a {
     width: 310px;
     height: 210px;
   }
-  .link_title {
-    font-weight: 600;
-    font-size: 22px;
-  }
-  footer .links div a {
-    font-size: 18px;
-  }
-  footer .logo p {
-    font-size: 35px;
-  }
-  .logoFooter{
-    width: 100px;
-  }
 }
 @media (max-width:750px) {
   .modal {
@@ -1038,19 +942,6 @@ footer .links div a {
     margin-top: -30px;
     margin-left: 40px;
   }
-  .link_title {
-    font-weight: 600;
-    font-size: 20px;
-  }
-  footer .links div a {
-    font-size: 18px;
-  }
-  footer .logo p {
-    font-size: 30px;
-  }
-  .logoFooter{
-    width: 90px;
-  }
 }
 @media (max-width:650px) {
   .modal {
@@ -1065,9 +956,6 @@ footer .links div a {
     width: 490px;
     margin-top: -30px;
     margin-left: 40px;
-  }
-  footer .logo {
-    width: 90%;
   }
 }
 @media (max-width:600px) {
@@ -1103,22 +991,6 @@ footer .links div a {
     width: 440px;
     margin-top: -30px;
     margin-left: 40px;
-  }
-  .link_title {
-    font-weight: 600;
-    font-size: 18px;
-  }
-  footer .links div a {
-    font-size: 16px;
-  }
-  footer .logo p {
-    font-size: 25px;
-  }
-  .logoFooter{
-    width: 70px;
-  }
-  footer .links {
-    width: 90%;
   }
 }
 @media (max-width:550px) {
@@ -1185,19 +1057,6 @@ footer .links div a {
     font-size: 25px;
     margin-left: 15px;
   }
-  .link_title {
-    font-weight: 600;
-    font-size: 16px;
-  }
-  footer .links div a {
-    font-size: 15px;
-  }
-  footer .logo p {
-    font-size: 20px;
-  }
-  .logoFooter{
-    width: 50px;
-  }
 }
 @media (max-width:400px) {
   .modal {
@@ -1253,19 +1112,6 @@ footer .links div a {
     width: 230px;
     height: 160px;
   }
-  .link_title {
-    font-weight: 600;
-    font-size: 15px;
-  }
-  footer .links div a {
-    font-size: 13px;
-  }
-  footer .logo p {
-    font-size: 16px;
-  }
-  .logoFooter{
-    width: 40px;
-  }
 }
 @media (max-width:320px) {
   .modal {
@@ -1289,11 +1135,5 @@ footer .links div a {
   }
   .addimg label{
     font-size: 15px;
-  }
-  footer .logo{
-    width: 98%;
-  }
-  footer .links{
-    width: 98%;
   }
 }

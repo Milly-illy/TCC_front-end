@@ -171,60 +171,6 @@ select option {
     transform: scale(1.06);
 }
 
-/*- - - - - - - - - - rodapé - - - - - - - - - -*/
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--verde);
-    margin-top: 150px;
-    padding: 20px;
-}
-footer .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid var(--offWhite);
-    width: 80%;
-    padding-top: 40px;
-    margin-top: 40px;
-    gap: 10px;
-}
-footer .logo p {
-    color: var(--offWhite);
-    font-family: "MoonDance";
-    font-size: 50px;
-}
-footer .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-}
-.link_title {
-    font-weight: 600;
-    font-size: 28px;
-    color: var(--offWhite);
-}
-footer .links div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    width: 20%;
-}
-footer .links div a {
-    font-size: 24px;
-    font-family: 'Montserrat-Light';
-    text-decoration: none;
-    color: var(--offWhite);
-}
-
 /*- - - - - - - - - - responsividade - - - - - - - - - -*/
 
 @media (max-width:1300px) {
@@ -261,18 +207,6 @@ footer .links div a {
     }
 }
 @media (max-width:1250px) {
-    footer .logo p {
-        font-size: 45px;
-    }
-    .logoFooter{
-        width: 130px;
-    }
-    .link_title {
-        font-size: 24px;
-    }
-    footer .links div a {
-        font-size: 20px;
-    }
     .titulo2 {
         font-size: 35px;
     }
@@ -313,15 +247,6 @@ footer .links div a {
     .titulo2{
         font-size: 30px;
     }
-    footer .logo p {
-        font-size: 40px;
-    }
-    .logoFooter{
-        width: 110px;
-    }
-    footer .links div {
-        width: 30%;
-    }
 }
 @media (max-width:800px) {
     .titulo{
@@ -331,21 +256,6 @@ footer .links div a {
         font-size: 20px;
         width: 400px;
         height: 50px;
-    }
-    .link_title {
-        font-size: 22px;
-    }
-    footer .links div a {
-        font-size: 18px;
-    }
-    footer .logo{
-        width: 90%;
-    }
-    footer .logo p {
-        font-size: 35px;
-    }
-    .logoFooter{
-        width: 90px;
     }
 }
 @media (max-width:700px) {
@@ -368,18 +278,6 @@ footer .links div a {
         font-size: 18px;
         width: 240px;
         height: 45px;
-    }
-    .link_title {
-        font-size: 20px;
-    }
-    footer .links div a {
-        font-size: 17px;
-    }
-    footer .logo p {
-        font-size: 32px;
-    }
-    .logoFooter{
-        width: 80px;
     }
 }
 @media (max-width:600px) {
@@ -412,26 +310,6 @@ footer .links div a {
     .card .data{
         font-size: 13px;
         margin: 5px 0;
-    }
-    .link_title {
-        font-size: 18px;
-    }
-    footer .links div a {
-        font-size: 16px;
-    }
-}
-@media (max-width:550px) {
-    .link_title {
-        font-size: 18px;
-    }
-    footer .links div a {
-        font-size: 16px;
-    }
-    footer .logo p {
-        font-size: 28px;
-    }
-    .logoFooter{
-        width: 65px;
     }
 }
 @media (max-width:500px) {
@@ -492,32 +370,6 @@ footer .links div a {
     .card_icons{
         width: 90%;
     }
-    footer .logo p {
-        font-size: 23px;
-    }
-    .logoFooter{
-        width: 56px;
-    }
-    footer .logo{
-        width: 95%;
-    }
-}
-@media (max-width:450px) {
-    footer .links{
-        width: 90%;
-    }
-    .link_title {
-        font-size: 16px;
-    }
-    footer .links div a {
-        font-size: 15px;
-    }
-    footer .logo p {
-        font-size: 22px;
-    }
-    .logoFooter{
-        width: 55px;
-    }
 }
 @media (max-width:400px) {
     .input-pesquisa {
@@ -534,18 +386,6 @@ footer .links div a {
     }
     .cards {
         margin: 0 30px;
-    }
-    .link_title {
-        font-size: 15px;
-    }
-    footer .links div a {
-        font-size: 14px;
-    }
-    footer .logo p {
-        font-size: 20px;
-    }
-    .logoFooter{
-        width: 50px;
     }
 }
 @media (max-width:350px) {
@@ -590,18 +430,6 @@ footer .links div a {
         font-size: 14px;
         padding: 0 65px;
     }
-    .link_title {
-        font-size: 14px;
-    }
-    footer .links div a {
-        font-size: 13px;
-    }
-    footer .logo p {
-        font-size: 17px;
-    }
-    .logoFooter{
-        width: 40px;
-    }
 }
 @media (max-width:320px) {
     .input-pesquisa {
@@ -620,11 +448,5 @@ footer .links div a {
         min-width: 250px;
         max-width: 250px;
         min-height: 370px;
-    }
-    .link_title {
-        font-size: 13px;
-    }
-    footer .links div a {
-        font-size: 12px;
     }
 }

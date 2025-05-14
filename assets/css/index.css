@@ -393,60 +393,6 @@ main .cards .card {
   gap: 5px;
 }
 
-/*- - - - - - - - - - rodapé - - - - - - - - - -*/
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--verde);
-
-  padding: 20px;
-}
-footer .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid var(--offWhite);
-  width: 80%;
-  padding-top: 40px;
-  margin-top: 40px;
-  gap: 10px;
-}
-footer .logo p {
-  color: var(--offWhite);
-  font-family: "MoonDance";
-  font-size: 50px;
-}
-footer .links{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-}
-.link_title{
-  font-weight: 600;
-  font-size: 28px;
-  color: var(--offWhite);
-}
-footer .links div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 15px;
-  width: 20%;
-}
-footer .links div a{
-  font-size: 24px;
-  font-family: 'Montserrat-Light';
-  text-decoration: none;
-  color: var(--offWhite);
-}
-
 /*- - - - - - - - - - responsividade - - - - - - - - - -*/
 
 @media (max-width:1440px) {
@@ -485,12 +431,6 @@ footer .links div a{
   .doar .content img{
     width: 45%;
   }
-  .link_title{
-    font-size: 26px;
-  }
-  footer .links div a{
-    font-size: 23px;
-  }
 }
 @media (max-width:1339px) {
   .banner .text .title{
@@ -511,12 +451,6 @@ footer .links div a{
   .doar .content img{
     width: 48%;
   } 
-  .link_title{
-    font-size: 25px;
-  }
-  footer .links div a{
-    font-size: 22px;
-  }
 }
 @media (max-width:1290px) {
   .banner .text .title{
@@ -541,9 +475,6 @@ footer .links div a{
   }
   .banner .logo{
     width: 100px;
-  }
-  footer .links div a{
-    font-size: 21px;
   }
 }
 @media (max-width:1265px) {
@@ -625,18 +556,6 @@ footer .links div a{
   main .ongs .title{
     font-size: 27px;
   }
-  .link_title{
-    font-size: 22px;
-  }
-  footer .links div a{
-    font-size: 19px;
-  }
-  footer .logo p {
-    font-size: 45px;
-  }
-  footer .logo img{
-    width: 130px;
-  }
 }
 @media (max-width:1117px) {
   .banner .text a{
@@ -685,23 +604,10 @@ footer .links div a{
     min-width: 300px;
     height: 450px;
   }
-  footer .logo p {
-    font-size: 40px;
-  }
-  footer .logo img{
-    width: 120px;
-  }
-  .link_title{
-    font-size: 20px;
-  }
 }
 @media (max-width:1088px) {
   main .cards .card {
     min-width: 290px;
-  }
-  footer .links div a{
-    font-size: 19px;
-    font-weight: 100;
   }
   .descricao {
     font-size: 12px;
@@ -718,9 +624,6 @@ footer .links div a{
 @media (max-width:1022px) {
   main .cards .card {
     min-width: 270px;
-  }
-  footer .links div{
-    width: 25%;
   }
   .links2 a{
     width: 72%;
@@ -830,12 +733,6 @@ footer .links div a{
     min-width: 240px;
     height: 410px;
   }
-  footer .logo p {
-    font-size: 38px;
-  }
-  footer .logo img{
-    width: 110px;
-  }
 }
 @media (max-width:902px) {
   .links2 a{
@@ -890,21 +787,6 @@ footer .links div a{
     width: 100%;
     height: 90%;
   }
-  .link_title{
-    font-size: 18px;
-  }
-  footer .links div{
-    width: 30%;
-  }
-  footer .links div a{
-    font-size: 17px;
-  }
-  footer .logo p {
-    font-size: 36px;
-  }
-  footer .logo img{
-    width: 100px;
-  }
 }
 @media (max-width:808px) {
   .banner .text a{
@@ -932,12 +814,6 @@ footer .links div a{
   }
 }
 @media (max-width:732px) {
-  footer .logo p {
-    font-size: 34px;
-  }
-  footer .logo img{
-    width: 90px;
-  }
   .banner .text a{
     padding: 10px 20px;
   }
@@ -959,34 +835,13 @@ footer .links div a{
   .banner .text a{
     padding: 10px 15px;
   }
-  .link_title{
-    font-size: 16px;
-  }
-  footer .links div a{
-    font-size: 16px;
-  }
-  footer .logo p {
-    font-size: 30px;
-  }
-  footer .logo img{
-    width: 75px;
-  }
 }
 @media (max-width:629px) {
-  footer .links{
-    width: 85%;
-  }
   .banner .text a{
     padding: 10px 10px;
   }
 }
 @media (max-width:600px) {
-  footer .logo p {
-    font-size: 27px;
-  }
-  footer .logo img{
-    width: 65px;
-  }
   .doar .content{
     flex-direction: column;
     align-items: center;
@@ -1019,9 +874,6 @@ footer .links div a{
   .banner .text a{
     padding: 10px 10px;
   }
-  footer .logo {
-    width: 90%;
-  }
 }
 @media (max-width:500px) {
   .banner .text .title{
@@ -1032,12 +884,6 @@ footer .links div a{
   }
   .banner .text .content{
     font-size: 14px;
-  }
-  footer .logo p {
-    font-size: 25px;
-  }
-  footer .logo img{
-    width: 60px;
   }
 }
 @media (max-width:428px) {
@@ -1064,24 +910,6 @@ footer .links div a{
   .doar .content img{
     width: 80%;
   }
-  footer .links{
-    width: 95%;
-  }
-  .link_title{
-    font-size: 14px;
-  }
-  footer .links div{
-    width: 35%;
-  }
-  footer .links div a{
-    font-size: 14px;
-  }
-  footer .logo p {
-    font-size: 21px;
-  }
-  footer .logo img{
-    width: 50px;
-  }
 }
 @media (max-width:390px) {
   .banner .text .title{
@@ -1095,24 +923,6 @@ footer .links div a{
   }
   .doar .content p{
     font-size: 14px;
-  }
-  footer .links div{
-    width: 30%;
-  }
-  .link_title{
-    font-size: 13px;
-  }
-  footer .links div a{
-    font-size: 13px;
-  }
-  footer .logo {
-    width: 100%;
-  }
-  footer .logo p {
-    font-size: 19px;
-  }
-  footer .logo img{
-    width: 50px;
   }
 }
 @media (max-width:350px) {
@@ -1128,9 +938,6 @@ footer .links div a{
   .banner .text a{
     font-size: 11px;
   }
-  footer .logo img{
-    width: 40px;
-  }
 }
 @media (max-width:320px) {
   .banner .text .title{
@@ -1144,11 +951,5 @@ footer .links div a{
   }
   main .cards .card {
     height: 380px;
-  }
-  footer .logo p {
-    font-size: 18px;
-  }
-  footer .logo img{
-    width: 35px;
   }
 }

@@ -142,61 +142,6 @@ body {
     transform: scale(1.08);
 }
 
-/*---------- rodapé ----------*/
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--verde);
-
-    margin-top: 150px;
-    padding: 20px;
-}
-footer .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid var(--offWhite);
-    width: 80%;
-    padding-top: 40px;
-    margin-top: 40px;
-    gap: 10px;
-}
-footer .logo p {
-    color: var(--offWhite);
-    font-family: "MoonDance";
-    font-size: 50px;
-}
-footer .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-}
-.link_title {
-    font-weight: 600;
-    font-size: 28px;
-    color: var(--offWhite);
-}
-footer .links div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    width: 20%;
-}
-footer .links div a {
-    font-size: 24px;
-    font-family: 'Montserrat-Light';
-    text-decoration: none;
-    color: var(--offWhite);
-}
-
 /*---------- responsividade ----------*/
 
 @media (max-width:1400px) {
@@ -222,15 +167,6 @@ footer .links div a {
     }
     .button button {
         font-size: 30px;
-    }
-    footer .links div a {
-        font-size: 22px;
-    }
-    .link_title {
-        font-size: 24px;
-    }
-    .logoFooter{
-        width: 130px;
     }
 }
 @media (max-width:999px) {
@@ -261,32 +197,12 @@ footer .links div a {
         border-bottom: none;
         border-right: none;
     }
-    footer .logo p {
-        font-size: 45px;
-    }
-    .logoFooter{
-        width: 120px;
-    }
 }
 @media (max-width:950px) {
     .setaVoltar {
         width: 40px;
         margin-left: 40px;
         margin-top: 40px;
-    }
-}
-@media (max-width:900px) {
-    footer .links div a {
-        font-size: 20px;
-    }
-    .link_title {
-        font-size: 22px;
-    }
-    .logoFooter{
-        width: 100px;
-    }
-    footer .logo {
-        width: 90%;
     }
 }
 @media (max-width:850px) {
@@ -312,20 +228,6 @@ footer .links div a {
         width: 35px;
         margin-left: 35px;
         margin-top: 35px;
-    }
-    footer .logo p {
-        font-size: 40px;
-    }
-    .logoFooter{
-        width: 90px;
-    }
-}
-@media (max-width:700px) {
-    footer .links div {
-        width: 30%;
-    }
-    footer .logo p {
-        font-size: 35px;
     }
 }
 @media (max-width:666px) {
@@ -365,12 +267,6 @@ footer .links div a {
     .sub-main .titulo {
         font-size: 23px;
     }
-    .logoFooter{
-        width: 80px;
-    }
-    footer .logo p {
-        font-size: 30px;
-    }
 }
 @media (max-width:550px) {
     .setaVoltar {
@@ -393,21 +289,6 @@ footer .links div a {
     .button button {
         font-size: 25px;
     }
-    footer .links div a {
-        font-size: 17px;
-    }
-    .link_title {
-        font-size: 19px;
-    }
-    .logoFooter{
-        width: 65px;
-    }
-    footer .logo p {
-        font-size: 28px;
-    }
-    footer .logo {
-        width: 95%;
-    }
 }
 @media (max-width:450px) {
     .sub-main .titulo {
@@ -424,18 +305,6 @@ footer .links div a {
     .valor {
         font-size: 33px;
     }
-    footer .links div a {
-        font-size: 15px;
-    }
-    .link_title {
-        font-size: 17px;
-    }
-    .logoFooter{
-        width: 55px;
-    }
-    footer .logo p {
-        font-size: 22px;
-    }
 }
 @media (max-width:400px) {
     .titulo-card {
@@ -448,33 +317,7 @@ footer .links div a {
         min-width: 250px;
         height: 180px;
     }
-    footer .links {
-        width: 90%;
-    }
     .button button {
         font-size: 20px;
-    }
-    footer .links div a {
-        font-size: 13px;
-    }
-    .link_title {
-        font-size: 15px;
-    }
-    footer .logo p {
-        font-size: 19px;
-    }
-    .logoFooter{
-        width: 50px;
-    }
-    footer .logo {
-        width: 100%;
-    }
-}
-@media (max-width:320px) {
-    footer .logo p {
-        font-size: 18px;
-    }
-    .logoFooter{
-        width: 40px;
     }
 }
