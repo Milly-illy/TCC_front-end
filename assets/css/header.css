@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+header .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--verde);
+    padding: 5px 20px 5px 60px;
+    height: 127px;
+}
+header .main .text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+}
+header nav p {
+    color: var(--offWhite);
+    font-size: 20px;
+    font-weight: 500;
+}
+header p {
+    color: var(--verdeClaro);
+    font-size: 20px;
+}
+header .slogan {
+    background-color: var(--verdeClaro);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: var(--verdeEscuro);
+}
+
+/* /- - - - - - - - - - responsividade - - - - - - - - - -/ */
+
+  @media (max-width:1024px) {
+    header .main {
+        padding: 5px 50px;
+    }
+    header nav {
+        gap: 40px;
+    }
+    .logoHeader {
+        width: 100px;
+    }
+    header nav p {
+        font-size: 18px;
+    }
+  }
+  
+  @media (max-width:700px) {
+    header .main {
+        padding: 5px 30px;
+    }
+    header nav {
+        gap: 30px;
+    }
+    .logoHeader {
+        width: 90px;
+    }
+    header nav a {
+        font-size: 16px;
+    }
+  }
+  @media (max-width:550px) {
+    .logoHeader {
+        width: 80px;
+    }
+    header nav p {
+        font-size: 15px;
+    }
+    header nav {
+        gap: 20px;
+    }
+
+  }
+  
+  @media (max-width:450px) {
+    header .main {
+        padding: 5px 20px;
+    }
+  }
+  
+  @media (max-width:400px) {
+    .logoHeader {
+        width: 70px;
+    }
+    header nav p {
+        font-size: 13px;
+    }
+  }
+  
+  @media (max-width:350px) {
+    header .main {
+        padding: 5px 15px;
+    }
+  }

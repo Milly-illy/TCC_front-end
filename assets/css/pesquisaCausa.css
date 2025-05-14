@@ -4,53 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-/*- - - - - - - - - - navbar - - - - - - - - - -*/
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-header .main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--verde);
-    padding: 5px 20px 5px 60px;
-    height: 127px;
-}
-header .main .text{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 40px;
-}
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
-}
-header nav p {
-    color: var(--offWhite);
-    font-size: 20px;
-    font-weight: 500;
-}
-header p {
-    color: var(--verdeClaro);
-    font-size: 20px;
-}
-header .slogan {
-    background-color: var(--verdeClaro);
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    color: var(--verdeEscuro);
-}
-
 /*- - - - - - - - - - conteúdo - - - - - - - - - -*/
 
 .foto {
@@ -354,9 +307,6 @@ footer .links div a {
     }
 }
 @media (max-width:900px) {
-    header .main{
-        padding: 5px 10px 5px 30px;
-    }
     main .cards .card {
         width: 28%;
         min-width: 320px;
@@ -404,16 +354,6 @@ footer .links div a {
     }
 }
 @media (max-width:700px) {
-    .logoHeader{
-        width: 100px;
-    }
-    header .main{
-        padding: 5px 5px 5px 20px;
-        height: 110px;
-    }
-    header nav p {
-        font-size: 17px;
-    }
     .titulo{
         font-size: 30px;
     }
@@ -474,13 +414,6 @@ footer .links div a {
     }
 }
 @media (max-width:550px) {
-    .logoHeader{
-        width: 90px;
-    }
-    header .main{
-        padding: 5px 5px 5px 20px;
-        height: 100px;
-    }
     .titulo{
         font-size: 26px;
     }
@@ -500,9 +433,6 @@ footer .links div a {
     }
 }
 @media (max-width:500px) {
-    .logoHeader{
-        width: 80px;
-    }
     main .cards .card {
         width: 28%;
         min-width: 280px;
@@ -555,16 +485,6 @@ footer .links div a {
     }
 }
 @media (max-width:400px) {
-    .logoHeader{
-        width: 70px;
-    }
-    header .main{
-        padding: 5px 5px 5px 20px;
-        height: 80px;
-    }
-    header nav p {
-        font-size: 15px;
-    }
     .titulo{
         font-size: 20px;
     }
@@ -623,9 +543,6 @@ footer .links div a {
     }
 }
 @media (max-width:320px) {
-    header nav p {
-        font-size: 13px;
-    }
     .input-pesquisa {
         font-size: 15px;
         width: 250px;

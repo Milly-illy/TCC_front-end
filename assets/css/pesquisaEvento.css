@@ -3,46 +3,6 @@ body {
     background-color: var(--offWhite);
 }
 
-/*- - - - - - - - - - navbar - - - - - - - - - -*/
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-header main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--verde);
-    padding: 5px 60px;
-}
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
-}
-header nav a {
-    color: var(--offWhite);
-    font-size: 20px;
-    font-weight: 500;
-}
-header p {
-    color: var(--verdeClaro);
-    font-size: 20px;
-}
-header .slogan {
-    background-color: var(--verdeClaro);
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    color: var(--verdeEscuro);
-}
-
 /*- - - - - - - - - - conteúdo - - - - - - - - - -*/
 
 .pesquisa {
@@ -301,9 +261,6 @@ footer .links div a {
     }
 }
 @media (max-width:1250px) {
-    .logoHeader{
-        width: 110px;
-    }
     footer .logo p {
         font-size: 45px;
     }
@@ -347,12 +304,6 @@ footer .links div a {
     }
 }
 @media (max-width:900px) {
-    .logoHeader{
-        width: 100px;
-    }
-    header p{
-        font-size: 18px;
-    }
     .card{
         min-height: 430px;
     }
@@ -398,9 +349,6 @@ footer .links div a {
     }
 }
 @media (max-width:700px) {
-    header main{
-        padding: 5px 40px;
-    }
     .titulo{
         font-size: 35px;
     }
@@ -435,9 +383,6 @@ footer .links div a {
     }
 }
 @media (max-width:600px) {
-    .logoHeader{
-        width: 90px;
-    }
     .input-pesquisa {
         font-size: 18px;
         width: 260px;
@@ -558,15 +503,6 @@ footer .links div a {
     }
 }
 @media (max-width:450px) {
-    .logoHeader{
-        width: 80px;
-    }
-    header p{
-        font-size: 16px;
-    }
-    header main{
-        padding: 5px 25px;
-    }
     footer .links{
         width: 90%;
     }
@@ -584,12 +520,6 @@ footer .links div a {
     }
 }
 @media (max-width:400px) {
-    .logoHeader{
-        width: 70px;
-    }
-    header p{
-        font-size: 15px;
-    }
     .input-pesquisa {
         font-size: 17px;
         width: 320px;
@@ -619,12 +549,6 @@ footer .links div a {
     }
 }
 @media (max-width:350px) {
-    .logoHeader{
-        width: 60px;
-    }
-    header p{
-        font-size: 14px;
-    }
     .titulo{
         font-size: 26px;
     }

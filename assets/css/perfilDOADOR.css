@@ -3,52 +3,7 @@ body {
   background-color: var(--offWhite);
 }
 
-/* /- - - - - - - - - - navbar - - - - - - - - - -/ */
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-header main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background-color: var(--verde);
-  padding: 5px 60px;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 50px;
-}
-
-header nav a {
-  color: var(--offWhite);
-  font-size: 20px;
-  font-weight: 500;
-}
-
-header .slogan {
-  background-color: var(--verdeClaro);
-  width: 100%;
-  padding: 5px;
-  text-align: center;
-  color: var(--verdeEscuro);
-}
-
 /* /- - - - - - - - - - conteúdo - - - - - - - - - -/ */
-
-.linkPerfil {
-  text-decoration: none;
-  color: var(--verdeClaro);
-}
 
 .titulo {
   margin-top: 30px;
@@ -404,22 +359,6 @@ footer .links div a {
   }
 }
 @media (max-width:1024px) {
-  header main {
-      padding: 5px 50px;
-  }
-
-  header nav {
-      gap: 40px;
-  }
-
-  .logoHeader {
-      width: 100px;
-  }
-
-  header nav a {
-      font-size: 18px;
-  }
-
   section {
       width: 32%;
   }
@@ -570,22 +509,6 @@ footer .links div a {
 }
 
 @media (max-width:700px) {
-  header main {
-      padding: 5px 30px;
-  }
-
-  header nav {
-      gap: 30px;
-  }
-
-  .logoHeader {
-      width: 90px;
-  }
-
-  header nav a {
-      font-size: 16px;
-  }
-
   .titulo {
       font-size: 35px;
   }
@@ -649,18 +572,6 @@ footer .links div a {
 }
 
 @media (max-width:550px) {
-  .logoHeader {
-      width: 80px;
-  }
-
-  header nav a {
-      font-size: 15px;
-  }
-
-  header nav {
-      gap: 20px;
-  }
-
   .fotoPerfil img {
       width: 95%;
   }
@@ -695,10 +606,6 @@ footer .links div a {
 }
 
 @media (max-width:450px) {
-  header main {
-      padding: 5px 20px;
-  }
-
   .buttons button {
       font-size: 15px;
       width: 120px;
@@ -764,14 +671,6 @@ footer .links div a {
 }
 
 @media (max-width:400px) {
-  .logoHeader {
-      width: 70px;
-  }
-
-  header nav a {
-      font-size: 13px;
-  }
-
   form {
       padding: 40px 40px;
   }
@@ -828,10 +727,6 @@ footer .links div a {
 }
 
 @media (max-width:350px) {
-  header main {
-      padding: 5px 15px;
-  }
-
   .link_title {
       font-size: 14px;
   }

@@ -3,42 +3,6 @@ body {
   background-color: var(--offWhite);
 }
 
-/*- - - - - - - - - - navbar - - - - - - - - - -*/
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-header main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background-color: var(--verde);
-  padding: 5px 60px;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 50px;
-}
-header nav a {
-  color: var(--offWhite);
-  font-size: 20px;
-  font-weight: 500;
-}
-header .slogan {
-  background-color: var(--verdeClaro);
-  width: 100%;
-  padding: 5px;
-  text-align: center;
-  color: var(--verdeEscuro);
-}
-
 /*- - - - - - - - - - conteúdo - - - - - - - - - -*/
 
 .linkPerfil {
@@ -319,9 +283,6 @@ footer .links div a {
   .linkPerfil {
     font-size: 18px;
   }
-  .logoHeader {
-    width: 110px;
-  }
   label {
     font-size: 18px;
   }
@@ -368,9 +329,6 @@ footer .links div a {
   .linkPerfil {
     font-size: 17px;
   }
-  .logoHeader {
-    width: 100px;
-  }
   .titulo {
     font-size: 40px;
   }
@@ -397,9 +355,6 @@ footer .links div a {
   }
 }
 @media (max-width:850px) {
-  header main {
-    padding: 5px 35px;
-  }
   main {
     padding: 30px 40px;
   }
@@ -407,9 +362,6 @@ footer .links div a {
 @media (max-width:800px) {
   .linkPerfil {
     font-size: 16px;
-  }
-  .logoHeader {
-    width: 90px;
   }
   .titulo {
     font-size: 35px;
@@ -577,9 +529,6 @@ footer .links div a {
   .linkPerfil {
     font-size: 14px;
   }
-  .logoHeader {
-    width: 80px;
-  }
   .titulo {
     font-size: 30px;
   }
@@ -608,12 +557,6 @@ footer .links div a {
   }
 }
 @media (max-width:423px) {
-  .logoHeader {
-    width: 70px;
-  }
-  header main {
-    padding: 5px 15px;
-  }
   .linkPerfil {
     font-size: 12px;
   }
@@ -643,12 +586,6 @@ footer .links div a {
 @media (max-width:326px) {
   .titulo {
     font-size: 25px;
-  }
-  .logoHeader {
-    width: 60px;
-  }
-  header main {
-    padding: 5px 10px;
   }
   .logoFooter {
     width: 40px;

@@ -3,49 +3,7 @@ body {
     background-color: var(--offWhite);
 }
 
-/*- - - - - - - - - - navbar - - - - - - - - - -*/
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-header main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--verde);
-    padding: 5px 60px;
-    height: 127px;
-}
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
-}
-header nav a {
-    color: var(--offWhite);
-    font-size: 20px;
-    font-weight: 500;
-}
-header p {
-    color: var(--verdeClaro);
-    font-size: 20px;
-}
-header .slogan {
-    background-color: var(--verdeClaro);
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    color: var(--verdeEscuro);
-}
-
 /*- - - - - - - - - - conteúdo - - - - - - - - - -*/
-
 
 .setaVoltar {
     width: 50px;
@@ -318,22 +276,6 @@ footer .links div a {
     }
 }
 @media (max-width:900px) {
-    .logoHeader{
-        width: 110px;
-    }
-    header main {
-        padding: 5px 50px;
-        height: 120px;
-    }
-    header nav {
-        gap: 40px;
-    }
-    header nav a {
-        font-size: 18px;
-    }
-    header p {
-        font-size: 18px;
-    }
     footer .links div a {
         font-size: 20px;
     }
@@ -366,13 +308,6 @@ footer .links div a {
     }
 }
 @media (max-width:800px) {
-    .logoHeader{
-        width: 100px;
-    }
-    header main {
-        padding: 5px 40px;
-        height: 110px;
-    }
     .setaVoltar {
         width: 35px;
         margin-left: 35px;
@@ -438,22 +373,6 @@ footer .links div a {
     }
 }
 @media (max-width:550px) {
-    .logoHeader{
-        width: 90px;
-    }
-    header main {
-        padding: 5px 20px;
-        height: 110px;
-    }
-    header nav {
-        gap: 30px;
-    }
-    header nav a {
-        font-size: 15px;
-    }
-    header p {
-        font-size: 15px;
-    }
     .setaVoltar {
         width: 30px;
         margin-left: 30px;
@@ -491,22 +410,6 @@ footer .links div a {
     }
 }
 @media (max-width:450px) {
-    .logoHeader{
-        width: 80px;
-    }
-    header nav a {
-        font-size: 13px;
-    }
-    header p {
-        font-size: 13px;
-    }
-    header nav {
-        gap: 20px;
-    }
-    header main {
-        padding: 5px 20px;
-        height: 90px;
-    }   
     .sub-main .titulo {
         font-size: 22px;
     }
@@ -535,12 +438,6 @@ footer .links div a {
     }
 }
 @media (max-width:400px) {
-    .logoHeader{
-        width: 70px;
-    }
-    header main {
-        height: 80px;
-    } 
     .titulo-card {
         font-size: 20px;
     }
@@ -571,18 +468,6 @@ footer .links div a {
     }
     footer .logo {
         width: 100%;
-    }
-}
-@media (max-width:350px) {
-    header main {
-        padding: 5px 15px;
-        height: 70px;
-    } 
-    header nav a {
-        font-size: 12px;
-    }
-    header p {
-        font-size: 12px;
     }
 }
 @media (max-width:320px) {

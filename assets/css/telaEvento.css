@@ -2,47 +2,6 @@ body {
     background-color: var(--offWhite);
 }
 
-/*- - - - - - - - - - navbar - - - - - - - - - -*/
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-header main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--verde);
-    padding: 5px 60px;
-    height: 127px;
-}
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
-}
-header nav a {
-    color: var(--offWhite);
-    font-size: 20px;
-    font-weight: 500;
-}
-header p {
-    color: var(--verdeClaro);
-    font-size: 20px;
-}
-header .slogan {
-    background-color: var(--verdeClaro);
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    color: var(--verdeEscuro);
-}
-
 /*- - - - - - - - - - conteúdo - - - - - - - - - -*/
 
 .pesquisa{
@@ -309,12 +268,6 @@ footer .links div a {
     .conteudo {
         flex-direction: column;
     }
-    header nav {
-        gap: 40px;
-    }
-    header main {
-        padding: 5px 40px;
-    }
     .descricao {
         width: 700px;
         padding: 30px;
@@ -343,15 +296,6 @@ footer .links div a {
     }
 }
 @media (max-width:850px) {
-    .logoHeader{
-        width: 110px;
-    }
-    header nav a {
-        font-size: 18px;
-    }
-    header p {
-        font-size: 18px;
-    }
     .link_title {
         font-size: 24px;
     }
@@ -366,21 +310,6 @@ footer .links div a {
     }
 }
 @media (max-width:800px) {
-    .logoHeader{
-        width: 100px;
-    }
-    header main {
-        padding: 5px 30px;
-    }
-    header nav a {
-        font-size: 17px;
-    }
-    header p {
-        font-size: 17px;
-    }
-    header nav {
-        gap: 30px;
-    }
     .descricao {
         width: 600px;
         padding: 30px;
@@ -443,18 +372,6 @@ footer .links div a {
     }
 }
 @media (max-width:600px) {
-    header nav a {
-        font-size: 15px;
-    }
-    header p {
-        font-size: 15px;
-    }
-    header main {
-        height: 100px;
-    }
-    .logoHeader{
-        width: 90px;
-    }
     .descricao {
         width: 400px;
         font-size: 16px;
@@ -489,15 +406,6 @@ footer .links div a {
     }
 }
 @media (max-width:500px) {
-    header main {
-        padding: 5px 20px;
-    }
-    header nav {
-        gap: 20px;
-    }
-    .logoHeader{
-        width: 80px;
-    }
     .setaVoltar{
         width: 25px;
         left: 25px;
@@ -520,9 +428,6 @@ footer .links div a {
     
 }
 @media (max-width:450px) {
-    header nav a {
-        font-size: 12px;
-    }
     .sub-main{
         padding: 20px 0;
     }
@@ -531,9 +436,6 @@ footer .links div a {
     }
     .subtitulo-p {
         font-size: 15px;
-    }
-    .logoHeader{
-        width: 70px;
     }
     .logoFooter{
         width: 60px;
@@ -577,12 +479,6 @@ footer .links div a {
     }
 }
 @media (max-width:350px) {
-    header nav a {
-        font-size: 11px;
-    }
-    header p {
-        font-size: 13px;
-    }
     .descricao {
         width: 250px;
         font-size: 13px;
@@ -625,15 +521,6 @@ footer .links div a {
     }
 }
 @media (max-width:320px) {
-    header main {
-        padding: 5px 10px;
-    }
-    .logoHeader{
-        width: 60px;
-    }
-    header main {
-        height: 80px;
-    }
     .logoFooter{
         width: 45px;
     }
