@@ -13,11 +13,12 @@
     <script src="../assets/js/menu.js" defer></script>
     <script src="../assets/js/config.js" defer></script>
 </head>
+
 <body>
     <div class="menu_bar" id="menu_bar">
         <div class="above">
             <a href="{{ route(Auth()->user()->tipo . '.perfil') }}" class="icon">
-                    <img src="../assets/images/menu/account.png" alt="">
+                <img src="../assets/images/menu/account.png" alt="">
             </a>
             <div class="menu_bar_info">
                 <h2>{{ $nome }}</h2>
@@ -75,71 +76,74 @@
     <main>
         <h1 class="titulo">Meu Perfil</h1>
 
-        <form action="">
-            <section class="section1">
-                <div class="nomePerfl">
-                    <label for="nomePerfl">Nome</label>
-                    <input class="input" type="text" name="nomePerfl" placeholder="Seu Nome" value="Andressa"
-                        disabled />
-                </div>
+        <section class="form">
+            <form action="">
+                <section class="section1">
+                    <div class="nomePerfl">
+                        <label for="nomePerfl">Nome</label>
+                        <input class="input" type="text" name="nomePerfl" placeholder="Seu Nome" value="Andressa"
+                            disabled />
+                    </div>
 
-                <div class="emailPerfil">
-                    <label for="emailPerfil">Email</label>
-                    <input class="input" type="email" name="emailPerfil" placeholder="Seu Email"
-                        value="andressa@gmail.com" disabled />
-                </div>
-
-                <div class="senhaPerfil">
-                    <label for="senhaPerfil">Senha</label>
-                    <input class="input" type="password" name="senhaPerfil" placeholder="Sua Senha" value="12345678"
-                        disabled />
-                </div>
-
-                <div class="confirmeSenhaPerfil" id="confirmeSenha">
-                    <label for="confirmeSenhaPerfil">Confirme sua Senha</label>
-                    <input class="input" type="password" name="confirmeSenhaPerfil" placeholder="Confirme sua Senha"
-                        value="12345678" disabled />
-                </div>
-            </section>
-            <section class="section2">
-                <div>
-                    <label for="causaPerfil">Causas em preferência</label>
-                    <select class="input" name="causaPerfil" id="" disabled>
-                        <option value="Proteção Animal">Proteção Animal</option>
-                        <option value="Direitos Humanos e Sociais">
-                            Direitos Humanos e Sociais
-                        </option>
-                        <option value="Meio Ambiente">Meio Ambiente</option>
-                        <option value="Saúde e Bem-Estar">Saúde e Bem-Estar</option>
-                        <option value="Educação e Cultura">Educação e Cultura</option>
-                    </select>
-                </div>
-                <div class="telefonePerfil">
-                    <label for="telefonePerfil">Telefone</label>
-                    <input class="input" type="text" name="telefonePerfil" placeholder="Seu Telefone"
-                        value="(14) 99857-0088" disabled />
-                </div>
-                <div class="editarPerfil">
-                    <button id="editar">Editar</button>
-                    <button type="submit" id="salvar" disabled>Salvar</button>
-                    <button type="reset" id="cancelar" disabled>Cancelar</button>
-                </div>
-            </section>
+                    <div class="emailPerfil">
+                        <label for="emailPerfil">Email</label>
+                        <input class="input" type="email" name="emailPerfil" placeholder="Seu Email"
+                            value="andressa@gmail.com" disabled />
+                    </div>
+                    </div>
+                </section>
+                <section class="section2">
+                    <div>
+                        <label for="causaPerfil">Causas em preferência</label>
+                        <select class="input" name="causaPerfil" id="" disabled>
+                            <option value="Proteção Animal">Proteção Animal</option>
+                            <option value="Direitos Humanos e Sociais">
+                                Direitos Humanos e Sociais
+                            </option>
+                            <option value="Meio Ambiente">Meio Ambiente</option>
+                            <option value="Saúde e Bem-Estar">Saúde e Bem-Estar</option>
+                            <option value="Educação e Cultura">Educação e Cultura</option>
+                        </select>
+                    </div>
+                    <div class="telefonePerfil">
+                        <label for="telefonePerfil">Telefone</label>
+                        <input class="input" type="text" name="telefonePerfil" placeholder="Seu Telefone"
+                            value="(14) 99857-0088" disabled />
+                    </div>
+                    <div class="editarPerfil">
+                        <button id="editar">Editar</button>
+                        <button type="submit" id="salvar" disabled>Salvar</button>
+                        <button type="reset" id="cancelar" disabled>Cancelar</button>
+                    </div>
+                </section>
+            </form>
             <section class="fotoPerfil">
-                <img src="../assets/images/fotoPerfilDoador.png" alt="" />
-                <div class="buttons">
-                    <button>Mudar</button>
-                    <button>Remover</button>
+                <div class="img">
+                    <img src="../assets/images/fotoPerfilDoador.png" alt="Foto de perfil" />
                 </div>
+
+                <form action="{{ route('doador.updateimg') }}" class="buttons" method="POST"
+                    enctype="multipart/form-data">
+
+                    <div class="inputfoto">
+                        <label for="upload" class="upload-label">Clique aqui para alterar a foto</label>
+                        <input type="file" id="upload" name="foto" accept="image/png, image/jpeg, image/jpg" hidden
+                            onchange="this.form.submit()" />
+                    </div>
+                    <a href="{{ route('doador.removeimg') }}">Remover Foto</a>
+
+                </form>
             </section>
-        </form>
+
+        </section>
         <div class="estatisticas">
             <div class="titulo-div">
                 <h1 class="tituloContribuicao">Minhas contribuições</h1>
             </div>
             <div style="border-top: 1px solid #ccc; width: 85%; margin: 4vh 0 4vh 0;"></div>
 
-            <div class="titulo2" style="color: var(--azul);">Parabéns! você alcançou mais de <b>R$1.000 <!--BANCO DE DADOS--> </b> em doações</div>
+            <div class="titulo2" style="color: var(--azul);">Parabéns! você alcançou mais de <b>R$1.000
+                    <!--BANCO DE DADOS--> </b> em doações</div>
             <div class="divisoria" style="background-color: var(--azul);">
                 <h1 class="myDoacao">Minhas doações</h1>
             </div>

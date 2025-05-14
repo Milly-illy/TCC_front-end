@@ -11,6 +11,7 @@ body {
   text-align: center;
   padding-bottom: 25px;
 }
+
 .tituloContribuicao {
   margin-top: 30px;
   font-size: 50px;
@@ -19,14 +20,20 @@ body {
   padding-bottom: 25px;
 }
 
+.form {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
 form {
-  background-color: var(--bege);
   display: flex;
   align-items: start;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px 60px;
-  width: 100%;
+  width: 70%;
 }
 
 form div {
@@ -51,6 +58,7 @@ button {
   color: var(--azulEscuro);
   gap: 30px;
   margin-top: 55px;
+  width: 100%;
 }
 
 .editarPerfil button {
@@ -76,7 +84,7 @@ button {
 }
 
 #salvar:hover {
-  background-color: #8EE48E;
+  background-color: #8ee48e;
   cursor: pointer;
 }
 
@@ -87,7 +95,7 @@ button {
 }
 
 #cancelar:hover {
-  background-color: #E55959;
+  background-color: #e55959;
   cursor: pointer;
 }
 
@@ -107,6 +115,7 @@ button {
 .buttons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 20px;
   width: 100%;
 }
@@ -142,8 +151,35 @@ input::placeholder {
   font-size: 24px;
 }
 
+.upload-label,
+.add-label {
+  background-color: var(--verde);
+  color: var(--offWhite);
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+  width: 100%;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.upload-label:hover,
+.add-label:hover {
+  background-color: var(--verdeEscuro);
+}
+
+input:disabled,
+select:disabled {
+  opacity: 0.6;
+}
+
 section {
-  width: 35%;
+  width: 45%;
   margin-top: -20px;
 }
 
@@ -160,6 +196,12 @@ section div {
   width: 20%;
 }
 
+.fotoPerfil .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .fotoPerfil img {
   width: 70%;
 }
@@ -168,11 +210,19 @@ section div {
   padding: 10px;
 }
 
+.fotoPerfil a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e55959;
+}
+
 .confirmeSenhaPerfil {
   display: none;
 }
 
-.titulo2{
+.titulo2 {
   font-size: 30px;
 }
 
@@ -184,7 +234,7 @@ section div {
   align-items: center;
 
   .titulo {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -207,11 +257,11 @@ section div {
   color: var(--azulEscuro);
 
   b {
-      color: var(--verdeNeon);
+    color: var(--verdeNeon);
   }
 
   h1 {
-      font-size: 27px;
+    font-size: 27px;
   }
 }
 
@@ -232,7 +282,7 @@ td {
 }
 
 .first {
-  width: 500px
+  width: 500px;
 }
 
 th:first-of-type,
@@ -259,22 +309,22 @@ tbody>tr:nth-of-type(even) {
   margin: 50px 0 50px 50px;
 
   a {
-      border: 0px;
-      border-radius: 4px;
-      font-size: 20px;
-      color: var(--begeClaro);
-      background-color: var(--azul);
-      padding: 9px;
-      width: 200px;
-      height: auto;
-      transition: all 0.4s;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: var(--begeClaro);
+    background-color: var(--azul);
+    padding: 9px;
+    width: 200px;
+    height: auto;
+    transition: all 0.4s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
   }
 
   a:hover {
-      background-color: var(--verdeNeon);
+    background-color: var(--verdeNeon);
   }
 }
 
@@ -284,128 +334,139 @@ tbody>tr:nth-of-type(even) {
   .first {
     width: 350px
   }
+  .titulo{
+    padding-bottom: 30px;
+  }
 }
+
 @media (max-width:1200px) {
   .first {
     width: 300px
   }
+  .editarPerfil button {
+    width: 40%;
+  }
 }
+
 @media (max-width:1100px) {
   .first {
     width: 250px
   }
+  .fotoPerfil img{
+    width: 90%;
+  }
 }
+
 @media (max-width:1024px) {
   section {
-      width: 32%;
+    width: 45%;
   }
 
   label {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   input,
   select {
-      font-size: 19px;
+    font-size: 19px;
   }
 
   .titulo {
-      font-size: 42px;
+    font-size: 42px;
   }
-  .tituloContribuicao{
+
+  .tituloContribuicao {
     font-size: 42px;
   }
 
   .editarPerfil {
-      gap: 20px;
+    gap: 20px;
   }
-
-  .editarPerfil button {
-      width: 40%;
-  }
-
   .fotoPerfil {
-      gap: 10px;
-      width: 25%;
+    gap: 10px;
+    width: 20%;
   }
-
+  
   .fotoPerfil img {
-      width: 75%;
+    width: 90%;
   }
 
   .link_title {
-      font-size: 24px;
+    font-size: 24px;
   }
+
   table {
     font-size: 20px;
   }
-  .doacoes h1{
+
+  .doacoes h1 {
     font-size: 23px;
   }
-  .titulo3{
+
+  .titulo3 {
     font-size: 23px;
   }
+
   .button-event {
     gap: 20px;
     width: 85%;
     margin: 50px 0 50px 50px;
-  
+
     a {
-        font-size: 17px;
-        width: 170px;
+      font-size: 17px;
+      width: 170px;
     }
   }
+
   .first {
     width: 200px
   }
-  .divisoria{
+
+  .divisoria {
     font-size: 14px;
   }
-  .titulo2{
+
+  .titulo2 {
     font-size: 25px;
   }
 }
 
 @media (max-width:890px) {
   form {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   section {
-      width: 70%;
+    width: 70%;
   }
 
   .editarPerfil {
-      order: 1;
-  }
-
-  .editarPerfil {
-      gap: 30px;
+    gap: 30px;
   }
 
   .section1 {
-      margin-top: 20px;
-      order: 2;
+    margin-top: 20px;
   }
 
   .section2 {
-      margin-top: 5px;
-      order: 3;
+    margin-top: 5px;
   }
 
   .fotoPerfil {
-      gap: 20px;
-      width: 35%;
-      margin: 0;
+    gap: 20px;
+    width: 35%;
+    margin: 0;
   }
 
   .fotoPerfil img {
-      width: 68%;
+    width: 68%;
   }
+
   table {
     font-size: 18px;
   }
+
   .first {
     width: 150px
   }
@@ -413,148 +474,190 @@ tbody>tr:nth-of-type(even) {
 
 @media (max-width:817px) {
   .link_title {
-      font-size: 20px;
+    font-size: 20px;
   }
+  
 }
 
 @media (max-width:700px) {
   .titulo {
-      font-size: 35px;
+    font-size: 35px;
   }
-  .tituloContribuicao{
+
+  .tituloContribuicao {
     font-size: 35px;
   }
 
   .fotoPerfil img {
-      width: 85%;
+    width: 85%;
   }
-  .titulo2{
+
+  .titulo2 {
     font-size: 20px;
     width: 450px;
     text-align: center;
   }
-  td{
+
+  td {
     width: 400px;
   }
-  .td2{
+
+  .td2 {
     width: 200px;
   }
 }
-
+@media (max-width:670px) {
+  .editarPerfil button {
+    width: 50%;
+  }
+  .editarPerfil {
+    gap: 20px;
+  }
+}
 @media (max-width:617px) {
   .fotoPerfil {
-      gap: 20px;
-      width: 40%;
-      margin: 0;
+    gap: 20px;
+    width: 40%;
+    margin: 0;
   }
-  .myDoacao{
+
+  .myDoacao {
     font-size: 25px;
   }
+
   .button-event {
     gap: 20px;
     width: 85%;
     margin: 50px 0 50px 0px;
     align-items: center;
     justify-content: center;
-  
+
     a {
-        font-size: 17px;
-        width: 170px;
+      font-size: 17px;
+      width: 170px;
     }
   }
+  .editarPerfil button {
+    font-size: 15px;
+  }
 }
-
+@media (max-width:600px) {
+  .form{
+    flex-direction: column;
+    align-items: center;
+  }
+  .editarPerfil {
+    order: 1;
+  }
+  .form form:first-child{
+    order: 2;
+  }
+  form{
+    width: 100%;
+  }
+  section{
+    width: 80%;
+  }
+}
 @media (max-width:550px) {
   .fotoPerfil img {
-      width: 95%;
+    width: 95%;
   }
 
   section .buttons {
-      margin-top: 8px;
+    margin-top: 8px;
   }
 
   section div {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 
   .editarPerfil {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 }
 
 @media (max-width:450px) {
   .buttons button {
-      font-size: 15px;
-      width: 120px;
+    font-size: 15px;
+    width: 120px;
   }
 
   .fotoPerfil {
-      width: 55%;
+    width: 50%;
   }
 
   section {
-      width: 80%;
+    width: 80%;
   }
 
   label {
-      font-size: 17px;
+    font-size: 17px;
   }
 
   input {
-      font-size: 16px;
-  }
-
-  .editarPerfil button {
-      font-size: 17px;
+    font-size: 16px;
   }
 
   .editarPerfil {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   #editar {
-      width: 100%;
+    width: 75%;
   }
-  .titulo2{
+  #salvar {
+    width: 65%;
+  }
+  #cancelar {
+    width: 65%;
+  }
+  .titulo2 {
     width: 350px;
   }
-  .doacoes h1{
+
+  .doacoes h1 {
     font-size: 18px;
   }
+
   table {
     font-size: 15px;
   }
-  .myDoacao{
+
+  .myDoacao {
     font-size: 20px;
   }
+
   .button-event {
     gap: 20px;
     width: 85%;
     margin: 50px 0 50px 0px;
-  
+
     a {
-        font-size: 14px;
-        width: 140px;
+      font-size: 14px;
+      width: 140px;
     }
   }
 }
 
 @media (max-width:400px) {
-  form {
-      padding: 40px 40px;
-  }
-
   .titulo {
-      font-size: 30px;
-  }
-  .tituloContribuicao{
     font-size: 30px;
   }
-  .first{
+
+  .tituloContribuicao {
+    font-size: 30px;
+  }
+
+  .first {
     width: 60px;
   }
-  td{
+
+  td {
     padding: 13px;
+  }
+  .upload-label{
+    font-size: 12px;
   }
 }
 
@@ -564,47 +667,51 @@ tbody>tr:nth-of-type(even) {
     width: 85%;
     margin: 50px 0 50px 0px;
     flex-direction: column;
-  
+
     a {
-        font-size: 14px;
-        width: 170px;
+      font-size: 14px;
+      width: 170px;
     }
+  }
+  section{
+    width: 70%;
   }
 }
 
 @media (max-width:350px) {
-  .titulo2{
+  .titulo2 {
     font-size: 17px;
   }
 }
 
 @media (max-width:325px) {
   .titulo {
-      font-size: 25px;
+    font-size: 25px;
   }
-  .tituloContribuicao{
+
+  .tituloContribuicao {
     font-size: 24px;
   }
 
   section {
-      width: 95%;
+    width: 95%;
   }
 
   label {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   input,
   select {
-      font-size: 16px;
-      height: 45px;
+    font-size: 16px;
+    height: 45px;
   }
 
   .editarPerfil button {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .editarPerfil {
-      margin-top: 30px;
+    margin-top: 30px;
   }
 }
